@@ -1,7 +1,16 @@
 .footer {
   border-top: 4px solid black;
+  .block {
+    float: left;
+    padding-bottom: 3em;
+    padding-top: 1em;
+    width: 50%
+  }
 }
 .footer-menu {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
   li {
     list-style: none;
   }

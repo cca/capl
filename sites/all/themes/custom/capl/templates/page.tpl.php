@@ -66,9 +66,11 @@
       <?php print render($page['footer']); ?>
     <?php endif; ?>
     <?php if ($main_menu): ?>
-      <ul class="footer-menu">
-        <?php print render($main_menu); ?>
-      </ul>
+      <div class="block">
+        <ul class="footer-menu">
+          <?php print render($main_menu); ?>
+        </ul>
+      </div>
     <?php endif; ?>
   </div>
 </footer>

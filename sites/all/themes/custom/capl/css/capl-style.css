@@ -12,6 +12,89 @@ h1 {
   padding: 4px 0;
 }
 
+/* line 16, ../src/sass/_base.scss */
+h2 {
+  font-size: 1.5em;
+}
+
+/* line 20, ../src/sass/_base.scss */
+a {
+  color: black;
+}
+/* line 18, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: black;
+}
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: grey;
+}
+/* line 27, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: grey;
+}
+/* line 22, ../src/sass/_base.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 27, ../src/sass/_base.scss */
+.node-teaser {
+  float: left;
+  margin: 2em;
+  min-height: 300px;
+  display: table;
+}
+/* line 32, ../src/sass/_base.scss */
+.node-teaser h2 {
+  margin: 0.25em 0 0;
+}
+/* line 34, ../src/sass/_base.scss */
+.node-teaser h2 a {
+  color: black;
+  font-style: normal;
+}
+/* line 18, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.node-teaser h2 a:visited {
+  color: black;
+}
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.node-teaser h2 a:hover {
+  color: grey;
+}
+/* line 27, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.node-teaser h2 a:active {
+  color: grey;
+}
+/* line 39, ../src/sass/_base.scss */
+.node-teaser a {
+  color: grey;
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 18, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.node-teaser a:visited {
+  color: grey;
+}
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.node-teaser a:hover {
+  color: black;
+}
+/* line 27, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.node-teaser a:active {
+  color: black;
+}
+
+/* line 46, ../src/sass/_base.scss */
+.block-views-our-programs {
+  clear: both;
+}
+
+/* line 50, ../src/sass/_base.scss */
+.text-center {
+  clear: both;
+}
+
 /* line 1, ../src/sass/_drawer.scss */
 .drawer {
   background: black;
@@ -22,12 +105,25 @@ h1 {
 .footer {
   border-top: 4px solid black;
 }
+/* line 3, ../src/sass/_footer.scss */
+.footer .block {
+  float: left;
+  padding-bottom: 3em;
+  padding-top: 1em;
+  width: 50%;
+}
 
-/* line 5, ../src/sass/_footer.scss */
+/* line 10, ../src/sass/_footer.scss */
+.footer-menu {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+/* line 14, ../src/sass/_footer.scss */
 .footer-menu li {
   list-style: none;
 }
-/* line 8, ../src/sass/_footer.scss */
+/* line 17, ../src/sass/_footer.scss */
 .footer-menu a {
   color: black;
   font-weight: bold;
