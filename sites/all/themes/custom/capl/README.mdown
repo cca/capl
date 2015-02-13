@@ -1,0 +1,58 @@
+This theme uses [Grunt](http://gruntjs.com/) for all build activities. This includes sass compilation, css magnification, javascript linting, minification, etc. See [Theme development with Grunt: LiveReload, lint, uglify, oh my!](http://www.chapterthree.com/node/938) for more detailed info.
+
+Editing of sass & javascript files is done in their respective directories within this src directory.
+
+
+Installation
+============
+
+
+1. Install Node.js/npm & Grunt
+------------------------------
+
+Download and install node from the [Node.js website](http://nodejs.org/download/). Currently grunt [requires Node.js >= 0.8.0](http://gruntjs.com/getting-started). Then in a terminal, run (might need to use sudo):
+
+    $ npm install -g grunt-cli
+
+
+2. Install Ruby gems
+--------------------
+
+The sass/compass files require a handful of ruby gems to compile. Assuming you already have a working ruby installation and have the gem "bundler" installed, cd to this theme's src directory and run:
+
+    $ bundle install
+
+This will install the required versions of each gem specified in the Gemfile.
+
+
+3. Install Grunt Plugins
+------------------------
+
+cd to this theme's src directory and run:
+
+    $ npm install
+
+This will install the required versions of each grunt plugin.
+
+
+
+Usage
+=====
+
+
+1. Run Grunt
+------------
+
+You can either run Grunt in a listening mode or as a one-off build. For a single build:
+
+    $ grunt build
+
+In listening mode, (does a build first):
+
+    $ grunt
+
+
+2. Edit Sass & Javascript Files
+-------------------------------
+
+Edit the sass and javascript files as usual, and upon save, Grunt will run the build task.

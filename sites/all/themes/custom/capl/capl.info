@@ -1,0 +1,13 @@
+name = CCA Center for Public Life
+description = Theme based on Radix
+screenshot  = screenshot.png
+core        = 7.x
+base theme   = radix
+
+stylesheets[all][]= css/capl-style.css
+
+regions[content] = Content
+regions[help] = Help
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sidebar First
+regions[footer] = Footer
