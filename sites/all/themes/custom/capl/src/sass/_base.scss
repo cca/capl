@@ -50,3 +50,13 @@ a {
 .text-center {
   clear: both;
 }
+
+.node-type-program,
+.node-type-project {
+  h1 {
+    border-top: none;
+    &.title {
+      display: none;
+    }
+  }
+}

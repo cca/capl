@@ -95,6 +95,17 @@ a:hover {
   clear: both;
 }
 
+/* line 56, ../src/sass/_base.scss */
+.node-type-program h1,
+.node-type-project h1 {
+  border-top: none;
+}
+/* line 58, ../src/sass/_base.scss */
+.node-type-program h1.title,
+.node-type-project h1.title {
+  display: none;
+}
+
 /* line 1, ../src/sass/_drawer.scss */
 .drawer {
   background: black;
