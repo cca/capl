@@ -69,7 +69,7 @@ function capl_project_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => '',
+          'vocabulary' => 'discipline',
           'parent' => 0,
         ),
       ),
@@ -256,7 +256,7 @@ function capl_project_field_default_field_bases() {
   // Exported field_base: 'field_slideshow'
   $field_bases['field_slideshow'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => 6,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_slideshow',

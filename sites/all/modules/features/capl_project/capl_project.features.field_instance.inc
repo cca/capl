@@ -47,7 +47,7 @@ function capl_project_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'weight' => 8,
     ),
   );
 
@@ -75,19 +75,16 @@ function capl_project_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_discipline',
     'label' => 'Course Discipline',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
+      'active' => 1,
       'module' => 'options',
-      'settings' => array(
-        'autocomplete_path' => 'taxonomy/autocomplete',
-        'size' => 60,
-      ),
+      'settings' => array(),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 1,
     ),
   );
 
@@ -115,15 +112,16 @@ function capl_project_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_issue',
     'label' => 'Issue',
-    'required' => FALSE,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 2,
     ),
   );
 
@@ -165,7 +163,7 @@ function capl_project_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 4,
     ),
   );
 
@@ -195,7 +193,7 @@ function capl_project_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_program',
     'label' => 'Program',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -204,7 +202,7 @@ function capl_project_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 3,
     ),
   );
 
@@ -260,7 +258,7 @@ function capl_project_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 0,
+      'weight' => 9,
     ),
   );
 
@@ -297,7 +295,7 @@ function capl_project_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 11,
+      'weight' => 5,
     ),
   );
 
@@ -393,7 +391,7 @@ function capl_project_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 8,
+      'weight' => 10,
     ),
   );
 
@@ -405,9 +403,11 @@ function capl_project_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'default',
+        ),
+        'type' => 'file_rendered',
         'weight' => 3,
       ),
       'teaser' => array(
@@ -447,7 +447,7 @@ function capl_project_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 9,
+      'weight' => 11,
     ),
   );
 
@@ -480,7 +480,7 @@ function capl_project_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_year',
     'label' => 'Year',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'default_value' => 'now',
       'default_value2' => 'same',
@@ -500,7 +500,7 @@ function capl_project_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_select',
-      'weight' => 12,
+      'weight' => 6,
     ),
   );
 
