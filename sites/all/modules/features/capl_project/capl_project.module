@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the _CAPL_Project feature.
+ */
+
+include_once 'capl_project.features.inc';
