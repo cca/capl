@@ -1,0 +1,16 @@
+// Styles for blocks.
+// --------------------------------------------------
+
+.block-views-our-programs  {
+  clear: both;
+}
+
+.region-footer {
+  border-top: 4px solid black;
+  .block {
+    float: left;
+    padding-bottom: 3em;
+    padding-top: 1em;
+    width: 50%
+  }
+}
