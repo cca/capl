@@ -1,0 +1,14 @@
+name = _CAPL_CKeditor
+description = CKeditor Settings, Input Format and dependancies.
+core = 7.x
+package = CAPL
+version = 7.x-1.0
+project = capl_ckeditor
+dependencies[] = ckeditor
+dependencies[] = ckeditor_media
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = media
+features[ckeditor_profile][] = Filtered
+features[features_api][] = api:2
+features[filter][] = filtered_html
