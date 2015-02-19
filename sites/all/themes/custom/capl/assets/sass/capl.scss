@@ -1,0 +1,18 @@
+// @file
+// SASS partials import
+// --------------------------------------------------
+@import "compass";
+
+// Theme CSS
+// --------------------------------------------------
+@import "global/typography";
+@import "partials/layout";
+@import "partials/structure";
+@import "partials/menu";
+@import "partials/page";
+@import "partials/block";
+@import "partials/view";
+@import "partials/form";
+@import "partials/term";
+@import "partials/node";
+@import "partials/user";

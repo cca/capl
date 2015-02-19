@@ -10,20 +10,33 @@
  * @see html.tpl.php
  */
 ?>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="drawer collapse navbar-collapse" id="navbar-collapse">
+  <?php if ($main_menu): ?>
+    <ul id="main-menu" class="menu nav navbar-nav">
+      <?php print render($main_menu); ?>
+    </ul>
+  <?php endif; ?>
+</div><!-- /.navbar-collapse -->
+
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+      <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div> <!-- /.navbar-header -->
+</nav><!-- /.navbar -->
+
 <header id="header" class="header" role="header">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#drawer">
-        <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="<?php print $front_page; ?>" class="logo" class="navbar-brand">
-        <img src="<?php print $logo; ?>"/>
-      </a>
-    </div> <!-- /.navbar-header -->
+    <a href="<?php print $front_page; ?>">
+      <img class="logo" src="<?php print $logo; ?>">
+    </a>
   </div> <!-- /.container -->
 </header>
 
@@ -35,13 +48,12 @@
           <?php print $messages; ?>
         </div>
       <?php endif; ?>
-
-      <?php if ($title): ?>
-        <h1 class="title"><?php print $title; ?></h1>
-      <?php endif; ?>
-
       <div id="page-header">
-
+        <?php if ($title): ?>
+          <div class="page-header">
+            <h1 class="title"><?php print $title; ?></h1>
+          </div>
+        <?php endif; ?>
         <?php if ($tabs): ?>
           <div class="tabs">
             <?php print render($tabs); ?>
@@ -60,22 +72,13 @@
   </div> <!-- /#main -->
 </div> <!-- /#main-wrapper -->
 
-<footer class="footer" role="footer">
+<footer id="footer" class="footer" role="footer">
   <div class="container">
-    <?php if ($page['footer']) : ?>
-      <?php print render($page['footer']); ?>
-    <?php endif; ?>
+    <? if ($page['footer']): print render($page['footer']); endif; ?>
     <?php if ($main_menu): ?>
-      <div class="block">
-        <ul class="footer-menu">
-          <?php print render($main_menu); ?>
-        </ul>
-      </div>
+      <ul class="footer-menu">
+        <?php print render($main_menu); ?>
+      </ul>
     <?php endif; ?>
   </div>
 </footer>
-<div class="drawer">
-  <?php if ($main_menu): ?>
-      <?php print render($main_menu); ?>
-  <?php endif; ?>
-</div>

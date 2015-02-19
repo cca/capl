@@ -2,9 +2,8 @@
 // CSS Helpers
 // --------------------------------------------------
 
-.logo {
-  img {
-    height: auto;
-    width: 400px;
-  }
+img.logo {
+  height: auto;
+  width: 300px;
+  padding-bottom: 1em;
 }
