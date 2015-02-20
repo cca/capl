@@ -37,6 +37,27 @@ a:hover {
   clear: both;
 }
 
+/* line 5, ../sass/global/_defaults.scss */
+img.logo {
+  height: auto;
+  width: 300px;
+  padding-bottom: 1em;
+}
+
+/* line 11, ../sass/global/_defaults.scss */
+.page-header {
+  border-bottom: none;
+}
+/* line 13, ../sass/global/_defaults.scss */
+.page-header h1 {
+  margin-bottom: 1em;
+}
+
+/* line 18, ../sass/global/_defaults.scss */
+.footer-menu {
+  padding-top: 1em;
+}
+
 /* line 3, ../sass/partials/_menu.scss */
 .navbar-default {
   background: transparent;
@@ -136,6 +157,47 @@ a:hover {
   padding-bottom: 3em;
   padding-top: 1em;
   width: 50%;
+}
+
+/* line 6, ../sass/partials/_view.scss */
+.panel-default {
+  -webkit-box-shadow: 0 0 transparent;
+  -moz-box-shadow: 0 0 transparent;
+  box-shadow: 0 0 transparent;
+  border-color: transparent;
+}
+
+/* line 11, ../sass/partials/_view.scss */
+fieldset.bef-select-as-radios-fieldset.collapsed legend,
+fieldset.bef-select-as-checkboxes-fieldset.collapsed legend {
+  background: none;
+  border: none;
+}
+
+/* line 18, ../sass/partials/_view.scss */
+.views-exposed-widgets .views-exposed-widget fieldset {
+  height: auto;
+}
+/* line 21, ../sass/partials/_view.scss */
+.views-exposed-widgets .views-exposed-widget input {
+  height: auto !important;
+}
+/* line 24, ../sass/partials/_view.scss */
+.views-exposed-widgets .views-exposed-widget .form-control {
+  height: auto;
+}
+/* line 26, ../sass/partials/_view.scss */
+.views-exposed-widgets .views-exposed-widget .form-control.form-checkboxes {
+  width: 200px;
+}
+/* line 28, ../sass/partials/_view.scss */
+.views-exposed-widgets .views-exposed-widget .form-control.form-checkboxes label {
+  font-weight: normal;
+}
+/* line 31, ../sass/partials/_view.scss */
+.views-exposed-widgets .views-exposed-widget .form-control.form-checkboxes input {
+  display: inline;
+  width: 20px;
 }
 
 /* line 4, ../sass/partials/_node.scss */

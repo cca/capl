@@ -1,2 +1,38 @@
 // Styles for Views
 // --------------------------------------------------
+
+// Better exposed filters
+
+.panel-default {
+  @include box-shadow(0 0 transparent);
+  border-color: transparent;
+}
+fieldset.bef-select-as-radios-fieldset.collapsed legend,
+fieldset.bef-select-as-checkboxes-fieldset.collapsed legend {
+  background: none;
+  border: none;
+
+}
+
+.views-exposed-widgets .views-exposed-widget {
+  fieldset {
+    height: auto;
+  }
+  input {
+    height: auto !important;
+  }
+  .form-control {
+    height: auto;
+    &.form-checkboxes {
+      width: 200px;
+      label {
+        font-weight: normal;
+      }
+      input {
+        display: inline;
+        width: 20px;
+      }
+    }
+
+  }
+}

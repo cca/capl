@@ -48,11 +48,9 @@
           <?php print $messages; ?>
         </div>
       <?php endif; ?>
-      <div id="page-header">
+      <div class="page-header">
         <?php if ($title): ?>
-          <div class="page-header">
-            <h1 class="title"><?php print $title; ?></h1>
-          </div>
+          <h1 class="title"><?php print $title; ?></h1>
         <?php endif; ?>
         <?php if ($tabs): ?>
           <div class="tabs">
