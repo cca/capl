@@ -1,5 +1,5 @@
 name = CCA Center for Public Life
-description = Theme based on Radix
+description = Theme based on Radix See documentation at http://radixtheme.github.io/documentation/
 screenshot  = screenshot.png
 core        = 7.x
 base theme   = radix
