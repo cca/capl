@@ -1,28 +1,10 @@
 <?php
-/**
- * @file
- * Theme functions
- */
 
-require_once dirname(__FILE__) . '/includes/structure.inc';
-require_once dirname(__FILE__) . '/includes/comment.inc';
-require_once dirname(__FILE__) . '/includes/form.inc';
-require_once dirname(__FILE__) . '/includes/menu.inc';
-require_once dirname(__FILE__) . '/includes/node.inc';
-require_once dirname(__FILE__) . '/includes/panel.inc';
-require_once dirname(__FILE__) . '/includes/user.inc';
-require_once dirname(__FILE__) . '/includes/view.inc';
+function capl_preprocess_page(&$vars){
 
-/**
- * Implements hook_css_alter().
- */
-function capl_css_alter(&$css) {
-  $radix_path = drupal_get_path('theme', 'radix');
+  // Create full main menu tree
+  $main_menu_tree = menu_tree_all_data('main-menu');
+  // Add the rendered output to the $main_menu_expanded variable
+  $vars['main_menu_expanded'] = menu_tree_output($main_menu_tree);
 
-  // Radix now includes compiled stylesheets for demo purposes.
-  // We remove these from our subtheme since they are already included 
-  // in compass_radix.
-  unset($css[$radix_path . '/assets/stylesheets/radix-style.css']);
-  unset($css[$radix_path . '/assets/stylesheets/radix-print.css']);
 }
-

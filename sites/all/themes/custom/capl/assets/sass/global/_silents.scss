@@ -1,0 +1,24 @@
+// --------------------------------------------------------
+// SILENT SELECTORS
+// --------------------------------------------------------
+
+%base-font {
+  font-family: Arial, sans-serif;;
+  font-size: 100%;
+  line-height: 1.4;
+}
+
+%button {
+  background: grey;
+}
+
+%clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+

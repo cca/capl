@@ -2,7 +2,6 @@ name = CCA Center for Public Life
 description = Theme based on Radix See documentation at http://radixtheme.github.io/documentation/
 screenshot  = screenshot.png
 core        = 7.x
-base theme   = radix
 
 ; Regions
 regions[content] = Content
@@ -13,18 +12,16 @@ regions[footer] = Footer
 
 
 ; CSS - General
-stylesheets[all][]     = assets/stylesheets/screen.css
-stylesheets[all][]     = assets/stylesheets/capl.css
-stylesheets[print][]   = assets/stylesheets/print.css
+stylesheets[all][]   = assets/css/style.css
 
 ; CSS - Conditional
-stylesheets-conditional[lte IE 9][all][] = assets/stylesheets/ie.css
-stylesheets-conditional[lte IE 9][all][] = assets/stylesheets/capl.css
-stylesheets-conditional[IE 7][all][] = assets/stylesheets/ie7.css
-stylesheets-conditional[IE 8][all][] = assets/stylesheets/ie8.css
+stylesheets-conditional[lte IE 9][all][] = assets/css/ie.css
+stylesheets-conditional[IE 7][all][] = assets/css/ie7.css
+stylesheets-conditional[IE 8][all][] = assets/css/ie8.css
 
 ; Javascript
-scripts[] = assets/javascripts/script.js
+scripts[] = assets/js/modernizr.js
+scripts[] = assets/js/scripts.js
 
 
 

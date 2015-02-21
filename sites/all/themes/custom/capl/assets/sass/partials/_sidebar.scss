@@ -1,0 +1,22 @@
+.region-sidebar-first {
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+    li {
+      list-style: none;
+      margin-left: 0;
+      li {
+        padding-left: .5em;
+      }
+      a {
+        @include border-radius(3px);
+        @include bg-colors(tint(black, 90%), tint(black, 70%), tint(black, 70%));
+        @include link-colors(black, grey, grey, black);
+        display: block;
+        margin-bottom: .5em;
+        padding: .25em .5em;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

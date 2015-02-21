@@ -1,6 +1,6 @@
 # Require any additional compass plugins here.
-require 'bootstrap-sass';
-require "compass_radix";
+require 'susy';
+require "breakpoint";
 require File.join(File.dirname(__FILE__), 'extensions/css_splitter/css_splitter.rb');
 
 # Set environment [development, production]
@@ -8,11 +8,11 @@ environment = :development
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "assets/stylesheets"
+css_dir = "assets/css"
 sass_dir = "assets/sass"
 images_dir = "assets/images"
 fonts_dir = "assets/fonts"
-javascripts_dir = "assets/javascripts"
+javascripts_dir = "assets/js"
 extensions_dir = "extensions"
 
 # You can select your preferred output style here (can be overridden via the command line):
@@ -35,3 +35,4 @@ line_comments = (environment == :development) ? true : false
 on_stylesheet_saved do |path|
   CssSplitter.split(path) unless path[/\d+$/]
 end
+

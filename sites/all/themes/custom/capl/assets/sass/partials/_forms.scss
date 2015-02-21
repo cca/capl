@@ -1,0 +1,230 @@
+////////////////////////
+// General Form styling
+////////////////////////
+
+// Form
+form {
+  @include breakpoint($hand) {
+    background: tint(black, 95%);
+  }
+}
+input {
+  vertical-align: middle;
+}
+select {
+  background: tint(black, 95%);
+  border: 1px solid tint(black, 65%);
+  height: 36px;
+}
+// Labels
+label   {
+  display: block;
+  font-weight: normal;
+  @include breakpoint($hand) {
+    display: block;
+  }
+}
+
+// Description
+.description {
+  color: tint(grey, 20%);
+  margin-top: .25em;
+}
+
+// Text
+input[type="text"],
+input[type="password"],
+textarea {
+  border: 1px solid tint(black, 65%);
+  background: tint(black, 95%);
+  font-size: 13px;
+  padding: 8px 5px;
+  @include breakpoint($hand) {
+    @include box-sizing(border-box);
+    width: 100%;
+  }
+}
+
+.form-required {
+  color: inherit;
+}
+
+html.js input {
+  &.form-autocomplete {
+    background-position: 100% 5px;
+  }
+  &.throbbing {
+    background-position: 100% -16px;
+  }
+}
+
+// Buttons
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  @extend %button;
+  &#edit-managed-file-upload-button {
+    margin-top: .25em;
+  }
+}
+.form-actions {
+  #edit-preview,
+  #edit-delete {
+    background-color: grey;
+    &:hover {
+      background-color: saturate(black, 20%);
+    }
+  }
+}
+
+// Misc
+fieldset {
+  background: white;
+  border: 2px solid tint(grey, 80%);
+  margin: .5em 0 1em;
+  legend {
+    background: white;
+    border: 2px solid tint(grey, 80%);
+    padding: .2em .5em;
+  }
+}
+.confirm-parent,
+.password-parent {
+  @include breakpoint($hand) {
+    width: auto;
+  }
+}
+.password-strength,
+div.password-confirm {
+  @include breakpoint($hand) {
+    color: grey;
+    font-size: 11px;
+    margin-top: 0;
+    width: auto;
+    float: none;
+  }
+}
+
+#edit-cancel {
+  @include link-colors(black, black);
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding-left: .5em;
+  text-transform: uppercase;
+}
+
+#edit-managed-file-upload {
+  @include breakpoint($hand) {
+    margin-right: .5em;
+    width: 50%;
+  }
+}
+
+.filter-wrapper {
+  background-color: tint(grey, 40%);
+  color: shade(grey, 30%);
+  border: 2px solid shade(grey, 10%);
+  font-size: 12px;
+  padding: .5em 0 1em;
+}
+
+// Node form
+.node-form {
+  @include border-radius(3px);
+  background-color: shade(grey, 5%);
+  padding: 1em;
+  a {
+    @include link-colors(adjust-saturation(black, -30%), black);
+  }
+  input[type="text"],
+  input[type="password"],
+  textarea  {
+    background: white;
+  }
+}
+
+// Vertical-tabs
+.vertical-tabs {
+  background: white;
+
+  // V-tabs buttons
+  .vertical-tabs-list .vertical-tab-button a {
+    @include link-colors(desaturate(black, 40%), black, black, black);
+    font-size: 85%;
+    strong {
+      font-size: 110%;
+    }
+    &:hover {
+      strong {
+        text-decoration: none;
+      }
+    }
+  }
+  .vertical-tab-button {
+    &.selected a {
+      @include link-colors(black, black, black, black);
+      strong {
+        color: black;
+      }
+      &:hover strong {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // V-tabs input
+  input[type="text"],
+  input[type="password"],
+  textarea  {
+    background-color: tint(grey, 40%);
+  }
+}
+
+// Search form
+.block-search {
+  @include breakpoint($desktop) {
+    float: right;
+  }
+  input[type="text"] {
+    width: 60%;
+    @include breakpoint($hand){
+      width: 80%;
+    }
+    @include breakpoint($tablet){
+      width: 75%;
+    }
+    @include breakpoint($desktop) {
+      width: auto;
+    }
+  }
+}
+
+// User Login Form
+#user-login-form {
+  li {
+    list-style: none;
+    margin-left: 0;
+  }
+  a {
+    @extend %button;
+    @include link-colors(black, black);
+    background: tint(black, 80%);
+    border: 1px solid tint(black, 45%);
+    display: inline-block;
+    text-align: center;
+    @include breakpoint($hand) {
+      display: block;
+    }
+    &:hover {
+      background: tint(black, 80%);
+      border: 1px solid tint(black, 45%);
+    }
+  }
+  input[type="submit"] {
+    @include breakpoint($hand) {
+      width: 100%;
+    }
+  }
+}

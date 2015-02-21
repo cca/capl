@@ -1,0 +1,31 @@
+ul.primary {
+  border-bottom: none;
+  margin-bottom: 1em;
+  margin-left: 0;
+  padding-bottom: 3px;
+  padding-left: 0;
+  white-space: normal;
+  li {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 0;
+    &.active a {
+      @include link-colors(white, grey);
+      background: desaturate(grey, 30%);
+      border-bottom: 1px solid #bbb;
+      color: white;
+      &:hover {
+        background: black;
+      }
+    }
+    a {
+      @include link-colors(black, grey);
+      background-color: tint(grey, 80%);
+      padding: 3px 10px;
+      border-style: solid solid solid solid;
+      &:hover {
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  }
+}

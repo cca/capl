@@ -1,0 +1,160 @@
+//--------------------------------------------------------
+// Susy Two configuration
+// Documentation: http://susydocs.oddbird.net/en/latest/settings/
+// Tutorial: http://www.zell-weekeat.com/susy2-tutorial/
+
+// These four rules will be enough for most susy grids:
+// Note that you do not need add additional classes to markup for susy to work.
+// - @include container //Define the wrapper selector
+// - @include span($columns of $totalcolumns) // sets the number of columns
+// - @include span($columns of $totalcolumns last // The 'last' flag indicates the last column in a row.
+// - @include span(isolate $columns at $location of $totalcolumns) // $location is the location of the column start. 'isolate' flag indicates there's no preceding column Use to create artificial padding
+
+// Suzy examples for 6 column grid
+//  .container {
+//    @include container; // Define .container as the full-width wrapper.
+//  }
+//  .selector {
+//    @include span(3 of 6); // Element with selector class will have a 3 of 6 (50%) width.
+//  }
+//  .selector {
+//    @include span(2 of 6 last); // Element with selector class will have a 2 of 6 (33%) width. It will be floated right to be the last element in the row.
+//  }
+//  .selector {
+//    @include span(isolate 4 at 1 of 6 ); // Element with selector class will have a 4 of 6 (66%) width and will have a left padding equal to one column width.
+//  }
+//--------------------------------------------------------
+
+
+// Susy settings.
+$susy: (
+  column-width: 30px,
+  columns: 6,
+  gutters: .25,
+  math: fluid,
+  use-custom: (
+    box-sizing: false,
+  ),
+);
+
+// Apply container function.
+.container {
+  padding: 1em;
+}
+.container,
+.group-left,
+.group-right,
+.sidebar-first,
+.sidebar-second {
+  @include box-sizing(border-box);
+}
+
+// Handheld
+@include breakpoint($hand) {
+  // Full width
+  .container {
+    @include container(4 of 4);
+  }
+  .container {
+    .group-left {
+      @include span(4 of 4);
+    }
+    .group-right {
+      @include span(4 of 4);
+    }
+  }
+}
+
+// Tablet
+@include breakpoint($tablet) {
+  // Full width
+  .container {
+    @include container(6 of 6);
+  }
+  .no-sidebars .main-content {
+    @include span(6 of 6);
+  }
+  .no-sidebars .main-content {
+    .group-left {
+      @include span(4.5 of 6);
+    }
+    .group-right {
+      @include span(1.5 of 6 last);
+
+    }
+  }
+
+  // First Sidebar Only
+  .sidebar-first .sidebar-first {
+    @include span(2.5 of 6);
+  }
+  .one-sidebar.sidebar-first .main-content {
+    @include span(3.5 of 6 last);
+  }
+
+  // Second Sidebar Only
+  .sidebar-second .sidebar-second {
+    @include span(1 of 6 last);
+  }
+  .one-sidebar.sidebar-second .main-content {
+    @include span(5 of 6);
+  }
+
+  // Two sidebars
+  .two-sidebars .sidebar-first {
+    @include span(1 of 4);
+  }
+  .two-sidebars .main-content {
+    @include span(2 of 4);
+  }
+  .two-sidebars .sidebar-second {
+    @include span(1 of 4 last);
+  }
+}
+
+// Desktop
+@include breakpoint($desktop) {
+  // Full width
+  .container {
+    @include container(6 of 6);
+  }
+  .no-sidebars .main-content {
+    @include span(6 of 6);
+  }
+  .no-sidebars .main-content {
+    .group-left {
+      @include span(4 of 6);
+    }
+    .group-right {
+      @include span(2 of 6 last);
+
+    }
+  }
+
+  // First Sidebar
+  .sidebar-first .sidebar-first {
+    @include span(1.5 of 6);
+  }
+  .one-sidebar.sidebar-first .main-content {
+    @include span(4.5 of 6 last);
+  }
+
+  // Second Sidebar
+  .one-sidebar.sidebar-second .sidebar-second {
+     @include span(2 of 6 last);
+  }
+  .one-sidebar.sidebar-second .main-content {
+    @include span(4 of 6);
+  }
+
+  // Two sidebars
+  .two-sidebars .main-content {
+     @include span(4 of 6);
+  }
+  .two-sidebars .sidebar-first {
+    @include span(1 of 6);
+  }
+  .two-sidebars .sidebar-second {
+    @include span(1 of 6 'last');
+  }
+}

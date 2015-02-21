@@ -1,0 +1,26 @@
+// Footer
+// --------------------------------------------------------
+
+.region-footer {
+  border-top: 4px solid black;
+  .block {
+    padding-top: 1em;
+  }
+}
+
+.footer-menu {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  ul {
+    margin-top: 0;
+    padding: 0;
+    li.leaf {
+      list-style: none;
+    }
+  }
+  a {
+    color: black;
+    font-weight: bold;
+  }
+}

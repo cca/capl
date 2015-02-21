@@ -1,0 +1,172 @@
+// Default Styles - Global
+// --------------------------------------------------------
+
+body {
+  @extend %base-font;
+  color: black;
+  font-size: 95%;
+  margin: 0;
+}
+
+// h1-h6
+#{headings(1,6)}{
+  @extend %base-font;
+  line-height: 1.3;
+  margin-bottom: .75em;
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: -2px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+
+// links
+li a,
+a {
+  transition: color 0.2s;
+  @include link-colors(
+    black, //normal
+    grey, //hover
+    grey, //active
+    black //visited
+  );
+  text-decoration: none;
+}
+
+// other
+blockquote {
+  color: tint(black, 15%);
+  font-size: 85%;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #dfdfdf;
+  color: #dfdfdf;
+  height: 1px;
+}
+
+.marker {
+  background: black;
+  color: white;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 2px 2px 3px 4px;
+}
+.more-link,
+.more-help-link {
+  border-bottom: 1px solid #dfdfdf;
+  border-top: 1px solid #dfdfdf;
+  text-align: center;
+  padding: .5em 0;
+  a {
+    @include link-colors(black, grey);
+    text-decoration: none;
+    &:after {
+      content: ' ...';
+    }
+  }
+}
+
+// List Styles
+.item-list {
+  ul,
+  ol {
+    li {
+      margin-bottom: .5em;
+    }
+  }
+}
+
+// Image Styles
+// --------------------------------------------------------
+img {
+  @include breakpoint($hand) {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+// Main Content Styles
+// --------------------------------------------------------
+.submitted {
+  color: grey;
+  font-size: .9em;
+}
+
+
+
+img.logo {
+  height: auto;
+  width: 300px;
+  padding-bottom: 1em;
+}
+
+.page-header {
+  border-bottom: none;
+  h1 {
+    margin-bottom: 1em;
+  }
+}
+
+.footer-menu {
+  padding-top: 1em;
+}
+
+h1 {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  font-size: 2em;
+  padding: 4px 0;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+a {
+  @include link-colors(black, grey, grey, black);
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+.text-center {
+  clear: both;
+}
+.block-views-our-programs  {
+  clear: both;
+}
+
+
+
+
+// Screen Readers
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}

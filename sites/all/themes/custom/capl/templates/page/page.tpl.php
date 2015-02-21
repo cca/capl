@@ -11,72 +11,79 @@
  */
 ?>
 
-<!-- Collect the nav links, forms, and other content for toggling -->
-<div class="drawer collapse navbar-collapse" id="navbar-collapse">
-  <?php if ($main_menu): ?>
-    <ul id="main-menu" class="menu nav navbar-nav">
-      <?php print render($main_menu); ?>
-    </ul>
-  <?php endif; ?>
-</div><!-- /.navbar-collapse -->
+<!-- Mobile Nav button -->
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger">
+  <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</label>
 
-<nav class="navbar navbar-default" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-      <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div> <!-- /.navbar-header -->
-</nav><!-- /.navbar -->
+<?php if ($main_menu): ?>
+  <div class="drawer">
+    <?php print render($main_menu_expanded); ?>
+  </div> <!-- /#main-menu -->
+<?php endif; ?>
+
 
 <header id="header" class="header" role="header">
   <div class="container">
     <a href="<?php print $front_page; ?>">
       <img class="logo" src="<?php print $logo; ?>">
     </a>
+    <div class="page-header">
+      <?php if ($title): ?>
+        <h1 class="title"><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php if ($tabs): ?>
+        <div class="tabs">
+          <?php print render($tabs); ?>
+        </div>
+      <?php endif; ?>
+      <?php print render($page['help']); ?>
+      <?php if ($action_links): ?>
+        <ul class="action-links">
+          <?php print render($action_links); ?>
+        </ul>
+      <?php endif; ?>
+    </div>
   </div> <!-- /.container -->
 </header>
 
-<div id="main-wrapper">
-  <div id="main" class="main">
-    <div class="container">
-      <?php if ($messages): ?>
-        <div id="messages">
-          <?php print $messages; ?>
-        </div>
-      <?php endif; ?>
-      <div class="page-header">
-        <?php if ($title): ?>
-          <h1 class="title"><?php print $title; ?></h1>
-        <?php endif; ?>
-        <?php if ($tabs): ?>
-          <div class="tabs">
-            <?php print render($tabs); ?>
-          </div>
-        <?php endif; ?>
-        <?php if ($action_links): ?>
-          <ul class="action-links">
-            <?php print render($action_links); ?>
-          </ul>
-        <?php endif; ?>
-      </div>
+<div class="container main-wrapper">
+  <?php if ($page['sidebar_first']): ?>
+    <div class="sidebar-first">
+      <?php print render($page['sidebar_first']); ?>
     </div>
-    <div id="content" class="container">
+  <?php endif; ?>
+  <!-- /sidebar-first -->
+
+  <div class="main-content" class="container">
+    <?php if ($messages): ?>
+      <div id="messages">
+        <?php print $messages; ?>
+      </div>
+    <?php endif; ?>
+    <div id="content" >
       <?php print render($page['content']); ?>
     </div>
-  </div> <!-- /#main -->
-</div> <!-- /#main-wrapper -->
+  </div>
+  <?php if ($page['sidebar_second']): ?>
+    <div class="sidebar-second">
+      <?php print render($page['sidebar_second']); ?>
+    </div>
+  <?php endif; ?>
+  <!-- /sidebar-second -->
+</div>
 
 <footer id="footer" class="footer" role="footer">
   <div class="container">
     <? if ($page['footer']): print render($page['footer']); endif; ?>
     <?php if ($main_menu): ?>
-      <ul class="footer-menu">
-        <?php print render($main_menu); ?>
-      </ul>
+      <div class="footer-menu">
+        <?php print render($main_menu_expanded); ?>
+      </div>
     <?php endif; ?>
   </div>
 </footer>

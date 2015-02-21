@@ -1,0 +1,57 @@
+@mixin link-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+  &,
+  &:link {
+  color: $normal;
+  }
+  @if $visited {
+    &:visited,
+    &:link:visited{
+      color: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      color: $focus;
+    }
+  }
+  @if $hover {
+    &.active:hover,
+    &.active-trail:hover,
+    &:hover {
+      color: $hover;
+    }
+  }
+  @if $active {
+    &.active,
+    &:active,
+    &.active-trail {
+      color: $active;
+    }
+  }
+}
+
+@mixin bg-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+  background-color: $normal;
+  @if $visited {
+    &:visited {
+      background-color: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      background-color: $focus;
+    }
+  }
+  @if $hover {
+    &.active:hover,
+    &:hover {
+      background-color: $hover;
+    }
+  }
+  @if $active {
+    &.active,
+    &:active {
+      background-color: $active;
+    }
+  }
+}

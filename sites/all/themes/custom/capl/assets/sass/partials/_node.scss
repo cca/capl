@@ -1,5 +1,5 @@
-// Styles for Nodes
-// --------------------------------------------------
+// Node Styles
+// --------------------------------------------------------
 
 .node-teaser {
   float: left;
@@ -23,7 +23,6 @@
 .node-type-program,
 .node-type-project {
   h1 {
-    border-top: none;
     &.title {
       display: none;
     }
