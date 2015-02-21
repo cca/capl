@@ -70,9 +70,9 @@ function capl_project_ds_layout_settings_info() {
     'regions' => array(
       'header' => array(
         0 => 'field_slideshow',
+        1 => 'title',
       ),
       'left' => array(
-        1 => 'title',
         2 => 'body',
         3 => 'field_video',
       ),
@@ -88,7 +88,7 @@ function capl_project_ds_layout_settings_info() {
     ),
     'fields' => array(
       'field_slideshow' => 'header',
-      'title' => 'left',
+      'title' => 'header',
       'body' => 'left',
       'field_video' => 'left',
       'field_discipline' => 'right',
