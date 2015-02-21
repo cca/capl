@@ -198,7 +198,7 @@ function capl_project_views_default_views() {
     3 => 0,
   );
   $handler->display->display_options['filters']['field_issue_tid_1']['type'] = 'select';
-  $handler->display->display_options['filters']['field_issue_tid_1']['vocabulary'] = 'discipline';
+  $handler->display->display_options['filters']['field_issue_tid_1']['vocabulary'] = 'issue';
   $handler->display->display_options['filters']['field_issue_tid_1']['error_message'] = FALSE;
   /* Filter criterion: Content: Program (field_program) */
   $handler->display->display_options['filters']['field_program_target_id']['id'] = 'field_program_target_id';

@@ -487,44 +487,37 @@ a:hover {
   font-weight: bold;
 }
 
-@media (min-width: 0) and (max-width: 480px) {
-  /* line 6, ../sass/partials/_forms.scss */
-  form {
-    background: #f2f2f2;
-  }
-}
-
-/* line 11, ../sass/partials/_forms.scss */
+/* line 6, ../sass/partials/_forms.scss */
 input {
   vertical-align: middle;
 }
 
-/* line 14, ../sass/partials/_forms.scss */
+/* line 9, ../sass/partials/_forms.scss */
 select {
   background: #f2f2f2;
   border: 1px solid #a5a5a5;
   height: 36px;
 }
 
-/* line 20, ../sass/partials/_forms.scss */
+/* line 15, ../sass/partials/_forms.scss */
 label {
   display: block;
   font-weight: normal;
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 20, ../sass/partials/_forms.scss */
+  /* line 15, ../sass/partials/_forms.scss */
   label {
     display: block;
   }
 }
 
-/* line 29, ../sass/partials/_forms.scss */
+/* line 24, ../sass/partials/_forms.scss */
 .description {
   color: #999999;
   margin-top: .25em;
 }
 
-/* line 35, ../sass/partials/_forms.scss */
+/* line 30, ../sass/partials/_forms.scss */
 input[type="text"],
 input[type="password"],
 textarea {
@@ -534,7 +527,7 @@ textarea {
   padding: 8px 5px;
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 35, ../sass/partials/_forms.scss */
+  /* line 30, ../sass/partials/_forms.scss */
   input[type="text"],
   input[type="password"],
   textarea {
@@ -545,21 +538,21 @@ textarea {
   }
 }
 
-/* line 48, ../sass/partials/_forms.scss */
+/* line 43, ../sass/partials/_forms.scss */
 .form-required {
   color: inherit;
 }
 
-/* line 53, ../sass/partials/_forms.scss */
+/* line 48, ../sass/partials/_forms.scss */
 html.js input.form-autocomplete {
   background-position: 100% 5px;
 }
-/* line 56, ../sass/partials/_forms.scss */
+/* line 51, ../sass/partials/_forms.scss */
 html.js input.throbbing {
   background-position: 100% -16px;
 }
 
-/* line 67, ../sass/partials/_forms.scss */
+/* line 62, ../sass/partials/_forms.scss */
 button#edit-managed-file-upload-button,
 input[type="button"]#edit-managed-file-upload-button,
 input[type="reset"]#edit-managed-file-upload-button,
@@ -567,24 +560,24 @@ input[type="submit"]#edit-managed-file-upload-button {
   margin-top: .25em;
 }
 
-/* line 72, ../sass/partials/_forms.scss */
+/* line 67, ../sass/partials/_forms.scss */
 .form-actions #edit-preview,
 .form-actions #edit-delete {
   background-color: grey;
 }
-/* line 75, ../sass/partials/_forms.scss */
+/* line 70, ../sass/partials/_forms.scss */
 .form-actions #edit-preview:hover,
 .form-actions #edit-delete:hover {
   background-color: black;
 }
 
-/* line 82, ../sass/partials/_forms.scss */
+/* line 77, ../sass/partials/_forms.scss */
 fieldset {
   background: white;
   border: 2px solid #e5e5e5;
   margin: .5em 0 1em;
 }
-/* line 86, ../sass/partials/_forms.scss */
+/* line 81, ../sass/partials/_forms.scss */
 fieldset legend {
   background: white;
   border: 2px solid #e5e5e5;
@@ -592,7 +585,7 @@ fieldset legend {
 }
 
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 92, ../sass/partials/_forms.scss */
+  /* line 87, ../sass/partials/_forms.scss */
   .confirm-parent,
   .password-parent {
     width: auto;
@@ -600,7 +593,7 @@ fieldset legend {
 }
 
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 98, ../sass/partials/_forms.scss */
+  /* line 93, ../sass/partials/_forms.scss */
   .password-strength,
   div.password-confirm {
     color: grey;
@@ -611,7 +604,7 @@ fieldset legend {
   }
 }
 
-/* line 109, ../sass/partials/_forms.scss */
+/* line 104, ../sass/partials/_forms.scss */
 #edit-cancel {
   font-size: 11px;
   letter-spacing: 1px;
@@ -628,14 +621,14 @@ fieldset legend {
 }
 
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 117, ../sass/partials/_forms.scss */
+  /* line 112, ../sass/partials/_forms.scss */
   #edit-managed-file-upload {
     margin-right: .5em;
     width: 50%;
   }
 }
 
-/* line 124, ../sass/partials/_forms.scss */
+/* line 119, ../sass/partials/_forms.scss */
 .filter-wrapper {
   background-color: #b2b2b2;
   color: #595959;
@@ -644,7 +637,7 @@ fieldset legend {
   padding: .5em 0 1em;
 }
 
-/* line 133, ../sass/partials/_forms.scss */
+/* line 128, ../sass/partials/_forms.scss */
 .node-form {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -660,18 +653,18 @@ fieldset legend {
 .node-form a.active:hover, .node-form a.active-trail:hover, .node-form a:hover {
   color: black;
 }
-/* line 140, ../sass/partials/_forms.scss */
+/* line 135, ../sass/partials/_forms.scss */
 .node-form input[type="text"],
 .node-form input[type="password"],
 .node-form textarea {
   background: white;
 }
 
-/* line 148, ../sass/partials/_forms.scss */
+/* line 143, ../sass/partials/_forms.scss */
 .vertical-tabs {
   background: white;
 }
-/* line 152, ../sass/partials/_forms.scss */
+/* line 147, ../sass/partials/_forms.scss */
 .vertical-tabs .vertical-tabs-list .vertical-tab-button a {
   font-size: 85%;
 }
@@ -691,11 +684,11 @@ fieldset legend {
 .vertical-tabs .vertical-tabs-list .vertical-tab-button a.active, .vertical-tabs .vertical-tabs-list .vertical-tab-button a:active, .vertical-tabs .vertical-tabs-list .vertical-tab-button a.active-trail {
   color: black;
 }
-/* line 155, ../sass/partials/_forms.scss */
+/* line 150, ../sass/partials/_forms.scss */
 .vertical-tabs .vertical-tabs-list .vertical-tab-button a strong {
   font-size: 110%;
 }
-/* line 159, ../sass/partials/_forms.scss */
+/* line 154, ../sass/partials/_forms.scss */
 .vertical-tabs .vertical-tabs-list .vertical-tab-button a:hover strong {
   text-decoration: none;
 }
@@ -715,16 +708,16 @@ fieldset legend {
 .vertical-tabs .vertical-tab-button.selected a.active, .vertical-tabs .vertical-tab-button.selected a:active, .vertical-tabs .vertical-tab-button.selected a.active-trail {
   color: black;
 }
-/* line 167, ../sass/partials/_forms.scss */
+/* line 162, ../sass/partials/_forms.scss */
 .vertical-tabs .vertical-tab-button.selected a strong {
   color: black;
 }
-/* line 170, ../sass/partials/_forms.scss */
+/* line 165, ../sass/partials/_forms.scss */
 .vertical-tabs .vertical-tab-button.selected a:hover strong {
   color: black;
   text-decoration: none;
 }
-/* line 178, ../sass/partials/_forms.scss */
+/* line 173, ../sass/partials/_forms.scss */
 .vertical-tabs input[type="text"],
 .vertical-tabs input[type="password"],
 .vertical-tabs textarea {
@@ -732,40 +725,40 @@ fieldset legend {
 }
 
 @media (min-width: 801px) {
-  /* line 186, ../sass/partials/_forms.scss */
+  /* line 181, ../sass/partials/_forms.scss */
   .block-search {
     float: right;
   }
 }
-/* line 190, ../sass/partials/_forms.scss */
+/* line 185, ../sass/partials/_forms.scss */
 .block-search input[type="text"] {
   width: 60%;
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 190, ../sass/partials/_forms.scss */
+  /* line 185, ../sass/partials/_forms.scss */
   .block-search input[type="text"] {
     width: 80%;
   }
 }
 @media (min-width: 481px) and (max-width: 800px) {
-  /* line 190, ../sass/partials/_forms.scss */
+  /* line 185, ../sass/partials/_forms.scss */
   .block-search input[type="text"] {
     width: 75%;
   }
 }
 @media (min-width: 801px) {
-  /* line 190, ../sass/partials/_forms.scss */
+  /* line 185, ../sass/partials/_forms.scss */
   .block-search input[type="text"] {
     width: auto;
   }
 }
 
-/* line 206, ../sass/partials/_forms.scss */
+/* line 201, ../sass/partials/_forms.scss */
 #user-login-form li {
   list-style: none;
   margin-left: 0;
 }
-/* line 210, ../sass/partials/_forms.scss */
+/* line 205, ../sass/partials/_forms.scss */
 #user-login-form a {
   background: #cccccc;
   border: 1px solid #727272;
@@ -781,18 +774,18 @@ fieldset legend {
   color: black;
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 210, ../sass/partials/_forms.scss */
+  /* line 205, ../sass/partials/_forms.scss */
   #user-login-form a {
     display: block;
   }
 }
-/* line 220, ../sass/partials/_forms.scss */
+/* line 215, ../sass/partials/_forms.scss */
 #user-login-form a:hover {
   background: #cccccc;
   border: 1px solid #727272;
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 225, ../sass/partials/_forms.scss */
+  /* line 220, ../sass/partials/_forms.scss */
   #user-login-form input[type="submit"] {
     width: 100%;
   }
@@ -1194,54 +1187,97 @@ label[for="nav-trigger"] .icon-bar {
   background: -moz-linear-gradient(0% 0% 270deg, #547085, #3d4f5d);
 }
 
-/* line 2, ../sass/partials/_sidebar.scss */
-.region-sidebar-first ul {
-  margin-left: 0;
+/* line 5, ../sass/partials/_sidebar.scss */
+html.js fieldset.collapsible .fieldset-legend {
+  background: none;
   padding-left: 0;
 }
-/* line 5, ../sass/partials/_sidebar.scss */
-.region-sidebar-first ul li {
-  list-style: none;
-  margin-left: 0;
+
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 10, ../sass/partials/_sidebar.scss */
+  .region-sidebar-first h2 {
+    display: block;
+  }
 }
-/* line 8, ../sass/partials/_sidebar.scss */
-.region-sidebar-first ul li li {
-  padding-left: .5em;
+@media (min-width: 481px) {
+  /* line 10, ../sass/partials/_sidebar.scss */
+  .region-sidebar-first h2 {
+    display: none;
+  }
 }
-/* line 11, ../sass/partials/_sidebar.scss */
-.region-sidebar-first ul li a {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #e5e5e5;
-  display: block;
-  margin-bottom: .5em;
-  padding: .25em .5em;
-  text-transform: uppercase;
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 18, ../sass/partials/_sidebar.scss */
+  .region-sidebar-first .views-exposed-widgets {
+    display: none;
+  }
 }
-/* line 46, ../sass/global/_mixins.scss */
-.region-sidebar-first ul li a.active:hover, .region-sidebar-first ul li a:hover {
-  background-color: #b2b2b2;
+/* line 23, ../sass/partials/_sidebar.scss */
+.region-sidebar-first .views-exposed-widget {
+  width: 100%;
 }
-/* line 52, ../sass/global/_mixins.scss */
-.region-sidebar-first ul li a.active, .region-sidebar-first ul li a:active {
-  background-color: #b2b2b2;
+/* line 26, ../sass/partials/_sidebar.scss */
+.region-sidebar-first fieldset {
+  border: none;
+}
+/* line 28, ../sass/partials/_sidebar.scss */
+.region-sidebar-first fieldset legend {
+  border: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0;
+}
+/* line 34, ../sass/partials/_sidebar.scss */
+.region-sidebar-first fieldset .fieldset-title:after {
+  content: ' -';
+}
+/* line 37, ../sass/partials/_sidebar.scss */
+.region-sidebar-first fieldset.collapsed .fieldset-title:after {
+  content: ' +';
+}
+/* line 41, ../sass/partials/_sidebar.scss */
+.region-sidebar-first .fieldset-wrapper {
+  color: grey;
+}
+/* line 43, ../sass/partials/_sidebar.scss */
+.region-sidebar-first .fieldset-wrapper .bef-toggle {
+  color: grey;
+  font-size: .8em;
 }
 /* line 2, ../sass/global/_mixins.scss */
-.region-sidebar-first ul li a, .region-sidebar-first ul li a:link {
-  color: black;
+.region-sidebar-first .fieldset-wrapper .bef-toggle, .region-sidebar-first .fieldset-wrapper .bef-toggle:link {
+  color: grey;
 }
 /* line 7, ../sass/global/_mixins.scss */
-.region-sidebar-first ul li a:visited, .region-sidebar-first ul li a:link:visited {
-  color: black;
+.region-sidebar-first .fieldset-wrapper .bef-toggle:visited, .region-sidebar-first .fieldset-wrapper .bef-toggle:link:visited {
+  color: grey;
 }
 /* line 18, ../sass/global/_mixins.scss */
-.region-sidebar-first ul li a.active:hover, .region-sidebar-first ul li a.active-trail:hover, .region-sidebar-first ul li a:hover {
-  color: grey;
+.region-sidebar-first .fieldset-wrapper .bef-toggle.active:hover, .region-sidebar-first .fieldset-wrapper .bef-toggle.active-trail:hover, .region-sidebar-first .fieldset-wrapper .bef-toggle:hover {
+  color: #0db2df;
 }
 /* line 25, ../sass/global/_mixins.scss */
-.region-sidebar-first ul li a.active, .region-sidebar-first ul li a:active, .region-sidebar-first ul li a.active-trail {
+.region-sidebar-first .fieldset-wrapper .bef-toggle.active, .region-sidebar-first .fieldset-wrapper .bef-toggle:active, .region-sidebar-first .fieldset-wrapper .bef-toggle.active-trail {
+  color: #0db2df;
+}
+/* line 2, ../sass/global/_mixins.scss */
+.region-sidebar-first .fieldset-wrapper label, .region-sidebar-first .fieldset-wrapper label:link {
   color: grey;
+}
+/* line 7, ../sass/global/_mixins.scss */
+.region-sidebar-first .fieldset-wrapper label:visited, .region-sidebar-first .fieldset-wrapper label:link:visited {
+  color: grey;
+}
+/* line 18, ../sass/global/_mixins.scss */
+.region-sidebar-first .fieldset-wrapper label.active:hover, .region-sidebar-first .fieldset-wrapper label.active-trail:hover, .region-sidebar-first .fieldset-wrapper label:hover {
+  color: #0db2df;
+}
+/* line 25, ../sass/global/_mixins.scss */
+.region-sidebar-first .fieldset-wrapper label.active, .region-sidebar-first .fieldset-wrapper label:active, .region-sidebar-first .fieldset-wrapper label.active-trail {
+  color: #0db2df;
+}
+/* line 52, ../sass/partials/_sidebar.scss */
+.region-sidebar-first .views-submit-button {
+  display: none;
 }
 
 /* line 1, ../sass/partials/_tables.scss */
@@ -1331,45 +1367,4 @@ ul.primary li a.active:hover, ul.primary li a.active-trail:hover, ul.primary li 
 /* line 26, ../sass/partials/_tabs.scss */
 ul.primary li a:hover {
   border-bottom: 1px solid #ccc;
-}
-
-/* line 3, ../sass/partials/_views.scss */
-.panel-default {
-  -moz-box-shadow: 0 0 transparent;
-  -webkit-box-shadow: 0 0 transparent;
-  box-shadow: 0 0 transparent;
-  border-color: transparent;
-}
-
-/* line 7, ../sass/partials/_views.scss */
-fieldset.bef-select-as-radios-fieldset.collapsed legend,
-fieldset.bef-select-as-checkboxes-fieldset.collapsed legend {
-  background: none;
-  border: none;
-}
-
-/* line 15, ../sass/partials/_views.scss */
-.views-exposed-widgets .views-exposed-widget fieldset {
-  height: auto;
-}
-/* line 18, ../sass/partials/_views.scss */
-.views-exposed-widgets .views-exposed-widget input {
-  height: auto !important;
-}
-/* line 21, ../sass/partials/_views.scss */
-.views-exposed-widgets .views-exposed-widget .form-control {
-  height: auto;
-}
-/* line 23, ../sass/partials/_views.scss */
-.views-exposed-widgets .views-exposed-widget .form-control.form-checkboxes {
-  width: 200px;
-}
-/* line 25, ../sass/partials/_views.scss */
-.views-exposed-widgets .views-exposed-widget .form-control.form-checkboxes label {
-  font-weight: normal;
-}
-/* line 28, ../sass/partials/_views.scss */
-.views-exposed-widgets .views-exposed-widget .form-control.form-checkboxes input {
-  display: inline;
-  width: 20px;
 }

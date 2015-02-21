@@ -3,11 +3,6 @@
 ////////////////////////
 
 // Form
-form {
-  @include breakpoint($hand) {
-    background: tint(black, 95%);
-  }
-}
 input {
   vertical-align: middle;
 }

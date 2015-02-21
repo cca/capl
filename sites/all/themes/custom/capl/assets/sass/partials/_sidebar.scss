@@ -1,22 +1,55 @@
+// Sidebar
+// --------------------------------------------------------
+
+// Exposed filters
+html.js fieldset.collapsible .fieldset-legend {
+  background: none;
+  padding-left: 0;
+}
 .region-sidebar-first {
-  ul {
-    margin-left: 0;
-    padding-left: 0;
-    li {
-      list-style: none;
-      margin-left: 0;
-      li {
-        padding-left: .5em;
-      }
-      a {
-        @include border-radius(3px);
-        @include bg-colors(tint(black, 90%), tint(black, 70%), tint(black, 70%));
-        @include link-colors(black, grey, grey, black);
-        display: block;
-        margin-bottom: .5em;
-        padding: .25em .5em;
-        text-transform: uppercase;
-      }
+  h2 {
+    @include breakpoint($hand) {
+      display: block;
     }
+    @include breakpoint($gthand) {
+      display: none;
+    }
+  }
+  .views-exposed-widgets {
+    @include breakpoint($hand) {
+      display: none;
+    }
+  }
+  .views-exposed-widget {
+    width: 100%;
+  }
+  fieldset {
+    border: none;
+    legend {
+      border: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      padding: 0;
+    }
+    .fieldset-title:after {
+      content: ' -';
+    }
+    &.collapsed .fieldset-title:after {
+      content: ' +';
+    }
+  }
+  .fieldset-wrapper {
+    color: grey;
+    .bef-toggle {
+      @include link-colors(grey, $active-color, $active-color, grey);
+      color: grey;
+      font-size: .8em;
+    }
+    label {
+      @include link-colors(grey, $active-color, $active-color, grey);
+    }
+  }
+  .views-submit-button {
+    display: none;
   }
 }
