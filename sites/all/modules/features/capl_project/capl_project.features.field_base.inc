@@ -69,7 +69,7 @@ function capl_project_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'discipline',
+          'vocabulary' => 'issue',
           'parent' => 0,
         ),
       ),

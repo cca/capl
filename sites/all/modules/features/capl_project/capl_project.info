@@ -47,5 +47,6 @@ features[field_instance][] = node-project-field_video
 features[field_instance][] = node-project-field_year
 features[node][] = project
 features[taxonomy][] = discipline
+features[taxonomy][] = issue
 features[views_view][] = projects
 features_exclude[field_base][body] = body
