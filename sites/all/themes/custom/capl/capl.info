@@ -20,7 +20,7 @@ stylesheets-conditional[IE 7][all][] = assets/css/ie7.css
 stylesheets-conditional[IE 8][all][] = assets/css/ie8.css
 
 ; Javascript
-scripts[] = assets/js/modernizr.js
+scripts[] = assets/js/vendor/modernizr.js
 scripts[] = assets/js/scripts.js
 
 

@@ -1,0 +1,34 @@
+// Slideshow
+// --------------------------------------------------------
+
+// Project Slideshow
+.field-name-field-slideshow {
+  position: relative;
+  img {
+    display: block;
+  }
+  .flex-control-nav {
+    display: none;
+  }
+  .flex-direction-nav {
+    list-style: none;
+    a {
+      background: rgba(151, 151, 151, .5);
+      position: absolute;
+      height: 100%;
+      overflow: hidden;
+      text-indent: -999px;
+      top: 0;
+      width: 30px;
+      &:hover {
+        background: rgba(151, 151, 151, .8);
+      }
+    }
+    .flex-prev {
+      left: 0;
+    }
+    .flex-next {
+      right: 0;
+    }
+  }
+}

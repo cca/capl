@@ -20,4 +20,15 @@
     }
   };
 
+  Drupal.behaviors.flexslider = {
+    attach: function (context, settings) {
+      $('.field-name-field-slideshow').flexslider({
+        selector: '.field-items > .field-item',
+        animation: "slide",
+        animationLoop: true,
+        itemWidth: 490
+      });
+    }
+  }
+
 })(jQuery);

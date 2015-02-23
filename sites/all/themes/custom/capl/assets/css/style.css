@@ -1342,6 +1342,45 @@ html.js fieldset.collapsible .fieldset-legend {
   display: none;
 }
 
+/* line 5, ../sass/partials/_slideshow.scss */
+.field-name-field-slideshow {
+  position: relative;
+}
+/* line 7, ../sass/partials/_slideshow.scss */
+.field-name-field-slideshow img {
+  display: block;
+}
+/* line 10, ../sass/partials/_slideshow.scss */
+.field-name-field-slideshow .flex-control-nav {
+  display: none;
+}
+/* line 13, ../sass/partials/_slideshow.scss */
+.field-name-field-slideshow .flex-direction-nav {
+  list-style: none;
+}
+/* line 15, ../sass/partials/_slideshow.scss */
+.field-name-field-slideshow .flex-direction-nav a {
+  background: rgba(151, 151, 151, 0.5);
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  text-indent: -999px;
+  top: 0;
+  width: 30px;
+}
+/* line 23, ../sass/partials/_slideshow.scss */
+.field-name-field-slideshow .flex-direction-nav a:hover {
+  background: rgba(151, 151, 151, 0.8);
+}
+/* line 27, ../sass/partials/_slideshow.scss */
+.field-name-field-slideshow .flex-direction-nav .flex-prev {
+  left: 0;
+}
+/* line 30, ../sass/partials/_slideshow.scss */
+.field-name-field-slideshow .flex-direction-nav .flex-next {
+  right: 0;
+}
+
 /* line 1, ../sass/partials/_tables.scss */
 table {
   margin-bottom: .5em;
