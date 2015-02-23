@@ -45,11 +45,15 @@ $susy: (
 .group-left,
 .group-right,
 .sidebar-first,
-.sidebar-second {
+.sidebar-second,
+.region-footer,
+.footer-menu {
   @include box-sizing(border-box);
 }
 
+//-----------------
 // Handheld
+//-----------------
 @include breakpoint($hand) {
   // Full width
   .container {
@@ -63,9 +67,16 @@ $susy: (
       @include span(4 of 4);
     }
   }
+  // Footer
+  .region-footer,
+  .footer-menu {
+    @include span (4 of 4);
+  }
 }
 
+//-----------------
 // Tablet
+//-----------------
 @include breakpoint($tablet) {
   // Full width
   .container {
@@ -86,10 +97,10 @@ $susy: (
 
   // First Sidebar Only
   .sidebar-first .sidebar-first {
-    @include span(2.5 of 6);
+    @include span(1.5 of 6);
   }
   .one-sidebar.sidebar-first .main-content {
-    @include span(3.5 of 6 last);
+    @include span(4.5 of 6 last);
   }
 
   // Second Sidebar Only
@@ -110,9 +121,19 @@ $susy: (
   .two-sidebars .sidebar-second {
     @include span(1 of 4 last);
   }
+
+  // Footer
+  .region-footer {
+    @include span (3 of 6);
+  }
+  .footer-menu {
+    @include span (3 of 6 last);
+  }
 }
 
+//-----------------
 // Desktop
+//-----------------
 @include breakpoint($desktop) {
   // Full width
   .container {
@@ -133,10 +154,10 @@ $susy: (
 
   // First Sidebar
   .sidebar-first .sidebar-first {
-    @include span(1.5 of 6);
+    @include span(1.5 of 8);
   }
   .one-sidebar.sidebar-first .main-content {
-    @include span(4.5 of 6 last);
+    @include span(6.5 of 8 last);
   }
 
   // Second Sidebar
@@ -156,5 +177,13 @@ $susy: (
   }
   .two-sidebars .sidebar-second {
     @include span(1 of 6 'last');
+  }
+
+  // Footer
+  .region-footer {
+    @include span (3 of 6);
+  }
+  .footer-menu {
+    @include span (3 of 6 last);
   }
 }

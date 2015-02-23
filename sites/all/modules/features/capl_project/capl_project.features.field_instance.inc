@@ -231,7 +231,7 @@ function capl_project_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_project_image',
     'label' => 'Project Key Image',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'description_field' => 0,
       'file_directory' => 'project_image',

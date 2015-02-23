@@ -2,10 +2,6 @@
 // --------------------------------------------------------
 
 .node-teaser {
-  float: left;
-  margin: 2em;
-  min-height: 300px;
-  display: table;
   h2 {
     margin: .25em 0 0 ;
     a {
@@ -26,5 +22,24 @@
     &.title {
       display: none;
     }
+  }
+}
+
+// Project Teaser
+.node-project.node-teaser {
+  @include box-sizing(border-box);
+  float: right;
+  padding: .75em 0 .75em 3%;
+  @include breakpoint($desktop) {
+    min-height: 350px;
+    width: calc(100% / 3);
+  }
+  @include breakpoint($tablet) {
+    min-height: 350px;
+    width: calc(100% / 2);
+  }
+  img {
+    height: auto;
+    width: 100%;
   }
 }
