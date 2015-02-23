@@ -22,12 +22,38 @@
 
   Drupal.behaviors.flexslider = {
     attach: function (context, settings) {
-      $('.field-name-field-slideshow').flexslider({
-        selector: '.field-items > .field-item',
-        animation: "slide",
-        animationLoop: true,
-        itemWidth: 490
+
+      var slideshow = $('.field-name-field-slideshow');
+      if (slideshow.length > 0 ) {
+        $(slideshow).flexslider({
+          selector: '.field-items > .field-item',
+          animation: "slide",
+          animationLoop: true,
+          itemWidth: 490
+        });
+      }
+    }
+  }
+
+  Drupal.behaviors.accordions = {
+    attach: function (context, settings) {
+
+      // Project Filter
+      $('.region-sidebar-first h2').click(function() {
+        $(this).toggleClass( 'expanded');
+        $('.region-sidebar-first > .block > .content').toggle('fast');
       });
+
+      //Project Details
+      var details = $('.group-left');
+      if (details.length > 0) {
+        details.prepend('<h2 class="js-trigger"> Project Details </h2>'
+        );
+        $('.js-trigger').click(function() {
+          $(this).toggleClass( 'expanded');
+          $('.group-left .field').toggle('fast');
+        });
+      }
     }
   }
 

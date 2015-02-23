@@ -9,6 +9,19 @@ html.js fieldset.collapsible .fieldset-legend {
 }
 .region-sidebar-first {
   h2 {
+    cursor: pointer;
+    &:after {
+      content: ' +';
+    }
+    &.expanded:after {
+      content: ' -';
+    }
+    &:hover {
+      color: $active-color;
+      &:after {
+        color: $active-color;
+      }
+    }
     @include breakpoint($hand) {
       display: block;
     }
@@ -16,7 +29,7 @@ html.js fieldset.collapsible .fieldset-legend {
       display: none;
     }
   }
-  .views-exposed-widgets {
+  & > .block > .content {
     @include breakpoint($hand) {
       display: none;
     }

@@ -87,11 +87,10 @@ $susy: (
   }
   .no-sidebars .main-content {
     .group-left {
-      @include span(4.5 of 6);
+      @include span(isolate 2 at 5 of 6 );
     }
     .group-right {
-      @include span(1.5 of 6 last);
-
+      @include span(4 of 6);
     }
   }
 
@@ -144,11 +143,10 @@ $susy: (
   }
   .no-sidebars .main-content {
     .group-left {
-      @include span(4 of 6);
+      @include span(isolate 2 at 5 of 6 );
     }
     .group-right {
-      @include span(2 of 6 last);
-
+      @include span(4 of 6);
     }
   }
 

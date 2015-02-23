@@ -93,74 +93,75 @@ input[type="submit"], #user-login-form a {
 
   /* line 89, ../sass/global/_layout.scss */
   .no-sidebars .main-content .group-left {
-    width: 74.13793%;
+    width: 31.03448%;
     float: left;
-    margin-right: 3.44828%;
+    margin-left: 68.96552%;
+    margin-right: -100%;
   }
   /* line 92, ../sass/global/_layout.scss */
   .no-sidebars .main-content .group-right {
-    width: 22.41379%;
-    float: right;
-    margin-right: 0;
+    width: 65.51724%;
+    float: left;
+    margin-right: 3.44828%;
   }
 
-  /* line 99, ../sass/global/_layout.scss */
+  /* line 98, ../sass/global/_layout.scss */
   .sidebar-first .sidebar-first {
     width: 22.41379%;
     float: left;
     margin-right: 3.44828%;
   }
 
-  /* line 102, ../sass/global/_layout.scss */
+  /* line 101, ../sass/global/_layout.scss */
   .one-sidebar.sidebar-first .main-content {
     width: 74.13793%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 107, ../sass/global/_layout.scss */
+  /* line 106, ../sass/global/_layout.scss */
   .sidebar-second .sidebar-second {
     width: 13.7931%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 110, ../sass/global/_layout.scss */
+  /* line 109, ../sass/global/_layout.scss */
   .one-sidebar.sidebar-second .main-content {
     width: 82.75862%;
     float: left;
     margin-right: 3.44828%;
   }
 
-  /* line 115, ../sass/global/_layout.scss */
+  /* line 114, ../sass/global/_layout.scss */
   .two-sidebars .sidebar-first {
     width: 21.05263%;
     float: left;
     margin-right: 5.26316%;
   }
 
-  /* line 118, ../sass/global/_layout.scss */
+  /* line 117, ../sass/global/_layout.scss */
   .two-sidebars .main-content {
     width: 47.36842%;
     float: left;
     margin-right: 5.26316%;
   }
 
-  /* line 121, ../sass/global/_layout.scss */
+  /* line 120, ../sass/global/_layout.scss */
   .two-sidebars .sidebar-second {
     width: 21.05263%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 126, ../sass/global/_layout.scss */
+  /* line 125, ../sass/global/_layout.scss */
   .region-footer {
     width: 48.27586%;
     float: left;
     margin-right: 3.44828%;
   }
 
-  /* line 129, ../sass/global/_layout.scss */
+  /* line 128, ../sass/global/_layout.scss */
   .footer-menu {
     width: 48.27586%;
     float: right;
@@ -168,7 +169,7 @@ input[type="submit"], #user-login-form a {
   }
 }
 @media (min-width: 801px) {
-  /* line 139, ../sass/global/_layout.scss */
+  /* line 138, ../sass/global/_layout.scss */
   .container {
     max-width: 1080px;
     margin-left: auto;
@@ -181,7 +182,7 @@ input[type="submit"], #user-login-form a {
     clear: both;
   }
 
-  /* line 142, ../sass/global/_layout.scss */
+  /* line 141, ../sass/global/_layout.scss */
   .no-sidebars .main-content {
     width: 100%;
     float: left;
@@ -189,76 +190,77 @@ input[type="submit"], #user-login-form a {
     margin-right: 0;
   }
 
-  /* line 146, ../sass/global/_layout.scss */
+  /* line 145, ../sass/global/_layout.scss */
   .no-sidebars .main-content .group-left {
+    width: 31.03448%;
+    float: left;
+    margin-left: 68.96552%;
+    margin-right: -100%;
+  }
+  /* line 148, ../sass/global/_layout.scss */
+  .no-sidebars .main-content .group-right {
     width: 65.51724%;
     float: left;
     margin-right: 3.44828%;
   }
-  /* line 149, ../sass/global/_layout.scss */
-  .no-sidebars .main-content .group-right {
-    width: 31.03448%;
-    float: right;
-    margin-right: 0;
-  }
 
-  /* line 156, ../sass/global/_layout.scss */
+  /* line 154, ../sass/global/_layout.scss */
   .sidebar-first .sidebar-first {
     width: 16.66667%;
     float: left;
     margin-right: 2.5641%;
   }
 
-  /* line 159, ../sass/global/_layout.scss */
+  /* line 157, ../sass/global/_layout.scss */
   .one-sidebar.sidebar-first .main-content {
     width: 80.76923%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 164, ../sass/global/_layout.scss */
+  /* line 162, ../sass/global/_layout.scss */
   .one-sidebar.sidebar-second .sidebar-second {
     width: 31.03448%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 167, ../sass/global/_layout.scss */
+  /* line 165, ../sass/global/_layout.scss */
   .one-sidebar.sidebar-second .main-content {
     width: 65.51724%;
     float: left;
     margin-right: 3.44828%;
   }
 
-  /* line 172, ../sass/global/_layout.scss */
+  /* line 170, ../sass/global/_layout.scss */
   .two-sidebars .main-content {
     width: 65.51724%;
     float: left;
     margin-right: 3.44828%;
   }
 
-  /* line 175, ../sass/global/_layout.scss */
+  /* line 173, ../sass/global/_layout.scss */
   .two-sidebars .sidebar-first {
     width: 13.7931%;
     float: left;
     margin-right: 3.44828%;
   }
 
-  /* line 178, ../sass/global/_layout.scss */
+  /* line 176, ../sass/global/_layout.scss */
   .two-sidebars .sidebar-second {
     width: 13.7931%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 183, ../sass/global/_layout.scss */
+  /* line 181, ../sass/global/_layout.scss */
   .region-footer {
     width: 48.27586%;
     float: left;
     margin-right: 3.44828%;
   }
 
-  /* line 186, ../sass/global/_layout.scss */
+  /* line 184, ../sass/global/_layout.scss */
   .footer-menu {
     width: 48.27586%;
     float: right;
@@ -1182,7 +1184,7 @@ label[for="nav-trigger"] .icon-bar {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: right;
-  padding: .75em 0 .75em 3%;
+  padding: .75em 1%;
 }
 @media (min-width: 801px) {
   /* line 29, ../sass/partials/_node.scss */
@@ -1198,8 +1200,104 @@ label[for="nav-trigger"] .icon-bar {
     width: calc(100% / 2);
   }
 }
-/* line 41, ../sass/partials/_node.scss */
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 29, ../sass/partials/_node.scss */
+  .node-project.node-teaser {
+    width: 100%;
+  }
+}
+/* line 44, ../sass/partials/_node.scss */
 .node-project.node-teaser img {
+  height: auto;
+  width: 100%;
+}
+
+/* line 53, ../sass/partials/_node.scss */
+.group-left h2.js-trigger:hover {
+  color: #0db2df;
+}
+/* line 55, ../sass/partials/_node.scss */
+.group-left h2.js-trigger:hover:after {
+  color: #0db2df;
+}
+/* line 59, ../sass/partials/_node.scss */
+.group-left h2.js-trigger:after {
+  content: ' +';
+  color: grey;
+}
+/* line 63, ../sass/partials/_node.scss */
+.group-left h2.js-trigger.expanded:after {
+  content: ' -';
+}
+@media (min-width: 481px) {
+  /* line 52, ../sass/partials/_node.scss */
+  .group-left h2.js-trigger {
+    display: none;
+  }
+}
+/* line 70, ../sass/partials/_node.scss */
+.group-left .field {
+  margin-bottom: .75em;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 70, ../sass/partials/_node.scss */
+  .group-left .field {
+    display: none;
+  }
+}
+@media (min-width: 481px) {
+  /* line 70, ../sass/partials/_node.scss */
+  .group-left .field {
+    display: block;
+  }
+}
+/* line 78, ../sass/partials/_node.scss */
+.group-left .field .field-items {
+  color: grey;
+  font-size: .9em;
+}
+/* line 81, ../sass/partials/_node.scss */
+.group-left .field .field-items a {
+  text-decoration: underline;
+}
+/* line 2, ../sass/global/_mixins.scss */
+.group-left .field .field-items a, .group-left .field .field-items a:link {
+  color: grey;
+}
+/* line 7, ../sass/global/_mixins.scss */
+.group-left .field .field-items a:visited, .group-left .field .field-items a:link:visited {
+  color: grey;
+}
+/* line 18, ../sass/global/_mixins.scss */
+.group-left .field .field-items a.active:hover, .group-left .field .field-items a.active-trail:hover, .group-left .field .field-items a:hover {
+  color: black;
+}
+/* line 25, ../sass/global/_mixins.scss */
+.group-left .field .field-items a.active, .group-left .field .field-items a:active, .group-left .field .field-items a.active-trail {
+  color: black;
+}
+
+/* line 90, ../sass/partials/_node.scss */
+.media-youtube-video {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+}
+/* line 96, ../sass/partials/_node.scss */
+.media-youtube-video iframe,
+.media-youtube-video object,
+.media-youtube-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 109, ../sass/partials/_node.scss */
+.field-name-field-program-image img {
   height: auto;
   width: 100%;
 }
@@ -1255,6 +1353,26 @@ html.js fieldset.collapsible .fieldset-legend {
   white-space: nowrap;
 }
 
+/* line 11, ../sass/partials/_sidebar.scss */
+.region-sidebar-first h2 {
+  cursor: pointer;
+}
+/* line 13, ../sass/partials/_sidebar.scss */
+.region-sidebar-first h2:after {
+  content: ' +';
+}
+/* line 16, ../sass/partials/_sidebar.scss */
+.region-sidebar-first h2.expanded:after {
+  content: ' -';
+}
+/* line 19, ../sass/partials/_sidebar.scss */
+.region-sidebar-first h2:hover {
+  color: #0db2df;
+}
+/* line 21, ../sass/partials/_sidebar.scss */
+.region-sidebar-first h2:hover:after {
+  color: #0db2df;
+}
 @media (min-width: 0) and (max-width: 480px) {
   /* line 11, ../sass/partials/_sidebar.scss */
   .region-sidebar-first h2 {
@@ -1268,39 +1386,39 @@ html.js fieldset.collapsible .fieldset-legend {
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 19, ../sass/partials/_sidebar.scss */
-  .region-sidebar-first .views-exposed-widgets {
+  /* line 32, ../sass/partials/_sidebar.scss */
+  .region-sidebar-first > .block > .content {
     display: none;
   }
 }
-/* line 24, ../sass/partials/_sidebar.scss */
+/* line 37, ../sass/partials/_sidebar.scss */
 .region-sidebar-first .views-exposed-widget {
   width: 100%;
 }
-/* line 27, ../sass/partials/_sidebar.scss */
+/* line 40, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset {
   border: none;
 }
-/* line 29, ../sass/partials/_sidebar.scss */
+/* line 42, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset legend {
   border: none;
   font-size: 1.2em;
   font-weight: bold;
   padding: 0;
 }
-/* line 35, ../sass/partials/_sidebar.scss */
+/* line 48, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset .fieldset-title:after {
   content: ' -';
 }
-/* line 38, ../sass/partials/_sidebar.scss */
+/* line 51, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset.collapsed .fieldset-title:after {
   content: ' +';
 }
-/* line 42, ../sass/partials/_sidebar.scss */
+/* line 55, ../sass/partials/_sidebar.scss */
 .region-sidebar-first .fieldset-wrapper {
   color: grey;
 }
-/* line 44, ../sass/partials/_sidebar.scss */
+/* line 57, ../sass/partials/_sidebar.scss */
 .region-sidebar-first .fieldset-wrapper .bef-toggle {
   color: grey;
   font-size: .8em;
@@ -1337,7 +1455,7 @@ html.js fieldset.collapsible .fieldset-legend {
 .region-sidebar-first .fieldset-wrapper label.active, .region-sidebar-first .fieldset-wrapper label:active, .region-sidebar-first .fieldset-wrapper label.active-trail {
   color: #0db2df;
 }
-/* line 53, ../sass/partials/_sidebar.scss */
+/* line 66, ../sass/partials/_sidebar.scss */
 .region-sidebar-first .views-submit-button {
   display: none;
 }

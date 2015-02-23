@@ -29,7 +29,7 @@
 .node-project.node-teaser {
   @include box-sizing(border-box);
   float: right;
-  padding: .75em 0 .75em 3%;
+  padding: .75em 1%;
   @include breakpoint($desktop) {
     min-height: 350px;
     width: calc(100% / 3);
@@ -38,7 +38,75 @@
     min-height: 350px;
     width: calc(100% / 2);
   }
+  @include breakpoint($hand) {
+    width: 100%;
+  }
   img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+// Project Details
+.group-left {
+  h2.js-trigger {
+    &:hover {
+      color: $active-color;
+      &:after {
+        color: $active-color;
+      }
+    }
+    &:after {
+      content: ' +';
+      color: grey
+    }
+    &.expanded:after {
+      content: ' -';
+    }
+    @include breakpoint($gthand) {
+      display: none;
+    }
+  }
+  .field {
+    margin-bottom: .75em;
+    @include breakpoint($hand) {
+      display: none;
+    }
+    @include breakpoint($gthand) {
+      display: block;
+    }
+    .field-items {
+      color: grey;
+      font-size: .9em;
+      a {
+        @include link-colors(grey, black, black, grey);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Responsive YouTube Embed
+.media-youtube-video {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Program
+.field-name-field-program-image {
+  img{
     height: auto;
     width: 100%;
   }
