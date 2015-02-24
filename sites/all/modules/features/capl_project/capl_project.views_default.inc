@@ -91,9 +91,11 @@ function capl_project_views_default_views() {
         ),
       ),
     ),
-    'field_year_value' => array(
-      'bef_format' => 'default',
+    'field_semester_year_tid' => array(
+      'bef_format' => 'bef',
       'more_options' => array(
+        'bef_select_all_none' => 1,
+        'bef_collapsible' => 1,
         'is_secondary' => 0,
         'any_label' => '',
         'bef_filter_description' => '',
@@ -217,22 +219,24 @@ function capl_project_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  /* Filter criterion: Content: Year (field_year) */
-  $handler->display->display_options['filters']['field_year_value']['id'] = 'field_year_value';
-  $handler->display->display_options['filters']['field_year_value']['table'] = 'field_data_field_year';
-  $handler->display->display_options['filters']['field_year_value']['field'] = 'field_year_value';
-  $handler->display->display_options['filters']['field_year_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_year_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_year_value']['expose']['operator_id'] = 'field_year_value_op';
-  $handler->display->display_options['filters']['field_year_value']['expose']['label'] = 'Year';
-  $handler->display->display_options['filters']['field_year_value']['expose']['operator'] = 'field_year_value_op';
-  $handler->display->display_options['filters']['field_year_value']['expose']['identifier'] = 'year';
-  $handler->display->display_options['filters']['field_year_value']['expose']['remember_roles'] = array(
+  /* Filter criterion: Content: Semester/Year (field_semester_year) */
+  $handler->display->display_options['filters']['field_semester_year_tid']['id'] = 'field_semester_year_tid';
+  $handler->display->display_options['filters']['field_semester_year_tid']['table'] = 'field_data_field_semester_year';
+  $handler->display->display_options['filters']['field_semester_year_tid']['field'] = 'field_semester_year_tid';
+  $handler->display->display_options['filters']['field_semester_year_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_semester_year_tid']['expose']['operator_id'] = 'field_semester_year_tid_op';
+  $handler->display->display_options['filters']['field_semester_year_tid']['expose']['label'] = 'Year';
+  $handler->display->display_options['filters']['field_semester_year_tid']['expose']['operator'] = 'field_semester_year_tid_op';
+  $handler->display->display_options['filters']['field_semester_year_tid']['expose']['identifier'] = 'field_semester_year_tid';
+  $handler->display->display_options['filters']['field_semester_year_tid']['expose']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['field_semester_year_tid']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    4 => 0,
     3 => 0,
   );
-  $handler->display->display_options['filters']['field_year_value']['granularity'] = 'year';
+  $handler->display->display_options['filters']['field_semester_year_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_semester_year_tid']['vocabulary'] = 'semester_year';
   $handler->display->display_options['path'] = 'projects';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Projects';

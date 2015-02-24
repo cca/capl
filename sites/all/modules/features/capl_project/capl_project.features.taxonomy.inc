@@ -25,5 +25,13 @@ function capl_project_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'semester_year' => array(
+      'name' => 'Semester/Year',
+      'machine_name' => 'semester_year',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
   );
 }
