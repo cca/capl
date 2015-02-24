@@ -79,7 +79,7 @@
 
 <footer class="footer" role="footer">
   <div class="container">
-    <? if ($page['footer']): print render($page['footer']); endif; ?>
+    <?php if ($page['footer']): print render($page['footer']); endif; ?>
     <?php if ($main_menu): ?>
       <div class="footer-menu">
         <?php print render($main_menu_expanded); ?>
