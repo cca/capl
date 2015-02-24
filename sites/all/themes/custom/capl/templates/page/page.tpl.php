@@ -20,12 +20,15 @@
   <span class="icon-bar"></span>
 </label>
 
+<?php if ($search): ?>
+  <?php print  render($search); ?>
+<?php endif; ?>
+
 <?php if ($main_menu): ?>
   <div class="drawer">
     <?php print render($main_menu_expanded); ?>
   </div> <!-- /#main-menu -->
 <?php endif; ?>
-
 
 <header id="header" class="header" role="header">
   <div class="container">

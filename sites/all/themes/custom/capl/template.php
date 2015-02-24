@@ -7,6 +7,10 @@ function capl_preprocess_page(&$vars){
   // Add the rendered output to the $main_menu_expanded variable
   $vars['main_menu_expanded'] = menu_tree_output($main_menu_tree);
 
+  // Make search available to page template.
+  $search_block = module_invoke('search','block_view','search');
+  $vars['search'] =  render($search_block);
+
 }
 
 function capl_preprocess_node(&$vars){
