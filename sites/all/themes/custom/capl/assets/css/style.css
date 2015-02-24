@@ -1183,7 +1183,7 @@ label[for="nav-trigger"] .icon-bar {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  float: right;
+  float: left;
   padding: .75em 1%;
 }
 @media (min-width: 801px) {

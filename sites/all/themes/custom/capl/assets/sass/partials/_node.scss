@@ -28,7 +28,7 @@
 // Project Teaser
 .node-project.node-teaser {
   @include box-sizing(border-box);
-  float: right;
+  float: left;
   padding: .75em 1%;
   @include breakpoint($desktop) {
     min-height: 350px;
