@@ -3,10 +3,12 @@
 
 .node-teaser {
   h2 {
+    font-size: 1.1em;
     margin: .25em 0 0 ;
     a {
       @include link-colors(black, grey, grey, black);
       font-style: normal;
+      font-size: 1em;
     }
   }
   a {
@@ -26,12 +28,13 @@
 }
 
 // Project Teaser
+.node-program.node-teaser,
 .node-project.node-teaser {
   @include box-sizing(border-box);
   float: left;
   padding: .75em 1%;
   @include breakpoint($desktop) {
-    min-height: 350px;
+    min-height: 340px;
     width: calc(100% / 3);
   }
   @include breakpoint($tablet) {
