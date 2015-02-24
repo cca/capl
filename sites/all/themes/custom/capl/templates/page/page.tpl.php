@@ -77,7 +77,7 @@
   <!-- /sidebar-second -->
 </div>
 
-<footer id="footer" class="footer" role="footer">
+<footer class="footer" role="footer">
   <div class="container">
     <? if ($page['footer']): print render($page['footer']); endif; ?>
     <?php if ($main_menu): ?>
