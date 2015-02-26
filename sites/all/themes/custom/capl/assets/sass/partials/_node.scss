@@ -21,6 +21,7 @@
 .node-type-program,
 .node-type-project {
   h1 {
+    border-top: none;
     &.title {
       display: none;
     }
@@ -30,6 +31,9 @@
 // Project Teaser
 .node-program.node-teaser,
 .node-project.node-teaser {
+  &:hover {
+    cursor: pointer;
+  }
   @include box-sizing(border-box);
   float: left;
   padding: .75em 1%;
