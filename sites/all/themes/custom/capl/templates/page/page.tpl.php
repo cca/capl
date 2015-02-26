@@ -20,9 +20,9 @@
   <span class="icon-bar"></span>
 </label>
 
-<?php if ($search): ?>
-  <?php print  render($search); ?>
-<?php endif; ?>
+<?php //if ($search): ?>
+<!--  --><?php //print  render($search); ?>
+<?php //endif; ?>
 
 <?php if ($main_menu): ?>
   <div class="drawer">
