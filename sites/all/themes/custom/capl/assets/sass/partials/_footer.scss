@@ -1,8 +1,16 @@
 // Footer
 // --------------------------------------------------------
 
-.footer .container {
-  border-top: 4px solid black;
+.front .footer {
+  background: white;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+.footer {
+  .container {
+    border-top: 4px solid black;
+  }
 }
 
 .footer-menu {

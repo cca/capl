@@ -524,26 +524,34 @@ a:hover {
 }
 
 /* line 4, ../sass/partials/_footer.scss */
+.front .footer {
+  background: white;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+/* line 11, ../sass/partials/_footer.scss */
 .footer .container {
   border-top: 4px solid black;
 }
 
-/* line 8, ../sass/partials/_footer.scss */
+/* line 16, ../sass/partials/_footer.scss */
 .footer-menu {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
 }
-/* line 12, ../sass/partials/_footer.scss */
+/* line 20, ../sass/partials/_footer.scss */
 .footer-menu ul {
   margin-top: 0;
   padding: 0;
 }
-/* line 15, ../sass/partials/_footer.scss */
+/* line 23, ../sass/partials/_footer.scss */
 .footer-menu ul li.leaf {
   list-style: none;
 }
-/* line 19, ../sass/partials/_footer.scss */
+/* line 27, ../sass/partials/_footer.scss */
 .footer-menu a {
   color: black;
   font-weight: bold;
