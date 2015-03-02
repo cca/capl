@@ -38,7 +38,7 @@
   float: left;
   padding: .75em 1%;
   @include breakpoint($desktop) {
-    min-height: 340px;
+    min-height: 285px;
     width: calc(100% / 3);
   }
   @include breakpoint($tablet) {
@@ -56,6 +56,7 @@
 
 // Project Details
 .group-left {
+  padding-top: 1em;
   h2.js-trigger {
     &:hover {
       color: $active-color;
