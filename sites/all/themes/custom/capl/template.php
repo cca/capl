@@ -11,6 +11,8 @@ function capl_preprocess_page(&$vars){
   $search_block = module_invoke('search','block_view','search');
   $vars['search'] =  render($search_block);
 
+  // Change logo on front page.
+  $vars['logopath'] = path_to_theme() .'/assets/images/logo-' .(($vars['is_front'] === TRUE) ? 'big': 'small') .'.svg' ;
 }
 
 function capl_preprocess_node(&$vars){

@@ -111,15 +111,31 @@ img {
   font-size: .9em;
 }
 
+.front  {
+  @include breakpoint($desktop) {
+    .logo {
+      @include span(6.5 of 8 last);
+      padding: 1em .5em .75em;
+    }
+    img {
+      @include breakpoint($hand) {
+        width: 100%;
+      }
+      @include breakpoint($gthand) {
+        width: 50%;
+      }
+    }
+  }
+}
 
-
-img.logo {
+.logo img {
   height: auto;
-  width: 300px;
-  padding-bottom: 1em;
+  padding-top: 2em;
+  width: 400px;
 }
 
 .page-header {
+  @include span(8 of 8 last);
   border-bottom: none;
   h1 {
     margin-bottom: 1em;

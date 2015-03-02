@@ -32,9 +32,11 @@
 
 <header id="header" class="header" role="header">
   <div class="container">
-    <a href="<?php print $front_page; ?>">
-      <img class="logo" src="<?php print $logo; ?>">
-    </a>
+    <div class="logo">
+      <a href="<?php print $front_page; ?>">
+        <img  src="<?php print $logopath?>">
+      </a>
+    </div>
     <div class="page-header">
       <?php if ($title): ?>
         <h1 class="title"><?php print $title; ?></h1>
