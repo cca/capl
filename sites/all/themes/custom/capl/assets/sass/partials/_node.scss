@@ -26,9 +26,24 @@
       display: none;
     }
   }
+  .region-content {
+    padding-left: 0;
+  }
 }
 
-// Project Teaser
+// Program Page Layout
+.node-type-program {
+  .field-name-body,
+  #block-views-projects-block-1 {
+    padding-left: 100px;
+  }
+}
+
+// Project Teasers
+.page-projects .region-content {
+  padding-left: 0;
+}
+
 .node-program.node-teaser,
 .node-project.node-teaser {
   &:hover {
@@ -52,6 +67,11 @@
     height: auto;
     width: 100%;
   }
+}
+
+// Project Body
+.group-right {
+  padding-left: 100px;
 }
 
 // Project Details
