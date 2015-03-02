@@ -1105,7 +1105,7 @@ label[for="nav-trigger"] .icon-bar {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
-  padding: .75em 1%;
+  padding: 0 1%;
 }
 /* line 34, ../sass/partials/_node.scss */
 .node-program.node-teaser:hover,
@@ -1124,7 +1124,7 @@ label[for="nav-trigger"] .icon-bar {
   /* line 32, ../sass/partials/_node.scss */
   .node-program.node-teaser,
   .node-project.node-teaser {
-    min-height: 350px;
+    min-height: 225px;
     width: calc(100% / 2);
   }
 }
@@ -1332,27 +1332,28 @@ html.js fieldset.collapsible .fieldset-legend {
 /* line 40, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset {
   border: none;
+  margin-bottom: 0;
 }
-/* line 42, ../sass/partials/_sidebar.scss */
+/* line 43, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset legend {
   border: none;
   font-size: 1.2em;
   font-weight: bold;
   padding: 0;
 }
-/* line 48, ../sass/partials/_sidebar.scss */
+/* line 49, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset .fieldset-title:after {
   content: ' -';
 }
-/* line 51, ../sass/partials/_sidebar.scss */
+/* line 52, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset.collapsed .fieldset-title:after {
   content: ' +';
 }
-/* line 55, ../sass/partials/_sidebar.scss */
+/* line 56, ../sass/partials/_sidebar.scss */
 .region-sidebar-first .fieldset-wrapper {
   color: grey;
 }
-/* line 57, ../sass/partials/_sidebar.scss */
+/* line 58, ../sass/partials/_sidebar.scss */
 .region-sidebar-first .fieldset-wrapper .bef-toggle {
   color: grey;
   font-size: .8em;
@@ -1389,7 +1390,7 @@ html.js fieldset.collapsible .fieldset-legend {
 .region-sidebar-first .fieldset-wrapper label.active, .region-sidebar-first .fieldset-wrapper label:active, .region-sidebar-first .fieldset-wrapper label.active-trail {
   color: #0db2df;
 }
-/* line 66, ../sass/partials/_sidebar.scss */
+/* line 67, ../sass/partials/_sidebar.scss */
 .region-sidebar-first .views-submit-button {
   display: none;
 }

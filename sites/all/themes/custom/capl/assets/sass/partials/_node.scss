@@ -36,13 +36,13 @@
   }
   @include box-sizing(border-box);
   float: left;
-  padding: .75em 1%;
+  padding: 0 1%;
   @include breakpoint($desktop) {
     min-height: 285px;
     width: calc(100% / 3);
   }
   @include breakpoint($tablet) {
-    min-height: 350px;
+    min-height: 225px;
     width: calc(100% / 2);
   }
   @include breakpoint($hand) {
