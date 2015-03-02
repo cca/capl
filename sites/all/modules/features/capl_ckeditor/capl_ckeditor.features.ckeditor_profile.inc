@@ -9,12 +9,22 @@
  */
 function capl_ckeditor_ckeditor_profile_defaults() {
   $data = array(
-    'Filtered' => array(
-      'name' => 'Filtered',
+    'Full' => array(
+      'name' => 'Full',
       'settings' => array(
         'ss' => 2,
         'toolbar' => '[
-    [\'Format\',\'Bold\',\'Italic\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'Link\',\'Unlink\',\'Source\',\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'Media\',\'MediaEmbed\']
+    [\'Source\'],
+    [\'Cut\',\'Copy\',\'Paste\',\'PasteText\',\'PasteFromWord\',\'-\',\'Undo\',\'Redo\',\'-\',\'Media\',\'Table\',\'HorizontalRule\'],
+    \'/\',
+    [\'Bold\',\'Italic\',\'Strike\',\'-\',\'-\',\'RemoveFormat\'],
+    [\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\',\'Blockquote\',\'CreateDiv\'],
+    [\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'-\',\'-\',\'Language\'],
+    [\'Link\',\'Unlink\'],
+    [\'DrupalBreak\'],
+    \'/\',
+    [\'Format\',\'FontSize\'],
+    [\'Maximize\']
 ]',
         'expand' => 't',
         'default' => 't',
@@ -29,7 +39,7 @@ function capl_ckeditor_ckeditor_profile_defaults() {
         'extraAllowedContent' => '',
         'enter_mode' => 'p',
         'shift_enter_mode' => 'br',
-        'font_format' => 'p;h1;h2;h3;h4;h5;h6',
+        'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
         'custom_formatting' => 'f',
         'formatting' => array(
           'custom_formatting_options' => array(
@@ -98,7 +108,7 @@ function capl_ckeditor_ckeditor_profile_defaults() {
         ),
       ),
       'input_formats' => array(
-        'filtered_html' => 'Filtered HTML',
+        'full_html' => 'Full HTML',
       ),
     ),
   );
