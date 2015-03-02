@@ -108,7 +108,7 @@ function capl_ckeditor_ckeditor_profile_defaults() {
         ),
       ),
       'input_formats' => array(
-        'full_html' => 'Full HTML',
+        'full_html' => 'Full HTML (Recommended)',
       ),
     ),
   );
