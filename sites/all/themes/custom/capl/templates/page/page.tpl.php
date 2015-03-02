@@ -34,7 +34,7 @@
   <div class="container">
     <div class="logo">
       <a href="<?php print $front_page; ?>">
-        <img  src="<?php print $logopath?>">
+        <img  src="/<?php print $logopath?>">
       </a>
     </div>
     <div class="page-header">
