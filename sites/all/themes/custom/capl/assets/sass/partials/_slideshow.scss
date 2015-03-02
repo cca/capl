@@ -13,18 +13,21 @@
   .flex-direction-nav {
     list-style: none;
     a {
-      background: rgba(151, 151, 151, .5);
+      background: rgba(151, 151, 151, .7) no-repeat 50% 50% url(../images/next.png) ;
       position: absolute;
       height: 100%;
       overflow: hidden;
+      opacity: .7;
       text-indent: -999px;
       top: 0;
-      width: 30px;
+      width: 50px;
       &:hover {
-        background: rgba(151, 151, 151, .8);
+        background-color: rgba(151, 151, 151, .8);
+        opacity: 1;
       }
     }
     .flex-prev {
+      background: rgba(151, 151, 151, .5) no-repeat 50% 50% url(../images/prev.png) ;
       left: 0;
     }
     .flex-next {

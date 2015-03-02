@@ -116,10 +116,12 @@ img {
 }
 
 .front  {
-  @include breakpoint($desktop) {
-    .logo {
+  .logo {
+    padding: 1em 0;
+    @include breakpoint($desktop) {
+      @include box-sizing(border-box);
       @include span(6.5 of 8 last);
-      padding: 1em .5em .75em;
+      padding: 3em 1em;
     }
     img {
       @include breakpoint($hand) {
@@ -132,10 +134,12 @@ img {
   }
 }
 
-.logo img {
-  height: auto;
+.logo {
   padding-top: 2em;
-  width: 400px;
+  img {
+    height: auto;
+    width: 400px;
+  }
 }
 
 .page-header {
