@@ -46,8 +46,8 @@ $susy: (
 .group-right,
 .sidebar-first,
 .sidebar-second,
-.region-footer,
-.footer-menu {
+#block-block-1,
+#block-menu-menu-footer-menu {
   @include box-sizing(border-box);
 }
 
@@ -68,8 +68,8 @@ $susy: (
     }
   }
   // Footer
-  .region-footer,
-  .footer-menu {
+  #block-block-1,
+  #block-menu-menu-footer-menu {
     @include span (4 of 4);
   }
 }
@@ -122,10 +122,10 @@ $susy: (
   }
 
   // Footer
-  .region-footer {
+  #block-block-1 {
     @include span (3 of 6);
   }
-  .footer-menu {
+  #block-menu-menu-footer-menu {
     @include span (3 of 6 last);
   }
 }
@@ -178,10 +178,10 @@ $susy: (
   }
 
   // Footer
-  .region-footer {
+  #block-block-1 {
     @include span (3 of 6);
   }
-  .footer-menu {
+  #block-menu-menu-footer-menu {
     @include span (3 of 6 last);
   }
 }

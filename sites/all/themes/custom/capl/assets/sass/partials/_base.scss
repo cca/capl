@@ -123,6 +123,13 @@ img {
   }
 }
 
+a.pdf {
+  background: url(/modules/file/icons/application-pdf.png) no-repeat 0 3px;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
 // Main Content Styles
 // --------------------------------------------------------
 .submitted {
@@ -161,10 +168,6 @@ img {
 .page-header {
   @include span(8 of 8 last);
   border-bottom: none;
-}
-
-.footer-menu {
-  padding-top: 1em;
 }
 
 a {

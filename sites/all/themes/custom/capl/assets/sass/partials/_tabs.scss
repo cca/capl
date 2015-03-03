@@ -4,6 +4,7 @@ ul.primary {
   margin-left: 0;
   padding-bottom: 3px;
   padding-left: 0;
+  padding-top: 1em;
   white-space: normal;
   li {
     display: inline-block;
@@ -19,6 +20,7 @@ ul.primary {
       }
     }
     a {
+      @include border-radius(18px);
       @include link-colors(black, grey);
       background-color: tint(grey, 80%);
       padding: 3px 10px;
@@ -26,6 +28,24 @@ ul.primary {
       &:hover {
         border-bottom: 1px solid #ccc;
       }
+    }
+  }
+}
+.action-links {
+  list-style: none;
+  padding-left: 0;
+  li {
+    @include border-radius(18px);
+    background-color: tint(grey, 80%);
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: .25em .5em;
+    &:hover {
+      background: black;
+    }
+    a {
+      @include link-colors(black, grey);
+      font-size: .9em;
     }
   }
 }

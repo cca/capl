@@ -35,11 +35,11 @@ function capl_ckeditor_ckeditor_profile_defaults() {
         'lang' => 'en',
         'auto_lang' => 't',
         'language_direction' => 'default',
-        'allowed_content' => 't',
+        'allowed_content' => 'f',
         'extraAllowedContent' => '',
         'enter_mode' => 'p',
         'shift_enter_mode' => 'br',
-        'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
+        'font_format' => 'p;div;h1;h2;h3;h4;h5;h6',
         'custom_formatting' => 'f',
         'formatting' => array(
           'custom_formatting_options' => array(
@@ -51,8 +51,8 @@ function capl_ckeditor_ckeditor_profile_defaults() {
             'pre_indent' => 0,
           ),
         ),
-        'css_mode' => 'none',
-        'css_path' => '',
+        'css_mode' => 'self',
+        'css_path' => '/sites/all/themes/custom/capl/assets/css/style.css',
         'css_style' => 'theme',
         'styles_path' => '',
         'filebrowser' => 'none',
@@ -68,6 +68,13 @@ function capl_ckeditor_ckeditor_profile_defaults() {
         'theme_config_js' => 'f',
         'js_conf' => '',
         'loadPlugins' => array(
+          'counter' => array(
+            'name' => 'counter',
+            'desc' => 'Plugin to count symbols, symbols without blanks and words',
+            'path' => '%plugin_dir%counter/',
+            'buttons' => FALSE,
+            'default' => 'f',
+          ),
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
             'desc' => 'Plugin for inserting Drupal teaser and page breaks.',
