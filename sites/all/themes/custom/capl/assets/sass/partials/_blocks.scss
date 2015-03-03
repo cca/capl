@@ -1,0 +1,24 @@
+// Project Block
+#block-views-projects-block-1 {
+  @include breakpoint($desktop) {
+    padding-left: 100px;
+  }
+}
+
+// CAPL Team
+#block-block-2 {
+  clear: both;
+}
+
+// Resources
+#block-block-3 {
+  @include breakpoint($desktop) {
+    margin-bottom: 1.5em;
+    padding-left: 100px;
+  }
+}
+
+// Programs
+.block-views-our-programs {
+  clear: both;
+}

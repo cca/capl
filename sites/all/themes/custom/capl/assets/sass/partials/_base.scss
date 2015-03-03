@@ -51,6 +51,12 @@ a {
   );
   text-decoration: none;
 }
+.field-name-body {
+  a,
+  a:hover {
+    text-decoration: underline;
+  }
+}
 
 // other
 blockquote {
@@ -165,10 +171,6 @@ a {
 }
 
 .text-center {
-  clear: both;
-}
-.block-views-our-programs,
-#block-block-2 {
   clear: both;
 }
 .region-content {

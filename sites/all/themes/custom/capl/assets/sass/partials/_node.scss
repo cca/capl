@@ -33,8 +33,7 @@
 
 // Program Page Layout
 .node-type-program {
-  .field-name-body,
-  #block-views-projects-block-1 {
+  .field-name-body {
     @include breakpoint($desktop) {
       padding-left: 100px;
     }

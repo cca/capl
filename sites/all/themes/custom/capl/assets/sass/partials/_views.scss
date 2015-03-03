@@ -1,2 +1,17 @@
 // Views
 // --------------------------------------------------------
+
+.view-partners {
+  .views-row {
+    h2 a {
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+    a {
+      @include link-colors(black, grey, grey, black);
+      font-weight: normal;
+      text-decoration: underline;
+    }
+    margin-bottom: 1.5em;
+  }
+}
