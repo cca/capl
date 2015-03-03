@@ -106,8 +106,11 @@ hr {
 }
 .field-name-body ul {
   list-style-image: url(../images/bullet.png);
+  padding-left: 20px;
+  padding-top: .5em;
   li {
     margin-bottom: 1.5em;
+    padding-left: 10px;
   }
 }
 
@@ -147,6 +150,7 @@ img {
 }
 
 .logo {
+  padding-bottom: 1em;
   padding-top: 2em;
   img {
     height: auto;
