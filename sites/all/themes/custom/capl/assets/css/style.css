@@ -874,14 +874,20 @@ fieldset legend {
 }
 
 /* line 2, ../sass/partials/_menu.scss */
+.nav-wrapper {
+  position: relative;
+}
+
+/* line 7, ../sass/partials/_menu.scss */
 .nav-trigger {
-  position: fixed;
+  display: none;
+  position: absolute;
   clip: rect(0, 0, 0, 0);
 }
 
-/* line 6, ../sass/partials/_menu.scss */
+/* line 12, ../sass/partials/_menu.scss */
 label[for="nav-trigger"] {
-  position: fixed;
+  position: absolute;
   right: 13px;
   top: 10px;
   z-index: 40;
@@ -889,7 +895,11 @@ label[for="nav-trigger"] {
   width: 30px;
   cursor: pointer;
 }
-/* line 14, ../sass/partials/_menu.scss */
+/* line 20, ../sass/partials/_menu.scss */
+label[for="nav-trigger"]:hover .icon-bar {
+  background-color: grey;
+}
+/* line 23, ../sass/partials/_menu.scss */
 label[for="nav-trigger"] .icon-bar {
   background-color: black;
   display: block;
@@ -898,23 +908,27 @@ label[for="nav-trigger"] .icon-bar {
   width: 27px;
 }
 
-/* line 24, ../sass/partials/_menu.scss */
+/* line 33, ../sass/partials/_menu.scss */
 .nav-trigger:checked ~ .drawer {
   right: 0;
   opacity: 1;
 }
-/* line 27, ../sass/partials/_menu.scss */
+/* line 36, ../sass/partials/_menu.scss */
 .nav-trigger:checked ~ .drawer li {
   opacity: 1;
   left: 0px;
 }
 
-/* line 33, ../sass/partials/_menu.scss */
+/* line 41, ../sass/partials/_menu.scss */
+.nav-trigger:checked ~ label {
+  position: fixed;
+}
+/* line 43, ../sass/partials/_menu.scss */
 .nav-trigger:checked ~ label .icon-bar {
-  background-color: white;
+  background-color: grey;
 }
 
-/* line 40, ../sass/partials/_menu.scss */
+/* line 50, ../sass/partials/_menu.scss */
 .drawer {
   -moz-transition-property: right, opacity;
   -o-transition-property: right, opacity;
@@ -937,17 +951,18 @@ label[for="nav-trigger"] .icon-bar {
   overflow-x: hidden;
   overflow-y: scroll;
   padding-bottom: 1em;
+  padding-top: 1em;
   position: fixed;
   right: -220px;
   top: 0;
   width: 220px;
   z-index: 20;
 }
-/* line 58, ../sass/partials/_menu.scss */
+/* line 69, ../sass/partials/_menu.scss */
 .drawer ul {
   padding-left: 0;
 }
-/* line 61, ../sass/partials/_menu.scss */
+/* line 72, ../sass/partials/_menu.scss */
 .drawer > ul > li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -971,7 +986,7 @@ label[for="nav-trigger"] .icon-bar {
   list-style: none;
   width: 220px;
 }
-/* line 72, ../sass/partials/_menu.scss */
+/* line 83, ../sass/partials/_menu.scss */
 .drawer > ul > li a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -996,13 +1011,13 @@ label[for="nav-trigger"] .icon-bar {
 .drawer > ul > li a.active, .drawer > ul > li a:active, .drawer > ul > li a.active-trail {
   color: #0db2df;
 }
-/* line 80, ../sass/partials/_menu.scss */
+/* line 91, ../sass/partials/_menu.scss */
 .drawer > ul > li li {
   list-style: none;
   margin: 0;
   padding: 0 .5em;
 }
-/* line 84, ../sass/partials/_menu.scss */
+/* line 95, ../sass/partials/_menu.scss */
 .drawer > ul > li li a {
   font-size: 1em;
   padding: .5em 1.5em;
@@ -1024,18 +1039,18 @@ label[for="nav-trigger"] .icon-bar {
   color: gray;
 }
 
-/* line 93, ../sass/partials/_menu.scss */
+/* line 104, ../sass/partials/_menu.scss */
 .navbar-default {
   background: transparent;
   border: none;
   min-height: 0;
 }
 
-/* line 98, ../sass/partials/_menu.scss */
+/* line 109, ../sass/partials/_menu.scss */
 .navbar-header {
   width: 100%;
 }
-/* line 100, ../sass/partials/_menu.scss */
+/* line 111, ../sass/partials/_menu.scss */
 .navbar-header .navbar-toggle {
   background-color: transparent;
   border: none;
@@ -1044,11 +1059,11 @@ label[for="nav-trigger"] .icon-bar {
   position: absolute;
   z-index: 100;
 }
-/* line 107, ../sass/partials/_menu.scss */
+/* line 118, ../sass/partials/_menu.scss */
 .navbar-header .navbar-toggle:hover, .navbar-header .navbar-toggle:focus {
   background-color: transparent;
 }
-/* line 111, ../sass/partials/_menu.scss */
+/* line 122, ../sass/partials/_menu.scss */
 .navbar-header .navbar-toggle .icon-bar {
   background-color: black;
   height: 3px;

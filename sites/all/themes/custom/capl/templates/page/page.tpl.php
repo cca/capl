@@ -12,23 +12,21 @@
 ?>
 
 <!-- Mobile Nav button -->
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger">
-  <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
-  <span class="icon-bar"></span>
-  <span class="icon-bar"></span>
-  <span class="icon-bar"></span>
-</label>
+<div class="container nav-wrapper">
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger">
+    <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </label>
 
-<?php //if ($search): ?>
-<!--  --><?php //print  render($search); ?>
-<?php //endif; ?>
-
-<?php if ($main_menu): ?>
-  <div class="drawer">
-    <?php print render($main_menu_expanded); ?>
-  </div> <!-- /#main-menu -->
-<?php endif; ?>
+  <?php if ($main_menu): ?>
+    <div class="drawer">
+      <?php print render($main_menu_expanded); ?>
+    </div> <!-- /#main-menu -->
+  <?php endif; ?>
+</div>
 
 <header id="header" class="header" role="header">
   <div class="container">

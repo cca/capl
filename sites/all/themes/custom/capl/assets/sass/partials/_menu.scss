@@ -1,16 +1,25 @@
+// Nav Wrapper
+.nav-wrapper {
+  position: relative;
+}
+
 // Trigger and Action
 .nav-trigger {
-  position: fixed;
+  display: none;
+  position: absolute;
   clip: rect(0, 0, 0, 0);
 }
 label[for="nav-trigger"] {
-  position: fixed;
+  position: absolute;
   right: 13px;
   top: 10px;
   z-index: 40;
   height: 30px;
   width: 30px;
   cursor: pointer;
+  &:hover .icon-bar {
+    background-color: grey;
+  }
   .icon-bar {
     background-color: black;
     display: block;
@@ -30,8 +39,9 @@ label[for="nav-trigger"] {
   }
 }
 .nav-trigger:checked ~ label {
+  position: fixed;
   .icon-bar {
-    background-color: white;
+    background-color: grey;
   }
 }
 
@@ -50,6 +60,7 @@ label[for="nav-trigger"] {
   overflow-x: hidden;
   overflow-y: scroll;
   padding-bottom: 1em;
+  padding-top: 1em;
   position: fixed;
   right: -$drawer-width;
   top: 0;
