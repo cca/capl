@@ -411,26 +411,35 @@ hr {
   margin-bottom: .5em;
 }
 
+/* line 101, ../sass/partials/_base.scss */
+.field-name-body ul {
+  list-style-image: url(../images/bullet.png);
+}
+/* line 103, ../sass/partials/_base.scss */
+.field-name-body ul li {
+  margin-bottom: 1.5em;
+}
+
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 104, ../sass/partials/_base.scss */
+  /* line 110, ../sass/partials/_base.scss */
   img {
     height: auto;
     max-width: 100%;
   }
 }
 
-/* line 113, ../sass/partials/_base.scss */
+/* line 119, ../sass/partials/_base.scss */
 .submitted {
   color: grey;
   font-size: .9em;
 }
 
-/* line 119, ../sass/partials/_base.scss */
+/* line 125, ../sass/partials/_base.scss */
 .front .logo {
   padding: 1em 0;
 }
 @media (min-width: 801px) {
-  /* line 119, ../sass/partials/_base.scss */
+  /* line 125, ../sass/partials/_base.scss */
   .front .logo {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -442,29 +451,29 @@ hr {
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 126, ../sass/partials/_base.scss */
+  /* line 132, ../sass/partials/_base.scss */
   .front .logo img {
     width: 100%;
   }
 }
 @media (min-width: 481px) {
-  /* line 126, ../sass/partials/_base.scss */
+  /* line 132, ../sass/partials/_base.scss */
   .front .logo img {
     width: 50%;
   }
 }
 
-/* line 137, ../sass/partials/_base.scss */
+/* line 143, ../sass/partials/_base.scss */
 .logo {
   padding-top: 2em;
 }
-/* line 139, ../sass/partials/_base.scss */
+/* line 145, ../sass/partials/_base.scss */
 .logo img {
   height: auto;
   width: 400px;
 }
 
-/* line 145, ../sass/partials/_base.scss */
+/* line 151, ../sass/partials/_base.scss */
 .page-header {
   width: 100%;
   float: right;
@@ -472,7 +481,7 @@ hr {
   border-bottom: none;
 }
 
-/* line 150, ../sass/partials/_base.scss */
+/* line 156, ../sass/partials/_base.scss */
 .footer-menu {
   padding-top: 1em;
 }
@@ -493,28 +502,28 @@ a.active:hover, a.active-trail:hover, a:hover {
 a.active, a:active, a.active-trail {
   color: grey;
 }
-/* line 156, ../sass/partials/_base.scss */
+/* line 162, ../sass/partials/_base.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 161, ../sass/partials/_base.scss */
+/* line 167, ../sass/partials/_base.scss */
 .text-center {
   clear: both;
 }
 
-/* line 164, ../sass/partials/_base.scss */
+/* line 170, ../sass/partials/_base.scss */
 .block-views-our-programs,
 #block-block-2 {
   clear: both;
 }
 
-/* line 168, ../sass/partials/_base.scss */
+/* line 174, ../sass/partials/_base.scss */
 .region-content {
   padding-left: 100px;
 }
 
-/* line 174, ../sass/partials/_base.scss */
+/* line 180, ../sass/partials/_base.scss */
 .sr-only {
   position: absolute;
   width: 1px;

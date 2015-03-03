@@ -98,6 +98,12 @@ hr {
     }
   }
 }
+.field-name-body ul {
+  list-style-image: url(../images/bullet.png);
+  li {
+    margin-bottom: 1.5em;
+  }
+}
 
 // Image Styles
 // --------------------------------------------------------
