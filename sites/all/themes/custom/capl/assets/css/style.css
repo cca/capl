@@ -1051,7 +1051,7 @@ label[for="nav-trigger"] .icon-bar {
 }
 /* line 25, ../sass/global/_mixins.scss */
 .drawer > ul > li a.active, .drawer > ul > li a:active, .drawer > ul > li a.active-trail {
-  color: #0db2df;
+  color: #bcbdbe;
 }
 /* line 91, ../sass/partials/_menu.scss */
 .drawer > ul > li li {

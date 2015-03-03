@@ -83,7 +83,7 @@ label[for="nav-trigger"] {
     a {
       @extend %base-font;
       @include box-sizing(border-box);
-      @include link-colors(#bcbdbe, $active-color, $active-color, #bcbdbe);
+      @include link-colors(#bcbdbe, $active-color, #bcbdbe, #bcbdbe);
       display: block;
       font-size: 1.1em;
       padding: .5em 1em;
