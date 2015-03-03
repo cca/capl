@@ -518,12 +518,14 @@ a:hover {
   clear: both;
 }
 
-/* line 174, ../sass/partials/_base.scss */
-.region-content {
-  padding-left: 100px;
+@media (min-width: 801px) {
+  /* line 174, ../sass/partials/_base.scss */
+  .region-content {
+    padding-left: 100px;
+  }
 }
 
-/* line 180, ../sass/partials/_base.scss */
+/* line 182, ../sass/partials/_base.scss */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1133,18 +1135,20 @@ label[for="nav-trigger"] .icon-bar {
   padding-left: 0;
 }
 
-/* line 36, ../sass/partials/_node.scss */
-.node-type-program .field-name-body,
-.node-type-program #block-views-projects-block-1 {
-  padding-left: 100px;
+@media (min-width: 801px) {
+  /* line 36, ../sass/partials/_node.scss */
+  .node-type-program .field-name-body,
+  .node-type-program #block-views-projects-block-1 {
+    padding-left: 100px;
+  }
 }
 
-/* line 43, ../sass/partials/_node.scss */
+/* line 45, ../sass/partials/_node.scss */
 .page-projects .region-content {
   padding-left: 0;
 }
 
-/* line 47, ../sass/partials/_node.scss */
+/* line 49, ../sass/partials/_node.scss */
 .node-program.node-teaser,
 .node-project.node-teaser {
   -moz-box-sizing: border-box;
@@ -1153,13 +1157,13 @@ label[for="nav-trigger"] .icon-bar {
   float: left;
   padding: 0 1%;
 }
-/* line 49, ../sass/partials/_node.scss */
+/* line 51, ../sass/partials/_node.scss */
 .node-program.node-teaser:hover,
 .node-project.node-teaser:hover {
   cursor: pointer;
 }
 @media (min-width: 801px) {
-  /* line 47, ../sass/partials/_node.scss */
+  /* line 49, ../sass/partials/_node.scss */
   .node-program.node-teaser,
   .node-project.node-teaser {
     min-height: 285px;
@@ -1167,7 +1171,7 @@ label[for="nav-trigger"] .icon-bar {
   }
 }
 @media (min-width: 481px) and (max-width: 800px) {
-  /* line 47, ../sass/partials/_node.scss */
+  /* line 49, ../sass/partials/_node.scss */
   .node-program.node-teaser,
   .node-project.node-teaser {
     min-height: 225px;
@@ -1175,73 +1179,75 @@ label[for="nav-trigger"] .icon-bar {
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 47, ../sass/partials/_node.scss */
+  /* line 49, ../sass/partials/_node.scss */
   .node-program.node-teaser,
   .node-project.node-teaser {
     width: 100%;
   }
 }
-/* line 66, ../sass/partials/_node.scss */
+/* line 68, ../sass/partials/_node.scss */
 .node-program.node-teaser img,
 .node-project.node-teaser img {
   height: auto;
   width: 100%;
 }
 
-/* line 73, ../sass/partials/_node.scss */
-.group-right {
-  padding-left: 100px;
+@media (min-width: 801px) {
+  /* line 75, ../sass/partials/_node.scss */
+  .group-right {
+    padding-left: 100px;
+  }
 }
 
-/* line 78, ../sass/partials/_node.scss */
+/* line 82, ../sass/partials/_node.scss */
 .group-left {
   padding-top: 1em;
 }
-/* line 81, ../sass/partials/_node.scss */
+/* line 85, ../sass/partials/_node.scss */
 .group-left h2.js-trigger:hover {
   color: #0db2df;
 }
-/* line 83, ../sass/partials/_node.scss */
+/* line 87, ../sass/partials/_node.scss */
 .group-left h2.js-trigger:hover:after {
   color: #0db2df;
 }
-/* line 87, ../sass/partials/_node.scss */
+/* line 91, ../sass/partials/_node.scss */
 .group-left h2.js-trigger:after {
   content: ' +';
   color: grey;
 }
-/* line 91, ../sass/partials/_node.scss */
+/* line 95, ../sass/partials/_node.scss */
 .group-left h2.js-trigger.expanded:after {
   content: ' -';
 }
 @media (min-width: 481px) {
-  /* line 80, ../sass/partials/_node.scss */
+  /* line 84, ../sass/partials/_node.scss */
   .group-left h2.js-trigger {
     display: none;
   }
 }
-/* line 98, ../sass/partials/_node.scss */
+/* line 102, ../sass/partials/_node.scss */
 .group-left .field {
   margin-bottom: .75em;
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 98, ../sass/partials/_node.scss */
+  /* line 102, ../sass/partials/_node.scss */
   .group-left .field {
     display: none;
   }
 }
 @media (min-width: 481px) {
-  /* line 98, ../sass/partials/_node.scss */
+  /* line 102, ../sass/partials/_node.scss */
   .group-left .field {
     display: block;
   }
 }
-/* line 106, ../sass/partials/_node.scss */
+/* line 110, ../sass/partials/_node.scss */
 .group-left .field .field-items {
   color: grey;
   font-size: .9em;
 }
-/* line 109, ../sass/partials/_node.scss */
+/* line 113, ../sass/partials/_node.scss */
 .group-left .field .field-items a {
   text-decoration: underline;
 }
@@ -1262,7 +1268,7 @@ label[for="nav-trigger"] .icon-bar {
   color: black;
 }
 
-/* line 118, ../sass/partials/_node.scss */
+/* line 122, ../sass/partials/_node.scss */
 .media-youtube-video {
   height: 0;
   overflow: hidden;
@@ -1270,7 +1276,7 @@ label[for="nav-trigger"] .icon-bar {
   padding-bottom: 56.25%;
   padding-top: 30px;
 }
-/* line 124, ../sass/partials/_node.scss */
+/* line 128, ../sass/partials/_node.scss */
 .media-youtube-video iframe,
 .media-youtube-video object,
 .media-youtube-video embed {
@@ -1281,7 +1287,7 @@ label[for="nav-trigger"] .icon-bar {
   height: 100%;
 }
 
-/* line 137, ../sass/partials/_node.scss */
+/* line 141, ../sass/partials/_node.scss */
 .field-name-field-program-image img {
   height: auto;
   width: 100%;

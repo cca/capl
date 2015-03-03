@@ -172,7 +172,9 @@ a {
   clear: both;
 }
 .region-content {
-  padding-left: 100px;
+  @include breakpoint($desktop) {
+    padding-left: 100px;
+  }
 }
 
 

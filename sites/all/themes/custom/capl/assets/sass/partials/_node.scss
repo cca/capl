@@ -35,7 +35,9 @@
 .node-type-program {
   .field-name-body,
   #block-views-projects-block-1 {
-    padding-left: 100px;
+    @include breakpoint($desktop) {
+      padding-left: 100px;
+    }
   }
 }
 
@@ -71,7 +73,9 @@
 
 // Project Body
 .group-right {
-  padding-left: 100px;
+  @include breakpoint($desktop) {
+    padding-left: 100px;
+  }
 }
 
 // Project Details
