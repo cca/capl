@@ -38,7 +38,7 @@ input[type="submit"], #user-login-form a {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
   .container:after {
     content: " ";
     display: block;
@@ -76,7 +76,7 @@ input[type="submit"], #user-login-form a {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
   .container:after {
     content: " ";
     display: block;
@@ -175,7 +175,7 @@ input[type="submit"], #user-login-form a {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
   .container:after {
     content: " ";
     display: block;
@@ -580,34 +580,32 @@ a:hover {
   /* line 4, ../sass/partials/_footer.scss */
   .front .footer {
     background: white;
-    bottom: 0;
-    position: fixed;
     width: 100%;
   }
 }
 
-/* line 13, ../sass/partials/_footer.scss */
+/* line 11, ../sass/partials/_footer.scss */
 .footer .container {
   border-top: 4px solid black;
 }
 
-/* line 18, ../sass/partials/_footer.scss */
+/* line 16, ../sass/partials/_footer.scss */
 #block-menu-menu-footer-menu {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
   padding-top: 1em;
 }
-/* line 23, ../sass/partials/_footer.scss */
+/* line 21, ../sass/partials/_footer.scss */
 #block-menu-menu-footer-menu ul {
   margin-top: 0;
   padding: 0;
 }
-/* line 26, ../sass/partials/_footer.scss */
+/* line 24, ../sass/partials/_footer.scss */
 #block-menu-menu-footer-menu ul li.leaf {
   list-style: none;
 }
-/* line 30, ../sass/partials/_footer.scss */
+/* line 28, ../sass/partials/_footer.scss */
 #block-menu-menu-footer-menu a {
   color: black;
   font-weight: bold;
