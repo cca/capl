@@ -1426,49 +1426,38 @@ html.js fieldset.collapsible .fieldset-legend {
   width: 100%;
 }
 /* line 40, ../sass/partials/_sidebar.scss */
+.region-sidebar-first input {
+  /* don't show checkboxes */
+  display: none;
+}
+/* line 43, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset {
   border: none;
   margin-bottom: 0;
 }
-/* line 43, ../sass/partials/_sidebar.scss */
+/* line 46, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset legend {
   border: none;
   font-size: 1.2em;
   font-weight: bold;
   padding: 0;
 }
-/* line 49, ../sass/partials/_sidebar.scss */
+/* line 52, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset .fieldset-title:after {
   content: ' -';
 }
-/* line 52, ../sass/partials/_sidebar.scss */
+/* line 55, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset.collapsed .fieldset-title:after {
   content: ' +';
 }
-/* line 56, ../sass/partials/_sidebar.scss */
-.region-sidebar-first .fieldset-wrapper {
-  color: grey;
-}
-/* line 58, ../sass/partials/_sidebar.scss */
+/* line 60, ../sass/partials/_sidebar.scss */
 .region-sidebar-first .fieldset-wrapper .bef-toggle {
-  color: grey;
   font-size: .8em;
 }
-/* line 2, ../sass/global/_mixins.scss */
-.region-sidebar-first .fieldset-wrapper .bef-toggle, .region-sidebar-first .fieldset-wrapper .bef-toggle:link {
-  color: grey;
-}
-/* line 7, ../sass/global/_mixins.scss */
-.region-sidebar-first .fieldset-wrapper .bef-toggle:visited, .region-sidebar-first .fieldset-wrapper .bef-toggle:link:visited {
-  color: grey;
-}
-/* line 18, ../sass/global/_mixins.scss */
-.region-sidebar-first .fieldset-wrapper .bef-toggle.active:hover, .region-sidebar-first .fieldset-wrapper .bef-toggle.active-trail:hover, .region-sidebar-first .fieldset-wrapper .bef-toggle:hover {
-  color: #0db2df;
-}
-/* line 25, ../sass/global/_mixins.scss */
-.region-sidebar-first .fieldset-wrapper .bef-toggle.active, .region-sidebar-first .fieldset-wrapper .bef-toggle:active, .region-sidebar-first .fieldset-wrapper .bef-toggle.active-trail {
-  color: #0db2df;
+/* line 63, ../sass/partials/_sidebar.scss */
+.region-sidebar-first .fieldset-wrapper label {
+  cursor: pointer;
+  font-weight: normal;
 }
 /* line 2, ../sass/global/_mixins.scss */
 .region-sidebar-first .fieldset-wrapper label, .region-sidebar-first .fieldset-wrapper label:link {
@@ -1486,7 +1475,11 @@ html.js fieldset.collapsible .fieldset-legend {
 .region-sidebar-first .fieldset-wrapper label.active, .region-sidebar-first .fieldset-wrapper label:active, .region-sidebar-first .fieldset-wrapper label.active-trail {
   color: #0db2df;
 }
-/* line 67, ../sass/partials/_sidebar.scss */
+/* line 68, ../sass/partials/_sidebar.scss */
+.region-sidebar-first .fieldset-wrapper .highlight label {
+  font-weight: bold;
+}
+/* line 72, ../sass/partials/_sidebar.scss */
 .region-sidebar-first .views-submit-button {
   display: none;
 }

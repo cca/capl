@@ -37,6 +37,9 @@ html.js fieldset.collapsible .fieldset-legend {
   .views-exposed-widget {
     width: 100%;
   }
+  input { /* don't show checkboxes */
+    display: none;
+  }
   fieldset {
     border: none;
     margin-bottom: 0;
@@ -54,14 +57,16 @@ html.js fieldset.collapsible .fieldset-legend {
     }
   }
   .fieldset-wrapper {
-    color: grey;
     .bef-toggle {
-      @include link-colors(grey, $active-color, $active-color, grey);
-      color: grey;
       font-size: .8em;
     }
     label {
+      cursor: pointer;
+      font-weight: normal;
       @include link-colors(grey, $active-color, $active-color, grey);
+    }
+    .highlight label {
+      font-weight: bold;
     }
   }
   .views-submit-button {
