@@ -287,7 +287,7 @@ function ldap_servers_update_7107() {
 
 
 function ldap_servers_db_field_exists($table, $field_name) {
-  if (!ldap_servers_db_field_exists($table, $field_name) && !ldap_servers_db_field_exists($table, drupal_strtolower($field_name)) ) {
+  if (!db_field_exists($table, $field_name) && !db_field_exists($table, drupal_strtolower($field_name)) ) {
     return false;
   }
   else {
@@ -300,7 +300,7 @@ function ldap_servers_db_field_exists($table, $field_name) {
 function ldap_servers_update_7108() {
 
   foreach (array('groupFunctionalityUnused', 'groupNested', 'groupSearchAll', 'groupUserMembershipsAttrExists', 'groupDeriveFromDn', 'groupUserMembershipsAttrExists') as $tinyint_field_name) {
-    if (!ldap_servers_ldap_servers_db_field_exists('ldap_servers', $tinyint_field_name))  {
+    if (!ldap_servers_db_field_exists('ldap_servers', $tinyint_field_name))  {
       db_add_field('ldap_servers', $tinyint_field_name, array(
         'type' => 'int',
         'size' => 'tiny',
@@ -796,21 +796,22 @@ function ldap_servers_update_7205() {
 }
 
 
-
 /**
  * Add LDAP Referrals fields in schema
  */
 function ldap_servers_update_7206() {
-  db_add_field(
-    'ldap_servers',
-    'followrefs',
-    array(
-      'type' => 'int',
-      'size' => 'tiny',
-      'not null' => FALSE,
-      'default' => 0,
-    )
-  );
+  if (!ldap_servers_db_field_exists('ldap_servers', 'followrefs')) {
+    db_add_field(
+      'ldap_servers',
+      'followrefs',
+      array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'not null' => FALSE,
+        'default' => 0,
+      )
+    );
+  }
 }
 
 function ldap_servers_install_update_schema($schema, &$change_log) {
