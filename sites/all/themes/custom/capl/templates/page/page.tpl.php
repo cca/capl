@@ -32,7 +32,7 @@
   <div class="container">
     <div class="logo">
       <a href="<?php print $front_page; ?>">
-        <img  src="/<?php print $logopath?>">
+        CCA Center for Art <span class="plus">+</span> Public Life<br />
       </a>
     </div>
     <div class="page-header">
