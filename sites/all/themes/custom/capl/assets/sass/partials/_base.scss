@@ -157,11 +157,27 @@ a.pdf {
 }
 
 .logo {
-  padding-bottom: 1em;
-  padding-top: 2em;
+  font-weight: bold;
+  padding-bottom: 2em;
+  font-size: 1.2em;
+  margin-top: -18px;
+  @include breakpoint($desktop) {
+    font-size: 1.7em;
+    margin-top: -22px;
+  }
+  @include breakpoint($tablet) {
+    font-size: 1.5em;
+    margin-top: -20px;
+  }
+  a:hover {
+    color: black;
+  }
   img {
     height: auto;
     width: 400px;
+  }
+  .plus {
+    color: #0db2df;
   }
 }
 
