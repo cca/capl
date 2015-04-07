@@ -7,11 +7,17 @@ body {
   margin: 0;
 }
 
+p {
+  font-weight: 300;
+}
+// reduce margin after header
+h2 + p {
+  margin-top: 0;
+}
 // h1-h6
 #{headings(1,6)}{
   @extend %base-font;
   line-height: 1.3;
-  margin-bottom: .75em;
 }
 
 h1 {
@@ -23,7 +29,9 @@ h1 {
   padding: 4px 0;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 0;
 }
 h3 {
   font-size: 22px;
