@@ -1224,7 +1224,7 @@ label[for="nav-trigger"] .icon-bar {
   /* line 43, ../sass/partials/_node.scss */
   .node-program.node-teaser,
   .node-project.node-teaser {
-    min-height: 285px;
+    min-height: 275px;
     width: calc(100% / 3);
   }
 }
