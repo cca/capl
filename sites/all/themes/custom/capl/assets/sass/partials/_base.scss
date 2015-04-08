@@ -50,8 +50,8 @@ a {
   transition: color 0.2s;
   @include link-colors(
     $black, //normal
-    grey, //hover
-    grey, //active
+    $gray, //hover
+    $gray, //active
     $black //visited
   );
   text-decoration: none;
@@ -92,7 +92,7 @@ hr {
   text-align: center;
   padding: .5em 0;
   a {
-    @include link-colors($black, grey);
+    @include link-colors($black, $gray);
     text-decoration: none;
     &:after {
       content: ' ...';
@@ -138,7 +138,7 @@ a.pdf {
 // Main Content Styles
 // --------------------------------------------------------
 .submitted {
-  color: grey;
+  color: $gray;
   font-size: .9em;
 }
 
@@ -192,7 +192,7 @@ a.pdf {
 }
 
 a {
-  @include link-colors($black, grey, grey, $black);
+  @include link-colors($black, $gray, $gray, $black);
   &:hover {
     text-decoration: none;
   }
