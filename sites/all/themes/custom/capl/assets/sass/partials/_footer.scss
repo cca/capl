@@ -9,7 +9,7 @@
 }
 .footer {
   .container {
-    border-top: 4px solid black;
+    border-top: 4px solid $black;
   }
 }
 
@@ -24,9 +24,5 @@
     li.leaf {
       list-style: none;
     }
-  }
-  a {
-    color: black;
-    font-weight: bold;
   }
 }

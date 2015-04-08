@@ -616,7 +616,7 @@ a:hover {
 
 /* line 11, ../sass/partials/_footer.scss */
 .footer .container {
-  border-top: 4px solid black;
+  border-top: 4px solid #3F484C;
 }
 
 /* line 16, ../sass/partials/_footer.scss */
@@ -634,11 +634,6 @@ a:hover {
 /* line 24, ../sass/partials/_footer.scss */
 #block-menu-menu-footer-menu ul li.leaf {
   list-style: none;
-}
-/* line 28, ../sass/partials/_footer.scss */
-#block-menu-menu-footer-menu a {
-  color: black;
-  font-weight: bold;
 }
 
 /* line 6, ../sass/partials/_forms.scss */
