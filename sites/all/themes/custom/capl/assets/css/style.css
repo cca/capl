@@ -289,8 +289,8 @@ h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
 
 /* line 22, ../sass/partials/_base.scss */
 h1 {
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1px solid #3F484C;
+  border-top: 1px solid #3F484C;
   font-size: 2em;
   font-weight: 300;
   margin-bottom: 0;
@@ -331,13 +331,13 @@ a {
 li a, li a:link,
 a,
 a:link {
-  color: black;
+  color: #3F484C;
 }
 /* line 7, ../sass/global/_mixins.scss */
 li a:visited, li a:link:visited,
 a:visited,
 a:link:visited {
-  color: black;
+  color: #3F484C;
 }
 /* line 18, ../sass/global/_mixins.scss */
 li a.active:hover, li a.active-trail:hover, li a:hover,
@@ -362,21 +362,21 @@ a.active-trail {
 
 /* line 67, ../sass/partials/_base.scss */
 blockquote {
-  color: #262626;
+  color: #5b6366;
   font-size: 85%;
 }
 
 /* line 72, ../sass/partials/_base.scss */
 hr {
   border: 0;
-  border-bottom: 3px solid black;
-  color: black;
+  border-bottom: 3px solid #3F484C;
+  color: #3F484C;
   height: 1px;
 }
 
 /* line 79, ../sass/partials/_base.scss */
 .marker {
-  background: black;
+  background: #3F484C;
   color: white;
   display: inline-block;
   font-size: 11px;
@@ -402,7 +402,7 @@ hr {
 .more-link a, .more-link a:link,
 .more-help-link a,
 .more-help-link a:link {
-  color: black;
+  color: #3F484C;
 }
 /* line 18, ../sass/global/_mixins.scss */
 .more-link a.active:hover, .more-link a.active-trail:hover, .more-link a:hover,
@@ -509,7 +509,7 @@ a.pdf {
 }
 /* line 177, ../sass/partials/_base.scss */
 .logo a:hover {
-  color: black;
+  color: #3F484C;
 }
 /* line 180, ../sass/partials/_base.scss */
 .logo img {
@@ -531,11 +531,11 @@ a.pdf {
 
 /* line 2, ../sass/global/_mixins.scss */
 a, a:link {
-  color: black;
+  color: #3F484C;
 }
 /* line 7, ../sass/global/_mixins.scss */
 a:visited, a:link:visited {
-  color: black;
+  color: #3F484C;
 }
 /* line 18, ../sass/global/_mixins.scss */
 a.active:hover, a.active-trail:hover, a:hover {

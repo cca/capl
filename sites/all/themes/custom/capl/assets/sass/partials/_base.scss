@@ -20,8 +20,8 @@ p {
 }
 
 h1 {
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1px solid $black;
+  border-top: 1px solid $black;
   font-size: 2em;
   font-weight: $font-weight-light;
   margin-bottom: 0;
@@ -49,10 +49,10 @@ li a,
 a {
   transition: color 0.2s;
   @include link-colors(
-    black, //normal
+    $black, //normal
     grey, //hover
     grey, //active
-    black //visited
+    $black //visited
   );
   text-decoration: none;
 }
@@ -65,19 +65,19 @@ a {
 
 // other
 blockquote {
-  color: tint(black, 15%);
+  color: tint($black, 15%);
   font-size: 85%;
 }
 
 hr {
   border: 0;
-  border-bottom: 3px solid black;
-  color: black;
+  border-bottom: 3px solid $black;
+  color: $black;
   height: 1px;
 }
 
 .marker {
-  background: black;
+  background: $black;
   color: white;
   display: inline-block;
   font-size: 11px;
@@ -92,7 +92,7 @@ hr {
   text-align: center;
   padding: .5em 0;
   a {
-    @include link-colors(black, grey);
+    @include link-colors($black, grey);
     text-decoration: none;
     &:after {
       content: ' ...';
@@ -175,7 +175,7 @@ a.pdf {
     margin-top: -20px;
   }
   a:hover {
-    color: black;
+    color: $black;
   }
   img {
     height: auto;
@@ -192,7 +192,7 @@ a.pdf {
 }
 
 a {
-  @include link-colors(black, grey, grey, black);
+  @include link-colors($black, grey, grey, $black);
   &:hover {
     text-decoration: none;
   }
