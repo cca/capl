@@ -3,12 +3,12 @@
 
 body {
   @extend %base-font;
-  color: black;
+  color: $black;
   margin: 0;
 }
 
 p {
-  font-weight: 300;
+  font-weight: $font-weight-light;
 }
 // reduce margin after header
 h2 + p {
@@ -21,15 +21,16 @@ h2 + p {
 }
 
 h1 {
-  border-bottom: 3px solid black;
-  border-top: 3px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
   font-size: 2em;
+  font-weight: $font-weight-light;
   margin-bottom: 0;
   margin-top: 0;
   padding: 4px 0;
 }
 h2 {
-  font-size: 20px;
+  font-size: 1.3em;
   font-weight: normal;
   margin-bottom: 0;
 }
