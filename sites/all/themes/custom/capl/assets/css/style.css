@@ -344,14 +344,14 @@ li a.active:hover, li a.active-trail:hover, li a:hover,
 a.active:hover,
 a.active-trail:hover,
 a:hover {
-  color: grey;
+  color: #7C8689;
 }
 /* line 25, ../sass/global/_mixins.scss */
 li a.active, li a:active, li a.active-trail,
 a.active,
 a:active,
 a.active-trail {
-  color: grey;
+  color: #7C8689;
 }
 
 /* line 60, ../sass/partials/_base.scss */
@@ -409,7 +409,7 @@ hr {
 .more-help-link a.active:hover,
 .more-help-link a.active-trail:hover,
 .more-help-link a:hover {
-  color: grey;
+  color: #7C8689;
 }
 /* line 97, ../sass/partials/_base.scss */
 .more-link a:after,
@@ -453,7 +453,7 @@ a.pdf {
 
 /* line 140, ../sass/partials/_base.scss */
 .submitted {
-  color: grey;
+  color: #7C8689;
   font-size: .9em;
 }
 
@@ -539,11 +539,11 @@ a:visited, a:link:visited {
 }
 /* line 18, ../sass/global/_mixins.scss */
 a.active:hover, a.active-trail:hover, a:hover {
-  color: grey;
+  color: #7C8689;
 }
 /* line 25, ../sass/global/_mixins.scss */
 a.active, a:active, a.active-trail {
-  color: grey;
+  color: #7C8689;
 }
 /* line 196, ../sass/partials/_base.scss */
 a:hover {
@@ -1077,7 +1077,7 @@ label[for="nav-trigger"] .icon-bar {
 }
 /* line 18, ../sass/global/_mixins.scss */
 .drawer > ul > li a.active:hover, .drawer > ul > li a.active-trail:hover, .drawer > ul > li a:hover {
-  color: #0db2df;
+  color: #0DB2DF;
 }
 /* line 25, ../sass/global/_mixins.scss */
 .drawer > ul > li a.active, .drawer > ul > li a:active, .drawer > ul > li a.active-trail {
@@ -1274,11 +1274,11 @@ label[for="nav-trigger"] .icon-bar {
 }
 /* line 84, ../sass/partials/_node.scss */
 .group-left h2.js-trigger:hover {
-  color: #0db2df;
+  color: #0DB2DF;
 }
 /* line 86, ../sass/partials/_node.scss */
 .group-left h2.js-trigger:hover:after {
-  color: #0db2df;
+  color: #0DB2DF;
 }
 /* line 90, ../sass/partials/_node.scss */
 .group-left h2.js-trigger:after {
@@ -1427,11 +1427,11 @@ html.js fieldset.collapsible .fieldset-legend {
 }
 /* line 19, ../sass/partials/_sidebar.scss */
 .region-sidebar-first h2:hover {
-  color: #0db2df;
+  color: #0DB2DF;
 }
 /* line 21, ../sass/partials/_sidebar.scss */
 .region-sidebar-first h2:hover:after {
-  color: #0db2df;
+  color: #0DB2DF;
 }
 @media (min-width: 0) and (max-width: 480px) {
   /* line 11, ../sass/partials/_sidebar.scss */
@@ -1468,20 +1468,20 @@ html.js fieldset.collapsible .fieldset-legend {
 /* line 46, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset legend {
   border: none;
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.3em;
   padding: 0;
 }
-/* line 52, ../sass/partials/_sidebar.scss */
+/* line 51, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset .fieldset-title:after {
   content: ' -';
 }
-/* line 55, ../sass/partials/_sidebar.scss */
+/* line 54, ../sass/partials/_sidebar.scss */
 .region-sidebar-first fieldset.collapsed .fieldset-title:after {
   content: ' +';
 }
-/* line 60, ../sass/partials/_sidebar.scss */
+/* line 59, ../sass/partials/_sidebar.scss */
 .region-sidebar-first .fieldset-wrapper .bef-toggle {
+  color: #7C8689;
   font-size: .8em;
 }
 /* line 63, ../sass/partials/_sidebar.scss */
@@ -1491,23 +1491,23 @@ html.js fieldset.collapsible .fieldset-legend {
 }
 /* line 2, ../sass/global/_mixins.scss */
 .region-sidebar-first .fieldset-wrapper label, .region-sidebar-first .fieldset-wrapper label:link {
-  color: grey;
+  color: #7C8689;
 }
 /* line 7, ../sass/global/_mixins.scss */
 .region-sidebar-first .fieldset-wrapper label:visited, .region-sidebar-first .fieldset-wrapper label:link:visited {
-  color: grey;
+  color: #7C8689;
 }
 /* line 18, ../sass/global/_mixins.scss */
 .region-sidebar-first .fieldset-wrapper label.active:hover, .region-sidebar-first .fieldset-wrapper label.active-trail:hover, .region-sidebar-first .fieldset-wrapper label:hover {
-  color: #0db2df;
+  color: #0DB2DF;
 }
 /* line 25, ../sass/global/_mixins.scss */
 .region-sidebar-first .fieldset-wrapper label.active, .region-sidebar-first .fieldset-wrapper label:active, .region-sidebar-first .fieldset-wrapper label.active-trail {
-  color: #0db2df;
+  color: #0DB2DF;
 }
 /* line 68, ../sass/partials/_sidebar.scss */
 .region-sidebar-first .fieldset-wrapper .highlight label {
-  font-weight: bold;
+  color: #0DB2DF;
 }
 /* line 72, ../sass/partials/_sidebar.scss */
 .region-sidebar-first .views-submit-button {

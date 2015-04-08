@@ -45,8 +45,7 @@ html.js fieldset.collapsible .fieldset-legend {
     margin-bottom: 0;
     legend {
       border: none;
-      font-size: 1.2em;
-      font-weight: bold;
+      font-size: 1.3em;
       padding: 0;
     }
     .fieldset-title:after {
@@ -58,15 +57,16 @@ html.js fieldset.collapsible .fieldset-legend {
   }
   .fieldset-wrapper {
     .bef-toggle {
+      color: $gray;
       font-size: .8em;
     }
     label {
       cursor: pointer;
       font-weight: normal;
-      @include link-colors(grey, $active-color, $active-color, grey);
+      @include link-colors($gray, $active-color, $active-color, $gray);
     }
     .highlight label {
-      font-weight: bold;
+      color: $active-color;
     }
   }
   .views-submit-button {
