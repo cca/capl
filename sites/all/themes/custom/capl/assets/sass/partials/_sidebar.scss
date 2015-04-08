@@ -58,7 +58,8 @@ html.js fieldset.collapsible .fieldset-legend {
   .fieldset-wrapper {
     .bef-toggle {
       color: $gray;
-      font-size: .8em;
+      font-size: $small-font-size;
+      @include link-colors($gray, $black, $black, $gray);
     }
     label {
       cursor: pointer;

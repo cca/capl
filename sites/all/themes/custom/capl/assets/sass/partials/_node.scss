@@ -2,19 +2,14 @@
 // --------------------------------------------------------
 
 .node-teaser {
-  h2 {
-    font-size: 1.1em;
+  h4 {
     margin: .25em 0 0 ;
     a {
-      @include link-colors(black, grey, grey, black);
-      font-style: normal;
-      font-size: 1em;
+      @include link-colors($black, $blue, $blue, $black);
     }
   }
   a {
-    @include link-colors(grey, black, black, grey);
-    font-weight: bold;
-    font-style: italic;
+    @include link-colors($gray, $black, $black, $gray);
   }
 }
 
