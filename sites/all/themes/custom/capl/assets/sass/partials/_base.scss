@@ -10,15 +10,13 @@ body {
 p {
   font-weight: $font-weight-light;
 }
-// reduce margin after header
-h3 +p,
-h2 + p {
-  margin-top: 0;
-}
 // h1-h6
 #{headings(1,6)}{
   @extend %base-font;
   line-height: 1.3;
+  & + p { // reduce paragraph margin after header
+    margin-top: 0;
+  }
 }
 
 h1 {
