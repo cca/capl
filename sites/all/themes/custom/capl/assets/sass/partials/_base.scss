@@ -148,15 +148,21 @@ a.pdf {
     @include breakpoint($desktop) {
       @include box-sizing(border-box);
       @include span(6.5 of 8 last);
-      padding: 3em 1em;
+      font-size: 3em;
+      line-height: 1.1em;
+      padding: 1em 1em;
     }
-    img {
-      @include breakpoint($hand) {
-        width: 100%;
-      }
-      @include breakpoint($gthand) {
-        width: 50%;
-      }
+    @include breakpoint($tablet) {
+      @include box-sizing(border-box);
+      @include span(6.5 of 8 last);
+      font-size: 2em;
+      line-height: 1.1em;
+      padding: 1em 1em;
+    }
+    @include breakpoint($hand) {
+      font-size: 1.3em;
+      line-height: 1.1em;
+      padding: 2em 3em;
     }
   }
 }

@@ -470,23 +470,35 @@ a.pdf {
     width: 80.76923%;
     float: right;
     margin-right: 0;
-    padding: 3em 1em;
+    font-size: 3em;
+    line-height: 1.1em;
+    padding: 1em 1em;
+  }
+}
+@media (min-width: 481px) and (max-width: 800px) {
+  /* line 146, ../sass/partials/_base.scss */
+  .front .logo {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 80.76923%;
+    float: right;
+    margin-right: 0;
+    font-size: 2em;
+    line-height: 1.1em;
+    padding: 1em 1em;
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 153, ../sass/partials/_base.scss */
-  .front .logo img {
-    width: 100%;
-  }
-}
-@media (min-width: 481px) {
-  /* line 153, ../sass/partials/_base.scss */
-  .front .logo img {
-    width: 50%;
+  /* line 146, ../sass/partials/_base.scss */
+  .front .logo {
+    font-size: 1.3em;
+    line-height: 1.1em;
+    padding: 2em 3em;
   }
 }
 
-/* line 164, ../sass/partials/_base.scss */
+/* line 170, ../sass/partials/_base.scss */
 .logo {
   font-weight: bold;
   padding-bottom: 2em;
@@ -494,34 +506,34 @@ a.pdf {
   margin-top: -18px;
 }
 @media (min-width: 801px) {
-  /* line 164, ../sass/partials/_base.scss */
+  /* line 170, ../sass/partials/_base.scss */
   .logo {
     font-size: 1.7em;
     margin-top: -22px;
   }
 }
 @media (min-width: 481px) and (max-width: 800px) {
-  /* line 164, ../sass/partials/_base.scss */
+  /* line 170, ../sass/partials/_base.scss */
   .logo {
     font-size: 1.5em;
     margin-top: -20px;
   }
 }
-/* line 177, ../sass/partials/_base.scss */
+/* line 183, ../sass/partials/_base.scss */
 .logo a:hover {
   color: #3F484C;
 }
-/* line 180, ../sass/partials/_base.scss */
+/* line 186, ../sass/partials/_base.scss */
 .logo img {
   height: auto;
   width: 400px;
 }
-/* line 184, ../sass/partials/_base.scss */
+/* line 190, ../sass/partials/_base.scss */
 .logo .plus {
   color: #0db2df;
 }
 
-/* line 189, ../sass/partials/_base.scss */
+/* line 195, ../sass/partials/_base.scss */
 .page-header {
   width: 100%;
   float: right;
@@ -545,24 +557,24 @@ a.active:hover, a.active-trail:hover, a:hover {
 a.active, a:active, a.active-trail {
   color: #7C8689;
 }
-/* line 196, ../sass/partials/_base.scss */
+/* line 202, ../sass/partials/_base.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 201, ../sass/partials/_base.scss */
+/* line 207, ../sass/partials/_base.scss */
 .text-center {
   clear: both;
 }
 
 @media (min-width: 801px) {
-  /* line 204, ../sass/partials/_base.scss */
+  /* line 210, ../sass/partials/_base.scss */
   .region-content {
     padding-left: 100px;
   }
 }
 
-/* line 212, ../sass/partials/_base.scss */
+/* line 218, ../sass/partials/_base.scss */
 .sr-only {
   position: absolute;
   width: 1px;
