@@ -609,11 +609,19 @@ a:hover {
   }
 }
 /* line 19, ../sass/partials/_blocks.scss */
-#block-block-3 a {
-  text-decoration: underline;
+#block-block-3 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 24, ../sass/partials/_blocks.scss */
+#block-block-3 li a {
+  color: #7C8689;
+  font-size: 0.8em;
+  text-decoration: none;
 }
 
-/* line 25, ../sass/partials/_blocks.scss */
+/* line 32, ../sass/partials/_blocks.scss */
 .block-views-our-programs {
   clear: both;
 }
