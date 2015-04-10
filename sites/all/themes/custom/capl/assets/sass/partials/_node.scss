@@ -30,7 +30,20 @@
 .node-type-program {
   .field-name-body {
     @include breakpoint($desktop) {
+      width: 80%;
       padding-left: 100px;
+    }
+  }
+  .view-projects { // related projects block
+    @include breakpoint($desktop) {
+      width: 90%;
+    }
+    &:before {
+      content: 'Program Case Studies';
+      margin-bottom: 0.3em;
+    }
+    .node-teaser {
+      padding-left: 0;
     }
   }
 }
