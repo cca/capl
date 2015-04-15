@@ -106,6 +106,9 @@
       display: none;
     }
   }
+  h4 {
+    color: $black;
+  }
   .field {
     margin-bottom: .75em;
     @include breakpoint($hand) {
