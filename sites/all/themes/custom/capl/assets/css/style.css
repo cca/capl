@@ -523,7 +523,7 @@ a.pdf {
 @media (min-width: 0) and (max-width: 480px) {
   /* line 171, ../sass/partials/_base.scss */
   .logo {
-    font-size: 1em;
+    font-size: 0.8em;
     margin-top: -20px;
   }
 }

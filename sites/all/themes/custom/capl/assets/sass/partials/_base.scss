@@ -182,7 +182,7 @@ a.pdf {
     margin-top: -20px;
   }
   @include breakpoint($hand) {
-    font-size: 1em;
+    font-size: $small-font-size;
     margin-top: -20px;
   }
   a:hover {
