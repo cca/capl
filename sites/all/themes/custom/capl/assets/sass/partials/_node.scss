@@ -66,13 +66,16 @@
     width: calc(100% / 3);
   }
   @include breakpoint($tablet) {
-    min-height: 225px;
+    min-height: 275px;
     width: calc(100% / 2);
   }
   @include breakpoint($hand) {
     width: 100%;
   }
   img {
+    @include breakpoint($hand) {
+      padding-top: 35px;
+    }
     height: auto;
     width: 100%;
   }
