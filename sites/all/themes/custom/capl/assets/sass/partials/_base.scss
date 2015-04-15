@@ -142,6 +142,7 @@ a.pdf {
   font-size: .9em;
 }
 
+/* homepage logo */
 .front  {
   .logo {
     padding: 1em 0;
@@ -167,6 +168,7 @@ a.pdf {
   }
 }
 
+/* subpage top logo */
 .logo {
   font-weight: bold;
   padding-bottom: 2em;
@@ -177,7 +179,11 @@ a.pdf {
     margin-top: -22px;
   }
   @include breakpoint($tablet) {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin-top: -20px;
+  }
+  @include breakpoint($hand) {
+    font-size: 1em;
     margin-top: -20px;
   }
   a:hover {
