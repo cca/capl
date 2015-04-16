@@ -35,11 +35,9 @@
         CCA Center for Art <span class="plus">+</span><br /> Public Life<br />
       </a>
     </div>
-    <!--
-    <div class="description">
-    Collaborations among California College of the Arts students, faculty and community partners.
+    <div class="tagline">
+      Collaborations among California College of the Arts students, faculty and community partners.
     </div>
-    -->
     <div class="page-header">
       <?php if ($title): ?>
         <h1 class="title"><?php print $title; ?></h1>

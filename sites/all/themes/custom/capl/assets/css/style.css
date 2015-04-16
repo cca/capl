@@ -13,6 +13,16 @@ input[type="submit"], #user-login-form a {
   background: grey;
 }
 
+/* line 16, ../sass/global/_silents.scss */
+.front .tagline:after,
+.front .logo:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
 /* line 41, ../sass/global/_layout.scss */
 .container {
   padding: 1em;
@@ -457,12 +467,9 @@ a.pdf {
 }
 
 /* homepage logo */
-/* line 146, ../sass/partials/_base.scss */
-.front .logo {
-  padding: 1em 0;
-}
-@media (min-width: 801px) {
+@media (min-width: 481px) {
   /* line 146, ../sass/partials/_base.scss */
+  .front .tagline,
   .front .logo {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -470,36 +477,59 @@ a.pdf {
     width: 80.76923%;
     float: right;
     margin-right: 0;
-    font-size: 3em;
-    line-height: 1.1em;
-    padding: 1em 1em;
+    padding: 1em 1em 0 0;
+  }
+}
+/* line 156, ../sass/partials/_base.scss */
+.front .tagline {
+  color: #7C8689;
+}
+@media (min-width: 801px) {
+  /* line 156, ../sass/partials/_base.scss */
+  .front .tagline {
+    font-size: 1.4em;
+    padding: 0.5em 12em 2em 0;
   }
 }
 @media (min-width: 481px) and (max-width: 800px) {
-  /* line 146, ../sass/partials/_base.scss */
-  .front .logo {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 80.76923%;
-    float: right;
-    margin-right: 0;
-    font-size: 2em;
-    line-height: 1.1em;
-    padding: 1em 1em;
+  /* line 156, ../sass/partials/_base.scss */
+  .front .tagline {
+    font-size: 1.2em;
+    padding: 0.5em 10em 2em 0;
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 146, ../sass/partials/_base.scss */
+  /* line 156, ../sass/partials/_base.scss */
+  .front .tagline {
+    font-size: 0.9em;
+    padding: 0 4em 2em 4em;
+  }
+}
+@media (min-width: 801px) {
+  /* line 171, ../sass/partials/_base.scss */
+  .front .logo {
+    font-size: 3em;
+    line-height: 1.1em;
+  }
+}
+@media (min-width: 481px) and (max-width: 800px) {
+  /* line 171, ../sass/partials/_base.scss */
+  .front .logo {
+    font-size: 2em;
+    line-height: 1.1em;
+  }
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 171, ../sass/partials/_base.scss */
   .front .logo {
     font-size: 1.3em;
     line-height: 1.1em;
-    padding: 2em 3em;
+    padding: 2em 3em 1em 2.8em;
   }
 }
 
 /* subpage top logo */
-/* line 171, ../sass/partials/_base.scss */
+/* line 189, ../sass/partials/_base.scss */
 .logo {
   font-weight: bold;
   padding-bottom: 2em;
@@ -507,41 +537,41 @@ a.pdf {
   margin-top: -18px;
 }
 @media (min-width: 801px) {
-  /* line 171, ../sass/partials/_base.scss */
+  /* line 189, ../sass/partials/_base.scss */
   .logo {
     font-size: 1.7em;
     margin-top: -22px;
   }
 }
 @media (min-width: 481px) and (max-width: 800px) {
-  /* line 171, ../sass/partials/_base.scss */
+  /* line 189, ../sass/partials/_base.scss */
   .logo {
     font-size: 1.2em;
     margin-top: -20px;
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 171, ../sass/partials/_base.scss */
+  /* line 189, ../sass/partials/_base.scss */
   .logo {
     font-size: 0.8em;
     margin-top: -20px;
   }
 }
-/* line 188, ../sass/partials/_base.scss */
+/* line 206, ../sass/partials/_base.scss */
 .logo a:hover {
   color: #3F484C;
 }
-/* line 191, ../sass/partials/_base.scss */
+/* line 209, ../sass/partials/_base.scss */
 .logo img {
   height: auto;
   width: 400px;
 }
-/* line 195, ../sass/partials/_base.scss */
+/* line 213, ../sass/partials/_base.scss */
 .logo .plus {
   color: #0db2df;
 }
 
-/* line 200, ../sass/partials/_base.scss */
+/* line 218, ../sass/partials/_base.scss */
 .page-header {
   width: 100%;
   float: right;
@@ -565,24 +595,24 @@ a.active:hover, a.active-trail:hover, a:hover {
 a.active, a:active, a.active-trail {
   color: #7C8689;
 }
-/* line 207, ../sass/partials/_base.scss */
+/* line 225, ../sass/partials/_base.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 212, ../sass/partials/_base.scss */
+/* line 230, ../sass/partials/_base.scss */
 .text-center {
   clear: both;
 }
 
 @media (min-width: 801px) {
-  /* line 215, ../sass/partials/_base.scss */
+  /* line 233, ../sass/partials/_base.scss */
   .region-content {
     padding-left: 100px;
   }
 }
 
-/* line 223, ../sass/partials/_base.scss */
+/* line 241, ../sass/partials/_base.scss */
 .sr-only {
   position: absolute;
   width: 1px;
