@@ -50,7 +50,15 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
-  <?php print $scripts; ?>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.0/JSXTransformer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    
+  <?php //print $scripts; ?>
+
+
   <meta http-equiv="X-UA-Compatible" content="IE=EDGE; IE=10; IE=9; IE=8; IE=7; " />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>

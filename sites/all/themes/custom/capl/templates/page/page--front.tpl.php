@@ -72,7 +72,10 @@
       </div>
     <?php endif; ?>
     <div id="content" >
-      <?php print render($page['content']); ?>
+
+      <!-- render views/json with react.js -->
+      <script type="text/jsx;harmony=true" src="/sites/all/themes/custom/capl/assets/js/scripts/example.js"></script>
+
     </div>
   </div>
   <?php if ($page['sidebar_second']): ?>
