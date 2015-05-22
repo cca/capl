@@ -1,27 +1,21 @@
 var Project = React.createClass({
 
   render: function() {
-    <div className='project'>
-      <span>{this.props.title}</span>
-    </div>
-
+    return <li key={this.props.key}>{this.props.title}</li>
   }
-
 });
 
 var ProjectList = React.createClass({
 
   getInitialState: function() {
-    return {
-      dataVar1: ''
-    };
+    return {projects: []};
   },
 
   componentDidMount: function() {
-    $.get(this.props.projects, function(result) {
+    $.get(this.props.projectsView, function(data) {
       if (this.isMounted()) {
         this.setState({
-          dataVar1: result
+          projects: data
         });
 
       }
@@ -29,18 +23,18 @@ var ProjectList = React.createClass({
   },
 
   render: function() {
-    
-    console.log(this.state.dataVar1);
+
+    var projects = this.state.projects.map(function(project) {
+      return <Project key={project.nid} title={project.title} />
+    });
 
     return (
-      <div>
-        {this.state.dataVar1}
-      </div>
+      <ul>{projects}</ul>
     );
   }
 });
 
 React.render(
-  <ProjectList projects="http://capl.local/nodes/projects" />,
+  <ProjectList projectsView="http://capl.local/nodes/projects" />,
   document.getElementById('content')
 );
