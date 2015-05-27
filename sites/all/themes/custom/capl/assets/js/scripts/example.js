@@ -1,7 +1,30 @@
+var ProjectImage = React.createClass({
+
+  // render image using Drupal image style preset
+  render: function() {
+    // path to our image style
+    var imageCacheUrl = 'sites/default/files/styles/project_key/public/project_image/';
+    // get file name from original image url
+    var fileName = this.props.image.split('/').pop();
+    return <img src={imageCacheUrl + fileName} />
+  }
+
+});
+
 var Project = React.createClass({
 
   render: function() {
-    return <li key={this.props.key}>{this.props.title}</li>
+    return (
+      <li key={this.props.key}>
+        <div className="imageWrapper">
+          <ProjectImage image={this.props.data.field_project_image} />
+          <div className="textOverlay">
+            <span className="title">{this.props.data.title}</span>
+            <span className="description">{this.props.data.body}</span>
+          </div>
+        </div>
+      </li>
+    )
   }
 });
 
@@ -17,7 +40,6 @@ var ProjectList = React.createClass({
         this.setState({
           projects: data
         });
-
       }
     }.bind(this));
   },
@@ -25,16 +47,16 @@ var ProjectList = React.createClass({
   render: function() {
 
     var projects = this.state.projects.map(function(project) {
-      return <Project key={project.nid} title={project.title} />
+      return <Project key={project.nid} data={project} />
     });
 
     return (
-      <ul>{projects}</ul>
+      <ul className="projectList">{projects}</ul>
     );
   }
 });
 
 React.render(
-  <ProjectList projectsView="http://capl.local/nodes/projects" />,
+  <ProjectList projectsView="nodes/projects" />,
   document.getElementById('content')
 );
