@@ -12,6 +12,8 @@
 ?>
 
 <!-- Mobile Nav button -->
+
+
 <div class="container nav-wrapper">
   <input type="checkbox" id="nav-trigger" class="nav-trigger" />
   <label for="nav-trigger">
@@ -72,10 +74,7 @@
       </div>
     <?php endif; ?>
     <div id="content" >
-
-      <!-- render views/json with react.js -->
-      <script type="text/jsx;harmony=true" src="/sites/all/themes/custom/capl/assets/js/scripts/example.js"></script>
-
+      <?php print render($page['content']); ?>
     </div>
   </div>
   <?php if ($page['sidebar_second']): ?>
