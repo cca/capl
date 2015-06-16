@@ -103,77 +103,77 @@ input[type="submit"], #user-login-form a {
 
   /* line 89, ../sass/global/_layout.scss */
   .no-sidebars .main-content .group-left {
-    width: 31.03448%;
+    width: 27.27273%;
     float: left;
-    margin-left: 68.96552%;
+    margin-left: 72.72727%;
     margin-right: -100%;
   }
   /* line 92, ../sass/global/_layout.scss */
   .no-sidebars .main-content .group-right {
-    width: 65.51724%;
+    width: 63.63636%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 9.09091%;
   }
 
   /* line 98, ../sass/global/_layout.scss */
   .sidebar-first .sidebar-first {
-    width: 22.41379%;
+    width: 18.18182%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 9.09091%;
   }
 
   /* line 101, ../sass/global/_layout.scss */
   .one-sidebar.sidebar-first .main-content {
-    width: 74.13793%;
+    width: 72.72727%;
     float: right;
     margin-right: 0;
   }
 
   /* line 106, ../sass/global/_layout.scss */
   .sidebar-second .sidebar-second {
-    width: 13.7931%;
+    width: 9.09091%;
     float: right;
     margin-right: 0;
   }
 
   /* line 109, ../sass/global/_layout.scss */
   .one-sidebar.sidebar-second .main-content {
-    width: 82.75862%;
+    width: 81.81818%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 9.09091%;
   }
 
   /* line 114, ../sass/global/_layout.scss */
   .two-sidebars .sidebar-first {
-    width: 21.05263%;
+    width: 14.28571%;
     float: left;
-    margin-right: 5.26316%;
+    margin-right: 14.28571%;
   }
 
   /* line 117, ../sass/global/_layout.scss */
   .two-sidebars .main-content {
-    width: 47.36842%;
+    width: 42.85714%;
     float: left;
-    margin-right: 5.26316%;
+    margin-right: 14.28571%;
   }
 
   /* line 120, ../sass/global/_layout.scss */
   .two-sidebars .sidebar-second {
-    width: 21.05263%;
+    width: 14.28571%;
     float: right;
     margin-right: 0;
   }
 
   /* line 125, ../sass/global/_layout.scss */
   #block-block-1 {
-    width: 48.27586%;
+    width: 45.45455%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 9.09091%;
   }
 
   /* line 128, ../sass/global/_layout.scss */
   #block-menu-menu-footer-menu {
-    width: 48.27586%;
+    width: 45.45455%;
     float: right;
     margin-right: 0;
   }
@@ -202,77 +202,77 @@ input[type="submit"], #user-login-form a {
 
   /* line 145, ../sass/global/_layout.scss */
   .no-sidebars .main-content .group-left {
-    width: 31.03448%;
+    width: 27.27273%;
     float: left;
-    margin-left: 68.96552%;
+    margin-left: 72.72727%;
     margin-right: -100%;
   }
   /* line 148, ../sass/global/_layout.scss */
   .no-sidebars .main-content .group-right {
-    width: 65.51724%;
+    width: 63.63636%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 9.09091%;
   }
 
   /* line 154, ../sass/global/_layout.scss */
   .sidebar-first .sidebar-first {
-    width: 16.66667%;
+    width: 13.33333%;
     float: left;
-    margin-right: 2.5641%;
+    margin-right: 6.66667%;
   }
 
   /* line 157, ../sass/global/_layout.scss */
   .one-sidebar.sidebar-first .main-content {
-    width: 80.76923%;
+    width: 80%;
     float: right;
     margin-right: 0;
   }
 
   /* line 162, ../sass/global/_layout.scss */
   .one-sidebar.sidebar-second .sidebar-second {
-    width: 31.03448%;
+    width: 27.27273%;
     float: right;
     margin-right: 0;
   }
 
   /* line 165, ../sass/global/_layout.scss */
   .one-sidebar.sidebar-second .main-content {
-    width: 65.51724%;
+    width: 63.63636%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 9.09091%;
   }
 
   /* line 170, ../sass/global/_layout.scss */
   .two-sidebars .main-content {
-    width: 65.51724%;
+    width: 63.63636%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 9.09091%;
   }
 
   /* line 173, ../sass/global/_layout.scss */
   .two-sidebars .sidebar-first {
-    width: 13.7931%;
+    width: 9.09091%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 9.09091%;
   }
 
   /* line 176, ../sass/global/_layout.scss */
   .two-sidebars .sidebar-second {
-    width: 13.7931%;
+    width: 9.09091%;
     float: right;
     margin-right: 0;
   }
 
   /* line 181, ../sass/global/_layout.scss */
   #block-block-1 {
-    width: 48.27586%;
+    width: 45.45455%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 9.09091%;
   }
 
   /* line 184, ../sass/global/_layout.scss */
   #block-menu-menu-footer-menu {
-    width: 48.27586%;
+    width: 45.45455%;
     float: right;
     margin-right: 0;
   }
@@ -491,7 +491,7 @@ a.pdf {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 80.76923%;
+    width: 80%;
     float: right;
     margin-right: 0;
     padding: 1em 1em 0 0;
@@ -1378,52 +1378,53 @@ label[for="nav-trigger"] .icon-bar {
   }
 }
 /* line 112, ../sass/partials/_node.scss */
+.group-left .field .field-label,
 .group-left h4 {
   color: #3F484C;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 29px;
+  margin: 0;
 }
-/* line 115, ../sass/partials/_node.scss */
+/* line 120, ../sass/partials/_node.scss */
 .group-left .field {
   margin-bottom: .75em;
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 115, ../sass/partials/_node.scss */
+  /* line 120, ../sass/partials/_node.scss */
   .group-left .field {
     display: none;
   }
 }
 @media (min-width: 481px) {
-  /* line 115, ../sass/partials/_node.scss */
+  /* line 120, ../sass/partials/_node.scss */
   .group-left .field {
     display: block;
   }
 }
-/* line 123, ../sass/partials/_node.scss */
+/* line 128, ../sass/partials/_node.scss */
 .group-left .field .field-items {
-  color: grey;
-  font-size: .9em;
-}
-/* line 126, ../sass/partials/_node.scss */
-.group-left .field .field-items a {
-  text-decoration: underline;
+  color: #3F484C;
+  font-weight: 300;
 }
 /* line 2, ../sass/global/_mixins.scss */
 .group-left .field .field-items a, .group-left .field .field-items a:link {
-  color: grey;
+  color: #7C8689;
 }
 /* line 7, ../sass/global/_mixins.scss */
 .group-left .field .field-items a:visited, .group-left .field .field-items a:link:visited {
-  color: grey;
+  color: #7C8689;
 }
 /* line 18, ../sass/global/_mixins.scss */
 .group-left .field .field-items a.active:hover, .group-left .field .field-items a.active-trail:hover, .group-left .field .field-items a:hover {
-  color: black;
+  color: #0DB2DF;
 }
 /* line 25, ../sass/global/_mixins.scss */
 .group-left .field .field-items a.active, .group-left .field .field-items a:active, .group-left .field .field-items a.active-trail {
-  color: black;
+  color: #0DB2DF;
 }
 
-/* line 135, ../sass/partials/_node.scss */
+/* line 139, ../sass/partials/_node.scss */
 .media-youtube-video {
   height: 0;
   overflow: hidden;
@@ -1431,7 +1432,7 @@ label[for="nav-trigger"] .icon-bar {
   padding-bottom: 56.25%;
   padding-top: 30px;
 }
-/* line 141, ../sass/partials/_node.scss */
+/* line 145, ../sass/partials/_node.scss */
 .media-youtube-video iframe,
 .media-youtube-video object,
 .media-youtube-video embed {
@@ -1442,7 +1443,7 @@ label[for="nav-trigger"] .icon-bar {
   height: 100%;
 }
 
-/* line 154, ../sass/partials/_node.scss */
+/* line 158, ../sass/partials/_node.scss */
 .field-name-field-program-image img {
   height: auto;
   width: 100%;
