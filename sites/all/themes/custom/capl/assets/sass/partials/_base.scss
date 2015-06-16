@@ -82,6 +82,14 @@ hr {
   height: 1px;
 }
 
+.lead-paragraph {
+  color: $gray-dark;
+  font-family: Georgia;
+  font-size: 2em;
+  font-style: italic;
+  line-height: 1.35em;
+}
+
 .marker {
   background: $black;
   color: white;
