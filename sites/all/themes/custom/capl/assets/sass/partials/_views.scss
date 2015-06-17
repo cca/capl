@@ -21,3 +21,20 @@
     font-size: $small-font-size;
   }
 }
+
+.view-programs {
+  .field-name-field-program-logo {
+    border: 1px solid $black;
+    height: 150px;
+    line-height: 150px;
+    overflow: hidden;
+    padding: 25px;
+    text-align: center;
+    img {
+      vertical-align: middle;
+      max-height: 130px;
+      padding: 0;
+      width: auto;
+    }
+  }
+}
