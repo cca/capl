@@ -23,6 +23,11 @@
 }
 
 .view-programs {
+  .field-name-body {
+    height: 150px;
+    overflow: hidden;
+    padding-bottom: 30px;
+  }
   .field-name-field-program-logo {
     border: 1px solid $black;
     height: 150px;
