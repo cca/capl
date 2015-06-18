@@ -1820,6 +1820,12 @@ ul.primary li a:hover {
 }
 
 /* line 26, ../sass/partials/_views.scss */
+.view-programs .field-name-body {
+  height: 150px;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+/* line 31, ../sass/partials/_views.scss */
 .view-programs .field-name-field-program-logo {
   border: 1px solid #3F484C;
   height: 150px;
@@ -1828,7 +1834,7 @@ ul.primary li a:hover {
   padding: 25px;
   text-align: center;
 }
-/* line 33, ../sass/partials/_views.scss */
+/* line 38, ../sass/partials/_views.scss */
 .view-programs .field-name-field-program-logo img {
   vertical-align: middle;
   max-height: 130px;
