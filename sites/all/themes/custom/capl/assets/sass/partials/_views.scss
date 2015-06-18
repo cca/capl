@@ -2,17 +2,29 @@
 // --------------------------------------------------------
 
 .view-partners {
+  h2 a {
+    @extend %sr-only;
+  }
   .views-row {
-    h2 a {
-      font-size: 1.3em;
-      font-weight: bold;
+    float: left;
+    padding: 20px;
+    width: 20%;
+  }
+  .field-name-field-partner-logo {
+    border: 1px solid $black;
+    height: 155px;
+    line-height: 155px;
+    overflow: hidden;
+    padding: 5px;
+    width: 155px;
+
+    text-align: center;
+    img {
+      vertical-align: middle;
+      max-height: 100px;
+      padding: 0;
+      width: auto;
     }
-    a {
-      @include link-colors(black, grey, grey, black);
-      font-weight: normal;
-      text-decoration: underline;
-    }
-    margin-bottom: 1.5em;
   }
 }
 
