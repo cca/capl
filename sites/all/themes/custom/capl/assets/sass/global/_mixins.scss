@@ -55,3 +55,16 @@
     }
   }
 }
+
+@mixin opacity($opacity) {
+  @include for-legacy-browser("ie", "8", $threshold: $opacity-usage-threshold) {
+    @if $opacity == 1 {
+      filter: unquote("progid:DXImageTransform.Microsoft.Alpha(enabled=false)");
+    }
+    @else {
+      filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})");
+    }
+  }
+
+  opacity: $opacity;
+}
