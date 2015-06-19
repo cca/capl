@@ -11,19 +11,27 @@
     width: 20%;
   }
   .field-name-field-partner-logo {
-    border: 1px solid $black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lighten($black, 40%);
     height: 155px;
     line-height: 155px;
     overflow: hidden;
     padding: 5px;
     width: 155px;
-
     text-align: center;
     img {
       vertical-align: middle;
       max-height: 100px;
+      @include opacity(0.6);
       padding: 0;
       width: auto;
+    }
+    &:hover {
+      border-color: $black;
+      img {
+        @include opacity(1.0);
+      }
     }
   }
 }
