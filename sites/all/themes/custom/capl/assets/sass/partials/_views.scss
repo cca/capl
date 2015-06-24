@@ -25,7 +25,7 @@
       max-height: 100px;
       @include opacity(0.6);
       padding: 0;
-      width: auto;
+      max-width: auto;
     }
     &:hover {
       border-color: $black;
@@ -52,14 +52,15 @@
     border: 1px solid $black;
     height: 150px;
     line-height: 150px;
+    margin-top: 30px;
     overflow: hidden;
     padding: 25px;
     text-align: center;
     img {
-      vertical-align: middle;
       max-height: 130px;
-      padding: 0;
       max-width: 100%;
+      padding: 0;
+      vertical-align: middle;
     }
   }
 }
