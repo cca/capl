@@ -2,30 +2,27 @@
 // --------------------------------------------------------
 
 .view-partners {
-  h2 a {
-    @extend %sr-only;
-  }
   .views-row {
     float: left;
-    padding: 20px;
-    width: 20%;
+    padding: 2%;
   }
   .views-field-field-partner-logo {
     border-width: 1px;
     border-style: solid;
     border-color: lighten($black, 40%);
-    height: 155px;
-    line-height: 155px;
+    height: 125px;
+    line-height: 125px;
     overflow: hidden;
-    padding: 5px;
-    width: 155px;
+    padding: 1%;
+    width: 125px;
     text-align: center;
+
     img {
       vertical-align: middle;
       max-height: 100px;
       @include opacity(0.6);
       padding: 0;
-      max-width: auto;
+      max-width: 100%;
     }
     &:hover {
       border-color: $black;
