@@ -1,6 +1,61 @@
 // Views
 // --------------------------------------------------------
 
+/* projects */
+.view-projects .view-content{
+  > div {
+    float: left;
+    line-height: 0;
+    margin: 2% 0;
+    overflow: hidden; /* keep text overlay hidden */
+    position: relative;
+    width: 100%;
+    @include breakpoint($mid) {
+      margin: 2%;
+      width: 46%;
+    }
+    @include breakpoint($full) {
+      margin: 1%;
+      width: 31.3%;
+    }
+    &:hover {
+      .views-field-title {
+        top: 10%;
+      }
+      .description {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+  .views-field-title {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    left: 0;
+    line-height: 1em;
+    padding: 5%;
+    position: absolute;
+    top: 70%;
+    transition: top 0.5s;
+    transition-delay: 0.25s;
+    width: 90%;
+  }
+  .title {
+    font-weight: bold;
+    margin-right: 10%;
+  }
+  .description {
+    opacity: 0;
+    transition: visibility 1.0s, opacity 1.0s;
+    visibility: hidden;
+  }
+}
+
+/* partners */
 .view-partners {
   .views-row {
     float: left;
@@ -33,12 +88,7 @@
   }
 }
 
-.view-projects {
-  .field-name-field-partner {
-    font-size: $small-font-size;
-  }
-}
-
+/* programs */
 .view-programs {
   .field-name-body {
     height: 150px;
