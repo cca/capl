@@ -28,12 +28,16 @@
       }
     }
   }
+  a,
+  a:hover {
+    color: white;
+  }
   img {
     height: auto;
     width: 100%;
   }
   .views-field-title {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(63, 72, 76, 0.8); /* convert dark-gray hex #3F484C to rgb */
     height: 100%;
     left: 0;
     line-height: 1em;
@@ -49,7 +53,12 @@
     margin-right: 10%;
   }
   .description {
+    border-top: 1px solid $blue;
+    color: white;
+    font-size: $small-font-size;
+    margin-top: 0.5em;
     opacity: 0;
+    padding-top: 0.5em;
     transition: visibility 1.0s, opacity 1.0s;
     visibility: hidden;
   }
