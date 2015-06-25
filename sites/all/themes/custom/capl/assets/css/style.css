@@ -1802,12 +1802,77 @@ ul.primary li a:hover {
   color: grey;
 }
 
-/* line 5, ../sass/partials/_views.scss */
+/* projects */
+/* line 6, ../sass/partials/_views.scss */
+.view-projects .view-content > div {
+  float: left;
+  line-height: 0;
+  margin: 2% 0;
+  overflow: hidden;
+  /* keep text overlay hidden */
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 700px) {
+  /* line 6, ../sass/partials/_views.scss */
+  .view-projects .view-content > div {
+    margin: 2%;
+    width: 46%;
+  }
+}
+@media (min-width: 1080px) {
+  /* line 6, ../sass/partials/_views.scss */
+  .view-projects .view-content > div {
+    margin: 1%;
+    width: 31.3%;
+  }
+}
+/* line 22, ../sass/partials/_views.scss */
+.view-projects .view-content > div:hover .views-field-title {
+  top: 10%;
+}
+/* line 25, ../sass/partials/_views.scss */
+.view-projects .view-content > div:hover .description {
+  opacity: 1;
+  visibility: visible;
+}
+/* line 31, ../sass/partials/_views.scss */
+.view-projects .view-content img {
+  height: auto;
+  width: 100%;
+}
+/* line 35, ../sass/partials/_views.scss */
+.view-projects .view-content .views-field-title {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 100%;
+  left: 0;
+  line-height: 1em;
+  padding: 5%;
+  position: absolute;
+  top: 70%;
+  transition: top 0.5s;
+  transition-delay: 0.25s;
+  width: 90%;
+}
+/* line 47, ../sass/partials/_views.scss */
+.view-projects .view-content .title {
+  font-weight: bold;
+  margin-right: 10%;
+}
+/* line 51, ../sass/partials/_views.scss */
+.view-projects .view-content .description {
+  opacity: 0;
+  transition: visibility 1.0s, opacity 1.0s;
+  visibility: hidden;
+}
+
+/* partners */
+/* line 60, ../sass/partials/_views.scss */
 .view-partners .views-row {
   float: left;
   padding: 2%;
 }
-/* line 9, ../sass/partials/_views.scss */
+/* line 64, ../sass/partials/_views.scss */
 .view-partners .views-field-field-partner-logo {
   border-width: 1px;
   border-style: solid;
@@ -1819,7 +1884,7 @@ ul.primary li a:hover {
   width: 125px;
   text-align: center;
 }
-/* line 20, ../sass/partials/_views.scss */
+/* line 75, ../sass/partials/_views.scss */
 .view-partners .views-field-field-partner-logo img {
   vertical-align: middle;
   max-height: 100px;
@@ -1828,28 +1893,24 @@ ul.primary li a:hover {
   padding: 0;
   max-width: 100%;
 }
-/* line 27, ../sass/partials/_views.scss */
+/* line 82, ../sass/partials/_views.scss */
 .view-partners .views-field-field-partner-logo:hover {
   border-color: #3F484C;
 }
-/* line 29, ../sass/partials/_views.scss */
+/* line 84, ../sass/partials/_views.scss */
 .view-partners .views-field-field-partner-logo:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
 
-/* line 37, ../sass/partials/_views.scss */
-.view-projects .field-name-field-partner {
-  font-size: 0.8em;
-}
-
-/* line 43, ../sass/partials/_views.scss */
+/* programs */
+/* line 93, ../sass/partials/_views.scss */
 .view-programs .field-name-body {
   height: 150px;
   overflow: hidden;
   padding-bottom: 30px;
 }
-/* line 48, ../sass/partials/_views.scss */
+/* line 98, ../sass/partials/_views.scss */
 .view-programs .field-name-field-program-logo {
   border: 1px solid #3F484C;
   height: 150px;
@@ -1859,7 +1920,7 @@ ul.primary li a:hover {
   padding: 25px;
   text-align: center;
 }
-/* line 56, ../sass/partials/_views.scss */
+/* line 106, ../sass/partials/_views.scss */
 .view-programs .field-name-field-program-logo img {
   max-height: 130px;
   max-width: 100%;
