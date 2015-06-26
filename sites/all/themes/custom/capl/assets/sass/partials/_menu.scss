@@ -2,6 +2,10 @@
 .nav-wrapper {
   position: relative;
 }
+// override container padding
+.container.nav-wrapper {
+  padding: 0;
+}
 
 // Trigger and Action
 .nav-trigger {
@@ -10,13 +14,15 @@
   clip: rect(0, 0, 0, 0);
 }
 label[for="nav-trigger"] {
-  position: absolute;
-  right: 13px;
-  top: 30px;
+  position: fixed;
+  right: 70px;
+  top: 0;
   z-index: 40;
-  height: 30px;
+  height: $nav-height;
   width: 30px;
+  margin-top: 0.8em;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
   &:hover .icon-bar {
     background-color: grey;
   }
@@ -27,6 +33,10 @@ label[for="nav-trigger"] {
     height: 4px;
     width: 27px;
   }
+}
+// sticky header classes added with javascript
+label[for="nav-trigger"].nav-up {
+   top: -50px;
 }
 
 // Clicked trigger
