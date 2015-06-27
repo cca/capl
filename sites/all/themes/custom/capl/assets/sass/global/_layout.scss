@@ -38,7 +38,7 @@ $susy: (
 );
 
 // Apply container function.
-.container {
+.main-wrapper {
   padding: 1em;
 }
 .container,
@@ -135,7 +135,7 @@ $susy: (
 //-----------------
 @include breakpoint($desktop) {
   // Full width
-  .container {
+  .main-wrapper {
     @include container(6 of 6);
   }
   .no-sidebars .main-content {
