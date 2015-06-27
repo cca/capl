@@ -15,7 +15,7 @@
 }
 label[for="nav-trigger"] {
   position: fixed;
-  right: 70px;
+  right: 20px;
   top: 0;
   z-index: 40;
   height: $nav-height;
@@ -23,6 +23,12 @@ label[for="nav-trigger"] {
   margin-top: 0.8em;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  @include breakpoint($desktop) {
+    right: 50px;
+  }
+  @include breakpoint($full) {
+    right: 80px;
+  }
   &:hover .icon-bar {
     background-color: grey;
   }
