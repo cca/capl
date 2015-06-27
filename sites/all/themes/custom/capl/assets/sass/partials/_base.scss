@@ -5,7 +5,7 @@ body {
   @extend %base-font;
   color: $black;
   margin: 0;
-  padding-top: $nav-height; // for sticky header
+  padding-top: 100px; // for sticky header
 }
 
 p {
@@ -168,89 +168,6 @@ a.pdf {
 .submitted {
   color: $gray;
   font-size: .9em;
-}
-
-/* homepage logo */
-.front  {
-  .tagline,
-  .logo {
-    @extend %clearfix;
-    @include breakpoint($gthand) {
-      @include box-sizing(border-box);
-      @include span(6.5 of 8 last);
-      padding: 1em 1em 0 0;
-    }
-  }
-
-  .tagline {
-    color: $gray;
-    @include breakpoint($desktop) {
-      font-size: 1.4em;
-      padding: 0.5em 12em 2em 0;
-    }
-    @include breakpoint($tablet) {
-      font-size: 1.2em;
-      padding: 0.5em 10em 2em 0;
-    }
-    @include breakpoint($hand) {
-      font-size: 0.9em;
-      padding: 0 4em 2em 4em;
-    }
-  }
-  .logo {
-    @include breakpoint($desktop) {
-      font-size: 3em;
-      line-height: 1.1em;
-    }
-    @include breakpoint($tablet) {
-      font-size: 2em;
-      line-height: 1.1em;
-    }
-    @include breakpoint($hand) {
-      font-size: 1.3em;
-      line-height: 1.1em;
-      padding: 2em 3em 1em 2.8em;
-    }
-  }
-}
-
-/* subpage top logo */
-.logo {
-  background: white;
-  font-size: 1.2em;
-  font-weight: bold;
-  height: $nav-height;
-  position: fixed;
-  top: 0;
-  transition: all 0.2s ease-in-out;
-  width: 88%;
-  z-index: 1;
-  @include breakpoint($desktop) {
-    font-size: 1.7em;
-  }
-  @include breakpoint($tablet) {
-    font-size: 1.2em;
-  }
-  @include breakpoint($hand) {
-    font-size: $small-font-size;
-  }
-  a:hover {
-    color: $black;
-  }
-  img {
-    height: auto;
-    width: 400px;
-  }
-  .plus {
-    color: #0db2df;
-  }
-}
-// sticky header classes added with javascript
-.logo.nav-up {
-  top: -50px; // same as header height. use variables in LESS/SASS
-}
-.logo.over {
-  border-bottom: 2px solid $gray-dark;
 }
 
 header > .container {
