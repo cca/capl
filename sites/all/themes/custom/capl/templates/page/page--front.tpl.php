@@ -11,31 +11,36 @@
  */
 ?>
 
-<!-- Mobile Nav button -->
+<div class="navbar">
+  <div class="container">
+  <div class="logo">
+    <a href="<?php print $front_page; ?>">
+      CCA Center for Art <span class="plus">+</span> Public Life<br />
+    </a>
+  </div>
+  <!-- Mobile Nav button -->
+  <div class="nav-wrapper">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger">
+      <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </label>
 
-
-<div class="container nav-wrapper">
-  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-  <label for="nav-trigger">
-    <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </label>
-
-  <?php if ($main_menu): ?>
-    <div class="drawer">
-      <?php print render($main_menu_expanded); ?>
-    </div> <!-- /#main-menu -->
-  <?php endif; ?>
+    <?php if ($main_menu): ?>
+      <div class="drawer">
+        <?php print render($main_menu_expanded); ?>
+      </div> <!-- /#main-menu -->
+    <?php endif; ?>
+  </div>
+  </div>
 </div>
 
 <header id="header" class="header" role="header">
   <div class="container">
-    <div class="logo">
-      <a href="<?php print $front_page; ?>">
-        CCA Center for Art <span class="plus">+</span><br /> Public Life<br />
-      </a>
+    <div class="big-logo">
+      CCA Center for Art <span class="plus">+</span> Public Life<br />
     </div>
     <div class="tagline">
       Collaborations among California College of the Arts students, faculty and community partners.

@@ -1,12 +1,20 @@
-/* homepage logo */
+/* homepage logo and tagline */
 .front  {
-  .tagline,
+  .navbar.over .logo {
+    opacity: 1.0;
+  }
   .logo {
+    opacity: 0.0;
+  }
+  .tagline {
+    padding: 2em 0 0 4em;
+  }
+  .tagline,
+  .big-logo {
     @extend %clearfix;
     @include breakpoint($gthand) {
-      @include box-sizing(border-box);
-      @include span(6.5 of 8 last);
-      padding: 1em 1em 0 0;
+      width: 55%;
+      padding-left: 15%;
     }
   }
 
@@ -14,24 +22,22 @@
     color: $gray;
     @include breakpoint($desktop) {
       font-size: 1.4em;
-      padding: 0.5em 12em 2em 0;
     }
     @include breakpoint($tablet) {
       font-size: 1.2em;
-      padding: 0.5em 10em 2em 0;
     }
     @include breakpoint($hand) {
       font-size: 0.9em;
       padding: 0 4em 2em 4em;
     }
   }
-  .logo {
+  .big-logo {
     @include breakpoint($desktop) {
       font-size: 3em;
       line-height: 1.1em;
     }
     @include breakpoint($tablet) {
-      font-size: 2em;
+      font-size: 2.5em;
       line-height: 1.1em;
     }
     @include breakpoint($hand) {
@@ -68,7 +74,7 @@
     height: auto;
     width: 400px;
   }
-  .plus {
-    color: #0db2df;
-  }
+}
+.plus {
+  color: #0db2df;
 }
