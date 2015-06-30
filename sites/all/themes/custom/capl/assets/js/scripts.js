@@ -41,7 +41,7 @@
       var didScroll;
       var lastScrollTop = 0;
       var delta = 5;
-      var navbarHeight = $('.logo').outerHeight();
+      var navbarHeight = $('header').outerHeight();
 
       console.log(navbarHeight);
 
@@ -67,17 +67,17 @@
           // This is necessary so you never see what is "behind" the navbar.
           if (st > lastScrollTop && st > navbarHeight){
               // Scroll Down
-              $('.logo, label[for="nav-trigger"]').removeClass('nav-down').addClass('nav-up');
-              $('.logo').removeClass('over');
+              $('header').removeClass('nav-down').addClass('nav-up');
+              $('header').removeClass('over');
           } else {
               // Scroll Up
               if(st + $(window).height() < $(document).height()) {
-                  $('.logo, label[for="nav-trigger"]').removeClass('nav-up').addClass('nav-down');
+                  $('header').removeClass('nav-up').addClass('nav-down');
               }
               if(st > navbarHeight) {
-                $('.logo').addClass('over');
+                $('header').addClass('over');
               } else {
-                $('.logo').removeClass('over');
+                $('header').removeClass('over');
               }
           }
           

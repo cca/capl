@@ -14,9 +14,7 @@
   clip: rect(0, 0, 0, 0);
 }
 label[for="nav-trigger"] {
-  position: fixed;
-  right: 20px;
-  top: 0;
+  float: right;
   z-index: 40;
   height: $nav-height;
   width: 30px;
@@ -33,16 +31,12 @@ label[for="nav-trigger"] {
     background-color: grey;
   }
   .icon-bar {
-    background-color: black;
+    background-color: $black;
     display: block;
     margin-bottom: 4px;
     height: 4px;
     width: 27px;
   }
-}
-// sticky header classes added with javascript
-label[for="nav-trigger"].nav-up {
-   top: -50px;
 }
 
 // Clicked trigger
@@ -136,7 +130,7 @@ label[for="nav-trigger"].nav-up {
       background-color: transparent;
     }
     .icon-bar {
-      background-color: black;
+      background-color: $black;
       height: 3px;
     }
   }

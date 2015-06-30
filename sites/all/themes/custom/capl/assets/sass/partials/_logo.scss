@@ -44,22 +44,14 @@
 
 /* subpage top logo */
 .logo {
-  background: white;
   font-size: 1.7em;
   font-weight: bold;
-  height: $nav-height;
   line-height: 1.8em;
-  padding-left: 1em;
-  position: fixed;
-  top: 0;
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-  z-index: 1;
+  float: left;
   @include breakpoint($desktop) {
     font-size: 1.7em;
   }
   @include breakpoint($full) {
-	  padding-left: 2em;
   }
   @include breakpoint($tablet) {
     font-size: 1.2em;
@@ -79,11 +71,4 @@
   .plus {
     color: #0db2df;
   }
-}
-// sticky header classes added with javascript
-.logo.nav-up {
-  top: -50px; // same as header height. use variables in LESS/SASS
-}
-.logo.over {
-  box-shadow: 0 1px 4px 1px $gray-dark;
 }
