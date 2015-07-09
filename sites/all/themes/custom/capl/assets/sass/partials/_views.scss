@@ -2,67 +2,81 @@
 // --------------------------------------------------------
 
 /* projects */
-.view-projects .view-content{
-  > div {
-    float: left;
-    line-height: 0;
-    margin: 2% 0;
-    overflow: hidden; /* keep text overlay hidden */
-    position: relative;
-    width: 100%;
-    @include breakpoint($mid) {
-      margin: 2%;
-      width: 46%;
-    }
-    @include breakpoint($full) {
-      margin: 1%;
-      width: 31.3%;
-    }
-    &:hover {
-      .views-field-title {
-        top: 10%;
+.view-projects {
+  .view-content{
+    > div {
+      float: left;
+      line-height: 0;
+      margin: 2% 0;
+      overflow: hidden; // keep text overlay hidden
+      position: relative;
+      width: 100%;
+      @include breakpoint($mid) {
+        margin: 2%;
+        width: 46%;
       }
-      .description {
-        opacity: 1;
-        visibility: visible;
+      @include breakpoint($full) {
+        margin: 1%;
+        width: 31.3%;
+      }
+      &:hover {
+        .views-field-title {
+          top: 10%;
+        }
+        .description {
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
+    a,
+    a:hover {
+      color: white;
+    }
+    img {
+      height: auto;
+      width: 100%;
+    }
+    .views-field-title {
+      background-color: rgba(63, 72, 76, 0.8); 
+      height: 100%;
+      left: 0;
+      line-height: 1em;
+      padding: 5%;
+      position: absolute;
+      top: 70%;
+      transition: top 0.5s;
+      transition-delay: 0.25s;
+      width: 90%;
+    }
+    .title {
+      font-weight: bold;
+      margin-right: 10%;
+    }
+    .description {
+      border-top: 1px solid $blue;
+      color: white;
+      font-size: $small-font-size;
+      margin-top: 0.5em;
+      opacity: 0;
+      padding-top: 0.5em;
+      transition: visibility 1.0s, opacity 1.0s;
+      visibility: hidden;
+    }
   }
-  a,
-  a:hover {
-    color: white;
+  // shuffle js classes used on projects view
+  #grid {
+    clear: both; 
+    position: relative
   }
-  img {
-    height: auto;
-    width: 100%;
-  }
-  .views-field-title {
-    background-color: rgba(63, 72, 76, 0.8); /* convert dark-gray hex #3F484C to rgb */
-    height: 100%;
-    left: 0;
-    line-height: 1em;
-    padding: 5%;
-    position: absolute;
-    top: 70%;
-    transition: top 0.5s;
-    transition-delay: 0.25s;
-    width: 90%;
-  }
-  .title {
-    font-weight: bold;
-    margin-right: 10%;
-  }
-  .description {
-    border-top: 1px solid $blue;
-    color: white;
-    font-size: $small-font-size;
-    margin-top: 0.5em;
-    opacity: 0;
-    padding-top: 0.5em;
-    transition: visibility 1.0s, opacity 1.0s;
-    visibility: hidden;
+  .item {
+    width: 262px; 
+    height: 187px; 
+    float: left; 
+    line-height: 262px; 
   }
 }
+
 
 /* partners */
 .view-partners {

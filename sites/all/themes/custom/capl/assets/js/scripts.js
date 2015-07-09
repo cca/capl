@@ -84,6 +84,60 @@
     }
   }
 
+  Drupal.behaviors.shuffle = {
+    attach: function (context, settings) {
+
+      // implement shufflejs for drupal views [http://vestride.github.io/Shuffle/]
+
+      // add grid id for project view
+      $('.view-projects').find('.view-content').attr('id', 'grid');
+
+      // 'item' must be configured as row class in views UI
+      $('.item').each(function() {
+        // get terms from views field
+        var $terms = $(this).find('.views-field-term-node-tid');
+        // format terms into comma-sparated list
+        var $data = $terms.text().trim().split(', ').join('","');
+        // add terms as data attribute for this item
+        $(this).attr('data-groups', '["' + $data + '"]');
+        // remove terms from display
+        $terms.remove();
+      });
+
+      // add filter id for category view
+      var $categories = $('.view-project-categories');
+      $categories.find('.view-content').attr('id', 'filter');
+
+      $categories.find('div').each(function () {
+        var $data = $(this).children('a').text().trim();
+        // add terms as data attribute for this item
+        $(this).children('a').attr('data-group', $data);
+      });
+
+      // initialize shuffle plugin
+      var $grid = $('#grid');
+
+      $grid.shuffle({
+          itemSelector: '.item' // the selector for the items in the grid
+      });
+
+      $('#filter a').click(function (e) {
+        e.preventDefault();
+
+        // set active class
+        $('#filter a').removeClass('active');
+        $(this).addClass('active');
+
+        // get group name from clicked item
+        var groupName = $(this).attr('data-group');
+
+        // reshuffle grid
+        $grid.shuffle('shuffle', groupName );
+      });
+
+    }
+  }
+
   Drupal.behaviors.accordions = {
     attach: function (context, settings) {
 

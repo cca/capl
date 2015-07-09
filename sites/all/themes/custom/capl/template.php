@@ -13,6 +13,10 @@ function capl_preprocess_page(&$vars){
 
   // Change logo on front page.
   $vars['logopath'] = path_to_theme() .'/assets/images/logo-' .(($vars['is_front'] === TRUE) ? 'big': 'small') .'.svg' ;
+
+  // Add shuffle.js
+  drupal_add_js(drupal_get_path('theme', 'capl') . '/bower_components/shufflejs/dist/jquery.shuffle.modernizr.js');
+  drupal_add_js(drupal_get_path('theme', 'capl') . '/bower_components/shufflejs/dist/jquery.shuffle.js');
 }
 
 function capl_preprocess_node(&$vars){
@@ -21,5 +25,4 @@ function capl_preprocess_node(&$vars){
   if ($vars['node']->type == 'project') {
     drupal_add_js(drupal_get_path('theme', 'capl') . '/assets/js/vendor/jquery.flexslider-min.js');
   }
-
 }
