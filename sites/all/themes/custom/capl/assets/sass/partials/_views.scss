@@ -77,6 +77,32 @@
   }
 }
 
+/* project categories */
+.view-project-categories {
+  a {
+    @include link-colors($gray, $active-color, $active-color, $gray);
+  }
+  .count {
+    font-size: 0.9em;
+  }
+  .view-header {
+    cursor: pointer;
+    font-size: 1.3em;
+    &:after {
+      content: ' +';
+    }
+    &.expanded:after {
+      content: ' -';
+    }
+  }
+  .view {
+    margin-top: 1em;
+  }
+  .view-content {
+    display: none;
+  }
+}
+
 
 /* partners */
 .view-partners {

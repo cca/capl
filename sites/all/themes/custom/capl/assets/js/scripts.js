@@ -138,13 +138,20 @@
     }
   }
 
+  Drupal.behaviors.categories = {
+    attach: function (context, settings) {
+    }
+  }
+
   Drupal.behaviors.accordions = {
     attach: function (context, settings) {
 
       // Project Filter
-      $('.region-sidebar-first h2').click(function() {
-        $(this).toggleClass( 'expanded');
-        $('.region-sidebar-first > .block > .content').toggle('fast');
+
+      $('.view-project-categories').on('click', '.view-header', function(e) {
+        e.stopPropagation();
+        $(this).toggleClass('expanded');
+        $(this).next('.view-content').toggle('fast');
       });
 
       //Project Details
