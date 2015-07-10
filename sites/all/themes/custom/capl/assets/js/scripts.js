@@ -110,8 +110,15 @@
 
       $categories.find('div').each(function () {
         var $data = $(this).children('a').text().trim();
+        var $count = $(this).children('.count').text();
+
         // add terms as data attribute for this item
         $(this).children('a').attr('data-group', $data);
+
+        // remove items with zero results
+        if ($count === '(0)') {
+          $(this).remove();
+        }
       });
 
       // add view all option for each category
