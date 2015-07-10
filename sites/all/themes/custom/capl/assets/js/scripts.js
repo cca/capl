@@ -114,6 +114,10 @@
         $(this).children('a').attr('data-group', $data);
       });
 
+      // add view all option for each category
+      var showAll = '<div><a href="#" class="show-all" data-group="all">Show All</a></div>';
+      $categories.find('.view-content').prepend(showAll);
+
       // initialize shuffle plugin
       var $grid = $('#grid');
 
@@ -135,11 +139,6 @@
         $grid.shuffle('shuffle', groupName );
       });
 
-    }
-  }
-
-  Drupal.behaviors.categories = {
-    attach: function (context, settings) {
     }
   }
 
