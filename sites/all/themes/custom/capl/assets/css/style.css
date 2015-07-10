@@ -1098,14 +1098,15 @@ label[for="nav-trigger"] .icon-bar {
 
 /* line 41, ../sass/partials/_menu.scss */
 .nav-trigger:checked ~ label {
+  right: 16px;
   position: fixed;
 }
-/* line 43, ../sass/partials/_menu.scss */
+/* line 44, ../sass/partials/_menu.scss */
 .nav-trigger:checked ~ label .icon-bar {
   background-color: grey;
 }
 
-/* line 50, ../sass/partials/_menu.scss */
+/* line 51, ../sass/partials/_menu.scss */
 .drawer {
   -moz-transition-property: right, opacity;
   -o-transition-property: right, opacity;
@@ -1135,11 +1136,11 @@ label[for="nav-trigger"] .icon-bar {
   width: 220px;
   z-index: 20;
 }
-/* line 69, ../sass/partials/_menu.scss */
+/* line 70, ../sass/partials/_menu.scss */
 .drawer ul {
   padding-left: 0;
 }
-/* line 72, ../sass/partials/_menu.scss */
+/* line 73, ../sass/partials/_menu.scss */
 .drawer > ul > li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1163,7 +1164,7 @@ label[for="nav-trigger"] .icon-bar {
   list-style: none;
   width: 220px;
 }
-/* line 83, ../sass/partials/_menu.scss */
+/* line 84, ../sass/partials/_menu.scss */
 .drawer > ul > li a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1188,13 +1189,13 @@ label[for="nav-trigger"] .icon-bar {
 .drawer > ul > li a.active, .drawer > ul > li a:active, .drawer > ul > li a.active-trail {
   color: #bcbdbe;
 }
-/* line 91, ../sass/partials/_menu.scss */
+/* line 92, ../sass/partials/_menu.scss */
 .drawer > ul > li li {
   list-style: none;
   margin: 0;
   padding: 0 .5em;
 }
-/* line 95, ../sass/partials/_menu.scss */
+/* line 96, ../sass/partials/_menu.scss */
 .drawer > ul > li li a {
   font-size: 1em;
   padding: .5em 1.5em;
@@ -1216,18 +1217,18 @@ label[for="nav-trigger"] .icon-bar {
   color: gray;
 }
 
-/* line 104, ../sass/partials/_menu.scss */
+/* line 105, ../sass/partials/_menu.scss */
 .navbar-default {
   background: transparent;
   border: none;
   min-height: 0;
 }
 
-/* line 109, ../sass/partials/_menu.scss */
+/* line 110, ../sass/partials/_menu.scss */
 .navbar-header {
   width: 100%;
 }
-/* line 111, ../sass/partials/_menu.scss */
+/* line 112, ../sass/partials/_menu.scss */
 .navbar-header .navbar-toggle {
   background-color: transparent;
   border: none;
@@ -1236,11 +1237,11 @@ label[for="nav-trigger"] .icon-bar {
   position: absolute;
   z-index: 100;
 }
-/* line 118, ../sass/partials/_menu.scss */
+/* line 119, ../sass/partials/_menu.scss */
 .navbar-header .navbar-toggle:hover, .navbar-header .navbar-toggle:focus {
   background-color: transparent;
 }
-/* line 122, ../sass/partials/_menu.scss */
+/* line 123, ../sass/partials/_menu.scss */
 .navbar-header .navbar-toggle .icon-bar {
   background-color: #3F484C;
   height: 3px;

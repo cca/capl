@@ -39,6 +39,7 @@ label[for="nav-trigger"] {
   }
 }
 .nav-trigger:checked ~ label {
+  right: 16px;
   position: fixed;
   .icon-bar {
     background-color: grey;
