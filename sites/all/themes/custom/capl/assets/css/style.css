@@ -2023,7 +2023,7 @@ ul.primary li a:hover {
 }
 /* line 150, ../sass/partials/_views.scss */
 .view-programs .field-name-field-program-logo {
-  border: 1px solid #3F484C;
+  background: #EDEDED;
   height: 150px;
   line-height: 150px;
   margin-top: 30px;
