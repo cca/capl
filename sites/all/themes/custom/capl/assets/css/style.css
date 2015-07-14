@@ -1898,12 +1898,12 @@ ul.primary li a:hover {
   height: 100%;
   left: 0;
   line-height: 1em;
-  padding: 5%;
+  padding: 4%;
   position: absolute;
-  top: 70%;
+  top: 80%;
   transition: top 0.5s;
   transition-delay: 0.25s;
-  width: 90%;
+  width: 92%;
 }
 /* line 52, ../sass/partials/_views.scss */
 .view-projects .view-content .title {
