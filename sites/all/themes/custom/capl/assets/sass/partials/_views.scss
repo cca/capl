@@ -110,6 +110,13 @@
 /* partners */
 #block-views-partners-block-1 {
   clear: both;
+  padding-top: 2em;
+  h2 {
+    @extend h1;
+    @include breakpoint($desktop) {
+      margin-left: -100px;
+    }
+  }
 }
 .view-partners {
   .views-row {
