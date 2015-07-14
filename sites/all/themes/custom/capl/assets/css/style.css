@@ -1978,12 +1978,17 @@ ul.primary li a:hover {
 }
 
 /* partners */
-/* line 112, ../sass/partials/_views.scss */
+/* line 111, ../sass/partials/_views.scss */
+.block-views-partners-block-1 {
+  clear: both;
+}
+
+/* line 115, ../sass/partials/_views.scss */
 .view-partners .views-row {
   float: left;
   padding: 2%;
 }
-/* line 116, ../sass/partials/_views.scss */
+/* line 119, ../sass/partials/_views.scss */
 .view-partners .views-field-field-partner-logo {
   border-width: 1px;
   border-style: solid;
@@ -1995,7 +2000,7 @@ ul.primary li a:hover {
   width: 125px;
   text-align: center;
 }
-/* line 127, ../sass/partials/_views.scss */
+/* line 130, ../sass/partials/_views.scss */
 .view-partners .views-field-field-partner-logo img {
   vertical-align: middle;
   max-height: 100px;
@@ -2004,24 +2009,24 @@ ul.primary li a:hover {
   padding: 0;
   max-width: 100%;
 }
-/* line 134, ../sass/partials/_views.scss */
+/* line 137, ../sass/partials/_views.scss */
 .view-partners .views-field-field-partner-logo:hover {
   border-color: #3F484C;
 }
-/* line 136, ../sass/partials/_views.scss */
+/* line 139, ../sass/partials/_views.scss */
 .view-partners .views-field-field-partner-logo:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
 
 /* programs */
-/* line 145, ../sass/partials/_views.scss */
+/* line 148, ../sass/partials/_views.scss */
 .view-programs .field-name-body {
   height: 150px;
   overflow: hidden;
   padding-bottom: 30px;
 }
-/* line 150, ../sass/partials/_views.scss */
+/* line 153, ../sass/partials/_views.scss */
 .view-programs .field-name-field-program-logo {
   background: #EDEDED;
   height: 150px;
@@ -2031,7 +2036,7 @@ ul.primary li a:hover {
   padding: 25px;
   text-align: center;
 }
-/* line 158, ../sass/partials/_views.scss */
+/* line 161, ../sass/partials/_views.scss */
 .view-programs .field-name-field-program-logo img {
   max-height: 130px;
   max-width: 100%;
