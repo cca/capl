@@ -44,8 +44,6 @@
       var navbar = $('.navbar');
       var navbarHeight = navbar.outerHeight();
 
-      console.log(navbarHeight);
-
       $(window).scroll(function(event){
           didScroll = true;
       });
