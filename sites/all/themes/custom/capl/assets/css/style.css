@@ -2001,9 +2001,6 @@ ul.primary li a:hover {
 }
 /* line 126, ../sass/partials/_views.scss */
 .view-partners .views-field-field-partner-logo {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #a4afb3;
   height: 125px;
   line-height: 125px;
   overflow: hidden;
@@ -2011,7 +2008,7 @@ ul.primary li a:hover {
   width: 125px;
   text-align: center;
 }
-/* line 137, ../sass/partials/_views.scss */
+/* line 134, ../sass/partials/_views.scss */
 .view-partners .views-field-field-partner-logo img {
   vertical-align: middle;
   max-height: 100px;
@@ -2020,24 +2017,20 @@ ul.primary li a:hover {
   padding: 0;
   max-width: 100%;
 }
-/* line 144, ../sass/partials/_views.scss */
-.view-partners .views-field-field-partner-logo:hover {
-  border-color: #3F484C;
-}
-/* line 146, ../sass/partials/_views.scss */
+/* line 142, ../sass/partials/_views.scss */
 .view-partners .views-field-field-partner-logo:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
 
 /* programs */
-/* line 155, ../sass/partials/_views.scss */
+/* line 151, ../sass/partials/_views.scss */
 .view-programs .field-name-body {
   height: 150px;
   overflow: hidden;
   padding-bottom: 30px;
 }
-/* line 160, ../sass/partials/_views.scss */
+/* line 156, ../sass/partials/_views.scss */
 .view-programs .field-name-field-program-logo {
   background: #EDEDED;
   height: 150px;
@@ -2047,7 +2040,7 @@ ul.primary li a:hover {
   padding: 25px;
   text-align: center;
 }
-/* line 168, ../sass/partials/_views.scss */
+/* line 164, ../sass/partials/_views.scss */
 .view-programs .field-name-field-program-logo img {
   max-height: 130px;
   max-width: 100%;

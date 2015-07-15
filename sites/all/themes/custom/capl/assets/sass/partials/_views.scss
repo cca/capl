@@ -124,9 +124,6 @@
     padding: 2%;
   }
   .views-field-field-partner-logo {
-    border-width: 1px;
-    border-style: solid;
-    border-color: lighten($black, 40%);
     height: 125px;
     line-height: 125px;
     overflow: hidden;
@@ -142,7 +139,6 @@
       max-width: 100%;
     }
     &:hover {
-      border-color: $black;
       img {
         @include opacity(1.0);
       }
