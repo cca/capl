@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 5, ../sass/global/_silents.scss */
-body, h1, #block-views-partners-block-1 h2, h2, h3, h4, h5, h6, .drawer > ul > li a {
+body, h1, #block-views-partners-block-1 h2, #block-views-capl-team-block-1 h2, h2, h3, h4, h5, h6, .drawer > ul > li a {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
@@ -291,17 +291,17 @@ p {
 }
 
 /* line 15, ../sass/partials/_base.scss */
-h1, #block-views-partners-block-1 h2, h2, h3, h4, h5, h6 {
+h1, #block-views-partners-block-1 h2, #block-views-capl-team-block-1 h2, h2, h3, h4, h5, h6 {
   line-height: 1.3;
   margin-bottom: 0;
 }
 /* line 19, ../sass/partials/_base.scss */
-h1 + p, #block-views-partners-block-1 h2 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+h1 + p, #block-views-partners-block-1 h2 + p, #block-views-capl-team-block-1 h2 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
   margin-top: 0;
 }
 
 /* line 24, ../sass/partials/_base.scss */
-h1, #block-views-partners-block-1 h2 {
+h1, #block-views-partners-block-1 h2, #block-views-capl-team-block-1 h2 {
   border-bottom: 1px solid #3F484C;
   color: #0DB2DF;
   font-family: georgia;
@@ -1310,17 +1310,21 @@ label[for="nav-trigger"] .icon-bar {
 }
 
 /* line 18, ../sass/partials/_node.scss */
-.node-type-program h1, .node-type-program #block-views-partners-block-1 h2, #block-views-partners-block-1 .node-type-program h2,
+.node-type-program h1, .node-type-program #block-views-partners-block-1 h2, #block-views-partners-block-1 .node-type-program h2, .node-type-program #block-views-capl-team-block-1 h2, #block-views-capl-team-block-1 .node-type-program h2,
 .node-type-project h1,
 .node-type-project #block-views-partners-block-1 h2,
-#block-views-partners-block-1 .node-type-project h2 {
+#block-views-partners-block-1 .node-type-project h2,
+.node-type-project #block-views-capl-team-block-1 h2,
+#block-views-capl-team-block-1 .node-type-project h2 {
   border-top: none;
 }
 /* line 20, ../sass/partials/_node.scss */
-.node-type-program h1.title, .node-type-program #block-views-partners-block-1 h2.title, #block-views-partners-block-1 .node-type-program h2.title,
+.node-type-program h1.title, .node-type-program #block-views-partners-block-1 h2.title, #block-views-partners-block-1 .node-type-program h2.title, .node-type-program #block-views-capl-team-block-1 h2.title, #block-views-capl-team-block-1 .node-type-program h2.title,
 .node-type-project h1.title,
 .node-type-project #block-views-partners-block-1 h2.title,
-#block-views-partners-block-1 .node-type-project h2.title {
+#block-views-partners-block-1 .node-type-project h2.title,
+.node-type-project #block-views-capl-team-block-1 h2.title,
+#block-views-capl-team-block-1 .node-type-project h2.title {
   display: none;
 }
 /* line 24, ../sass/partials/_node.scss */
@@ -2046,4 +2050,85 @@ ul.primary li a:hover {
   max-width: 100%;
   padding: 0;
   vertical-align: middle;
+}
+
+/* CAPL Team */
+@media (min-width: 801px) {
+  /* line 175, ../sass/partials/_views.scss */
+  #block-views-capl-team-block-1 h2 {
+    margin-left: -100px;
+  }
+}
+
+/* line 183, ../sass/partials/_views.scss */
+.view-capl-team .views-row {
+  box-sizing: border-box;
+  float: left;
+  padding-top: 40px;
+}
+@media (min-width: 481px) {
+  /* line 183, ../sass/partials/_views.scss */
+  .view-capl-team .views-row {
+    width: 50%;
+  }
+}
+/* line 190, ../sass/partials/_views.scss */
+.view-capl-team .views-row.views-row-odd {
+  clear: both;
+}
+@media (min-width: 481px) {
+  /* line 190, ../sass/partials/_views.scss */
+  .view-capl-team .views-row.views-row-odd {
+    padding-right: 10px;
+  }
+}
+@media (min-width: 801px) {
+  /* line 190, ../sass/partials/_views.scss */
+  .view-capl-team .views-row.views-row-odd {
+    padding-right: 60px;
+  }
+}
+@media (min-width: 481px) {
+  /* line 199, ../sass/partials/_views.scss */
+  .view-capl-team .views-row.views-row-even {
+    padding-left: 10px;
+  }
+}
+@media (min-width: 801px) {
+  /* line 199, ../sass/partials/_views.scss */
+  .view-capl-team .views-row.views-row-even {
+    padding-left: 60px;
+  }
+}
+/* line 208, ../sass/partials/_views.scss */
+.view-capl-team .field-name-field-staff-name {
+  color: #0DB2DF;
+  font-family: georgia;
+  font-style: italic;
+  font-weight: 300;
+  margin: 5px 0;
+}
+@media (min-width: 801px) {
+  /* line 208, ../sass/partials/_views.scss */
+  .view-capl-team .field-name-field-staff-name {
+    font-size: 1.5em;
+  }
+}
+/* line 218, ../sass/partials/_views.scss */
+.view-capl-team .field-name-name {
+  border-bottom: 1px solid #0DB2DF;
+}
+/* line 220, ../sass/partials/_views.scss */
+.view-capl-team .field-name-name .field-item {
+  margin-bottom: 5px;
+}
+/* line 224, ../sass/partials/_views.scss */
+.view-capl-team .field-name-field-bio {
+  margin: 10px 10px 0 0;
+}
+/* line 227, ../sass/partials/_views.scss */
+.view-capl-team img {
+  width: 100%;
+  border: 30px solid #EDEDED;
+  box-sizing: border-box;
 }

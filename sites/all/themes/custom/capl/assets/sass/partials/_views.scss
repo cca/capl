@@ -169,3 +169,66 @@
     }
   }
 }
+
+/* CAPL Team */
+#block-views-capl-team-block-1 {
+  h2 {
+    @extend h1;
+    @include breakpoint($desktop) {
+      margin-left: -100px;
+    }
+  }
+}
+.view-capl-team {
+  .views-row {
+    box-sizing: border-box;
+    float: left;
+    padding-top: 40px;
+    @include breakpoint($gthand) {
+      width: 50%;
+    }
+    &.views-row-odd {
+      clear: both;
+      @include breakpoint($gthand) {
+        padding-right: 10px;
+      }
+      @include breakpoint($desktop) {
+        padding-right: 60px;
+      }
+    }
+    &.views-row-even {
+      @include breakpoint($gthand) {
+        padding-left: 10px;
+      }
+      @include breakpoint($desktop) {
+        padding-left: 60px;
+      }
+    }
+  }
+  .field-name-field-staff-name {
+    color: $blue;
+    font-family: georgia;
+    font-style: italic;
+    font-weight: $font-weight-light;
+    margin: 5px 0;
+    @include breakpoint($desktop) {
+      font-size: 1.5em;
+    }
+  }
+  .field-name-name {
+    border-bottom: 1px solid $blue;
+    .field-item {
+      margin-bottom: 5px;
+    }
+  }
+  .field-name-field-bio {
+    margin: 10px 10px 0 0;
+  }
+  img {
+    width: 100%;
+    border: 30px solid $gray-light;
+    box-sizing: border-box;
+  }
+
+}
+
