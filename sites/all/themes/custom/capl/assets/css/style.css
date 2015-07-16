@@ -560,6 +560,37 @@ a:hover {
   border: 0;
 }
 
+@font-face {
+  font-family: "cca-logo";
+  src: url("../fonts/cca-logo.eot");
+  src: url("../fonts/cca-logo.eot?#iefix") format("embedded-opentype"), url("../fonts/cca-logo.woff") format("woff"), url("../fonts/cca-logo.ttf") format("truetype"), url("../fonts/cca-logo.svg#cca-logo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 222, ../sass/partials/_base.scss */
+[class^="cca-logo-"]:before, [class*="cca-logo-"]:before {
+  font-family: "cca-logo";
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 232, ../sass/partials/_base.scss */
+.cca-logo-c:before {
+  color: #4B5B65;
+  content: "\e000";
+}
+
+/* line 236, ../sass/partials/_base.scss */
+.cca-logo-a:before {
+  color: #FF001F;
+  content: "\e001";
+}
+
 @media (min-width: 801px) {
   /* line 2, ../sass/partials/_blocks.scss */
   #block-views-projects-block-1 {
@@ -600,34 +631,49 @@ a:hover {
   clear: both;
 }
 
-@media (min-width: 481px) {
-  /* line 4, ../sass/partials/_footer.scss */
-  .front .footer {
-    background: white;
-    width: 100%;
-  }
-}
-
-/* line 11, ../sass/partials/_footer.scss */
-.footer .container {
+/* line 4, ../sass/partials/_footer.scss */
+footer {
+  background-color: #EDEDED;
   border-top: 4px solid #3F484C;
+  color: #7C8689;
+  font-size: 0.9em;
 }
-
-/* line 16, ../sass/partials/_footer.scss */
-#block-menu-menu-footer-menu {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  padding-top: 1em;
+/* line 9, ../sass/partials/_footer.scss */
+footer .container {
+  border-top: 1px solid #FFF;
 }
-/* line 21, ../sass/partials/_footer.scss */
-#block-menu-menu-footer-menu ul {
-  margin-top: 0;
+/* line 12, ../sass/partials/_footer.scss */
+footer ul {
+  margin: 0;
   padding: 0;
 }
-/* line 24, ../sass/partials/_footer.scss */
-#block-menu-menu-footer-menu ul li.leaf {
-  list-style: none;
+/* line 15, ../sass/partials/_footer.scss */
+footer ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+/* line 20, ../sass/partials/_footer.scss */
+footer .footer-links {
+  float: left;
+}
+/* line 23, ../sass/partials/_footer.scss */
+footer .footer-logos {
+  float: right;
+}
+/* line 26, ../sass/partials/_footer.scss */
+footer .capl-logo {
+  color: #3F484C;
+  font-weight: bold;
+}
+/* line 30, ../sass/partials/_footer.scss */
+footer .cca-logo {
+  text-align: right;
+  margin-top: 10px;
+}
+/* line 34, ../sass/partials/_footer.scss */
+footer .site-copyright {
+  clear: both;
+  text-align: center;
 }
 
 /* line 6, ../sass/partials/_forms.scss */

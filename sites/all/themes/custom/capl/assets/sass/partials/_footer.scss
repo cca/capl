@@ -1,28 +1,38 @@
 // Footer
 // --------------------------------------------------------
 
-.front .footer {
-  @include breakpoint($gthand) {
-    background: white;
-    width: 100%;
-  }
-}
-.footer {
+footer {
+  background-color: $gray-light;
+  border-top: 4px solid $black;
+  color: $gray;
+  font-size: 0.9em;
   .container {
-    border-top: 4px solid $black;
+    border-top: 1px solid #FFF;
   }
-}
-
-#block-menu-menu-footer-menu {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  padding-top: 1em;
   ul {
-    margin-top: 0;
+    margin: 0;
     padding: 0;
-    li.leaf {
-      list-style: none;
+    li {
+      list-style-type: none;
+      margin-bottom: 10px;
     }
+  }
+  .footer-links {
+    float: left;
+  }
+  .footer-logos {
+    float: right;
+  }
+  .capl-logo {
+    color: $gray-dark;
+    font-weight: bold;
+  }
+  .cca-logo {
+    text-align: right;
+    margin-top: 10px;
+  }
+  .site-copyright {
+    clear: both;
+    text-align: center;
   }
 }
