@@ -1028,6 +1028,7 @@ fieldset legend {
   /* line 34, ../sass/partials/_logo.scss */
   .front .big-logo {
     font-size: 3em;
+    font-weight: bold;
     line-height: 1.1em;
   }
 }
@@ -1048,7 +1049,7 @@ fieldset legend {
 }
 
 /* subpage top logo */
-/* line 52, ../sass/partials/_logo.scss */
+/* line 53, ../sass/partials/_logo.scss */
 .logo {
   font-size: 1.7em;
   font-weight: bold;
@@ -1056,36 +1057,36 @@ fieldset legend {
   float: left;
 }
 @media (min-width: 801px) {
-  /* line 52, ../sass/partials/_logo.scss */
+  /* line 53, ../sass/partials/_logo.scss */
   .logo {
     font-size: 1.7em;
   }
 }
 @media (min-width: 481px) and (max-width: 800px) {
-  /* line 52, ../sass/partials/_logo.scss */
+  /* line 53, ../sass/partials/_logo.scss */
   .logo {
     font-size: 1.2em;
     line-height: 2.6em;
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 52, ../sass/partials/_logo.scss */
+  /* line 53, ../sass/partials/_logo.scss */
   .logo {
     font-size: 0.8em;
     line-height: 4em;
   }
 }
-/* line 70, ../sass/partials/_logo.scss */
+/* line 71, ../sass/partials/_logo.scss */
 .logo a:hover {
   color: #3F484C;
 }
-/* line 73, ../sass/partials/_logo.scss */
+/* line 74, ../sass/partials/_logo.scss */
 .logo img {
   height: auto;
   width: 400px;
 }
 
-/* line 78, ../sass/partials/_logo.scss */
+/* line 79, ../sass/partials/_logo.scss */
 .plus {
   color: #0db2df;
 }
