@@ -73,6 +73,7 @@ a {
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid $gray;
+  font-family: Georgia;
   font-style: italic;
   margin: 1.5em 10px 1.5em 25px;
   padding: 0.5em 10px;
@@ -81,9 +82,9 @@ blockquote {
     display: inline;
   }
   span {
+    clear: both;
     color: #888;
     display: block;
-    clear: both;
     font-weight: $font-weight-light;
     &:before {
       content: "– ";
@@ -93,7 +94,6 @@ blockquote {
 blockquote:before {
   color: $gray;
   content: open-quote;
-  font-family: Georgia;
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.15em;
