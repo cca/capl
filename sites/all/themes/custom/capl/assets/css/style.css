@@ -381,28 +381,40 @@ a.active-trail {
 /* line 73, ../sass/partials/_base.scss */
 blockquote {
   background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
+  border-left: 10px solid #7C8689;
+  font-style: italic;
+  margin: 1.5em 10px 1.5em 25px;
   padding: 0.5em 10px;
   quotes: "“" "”" "‘" "’";
 }
-
 /* line 80, ../sass/partials/_base.scss */
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-
-/* line 88, ../sass/partials/_base.scss */
 blockquote p {
   display: inline;
 }
+/* line 83, ../sass/partials/_base.scss */
+blockquote span {
+  color: #888;
+  display: block;
+  clear: both;
+  font-weight: 300;
+}
+/* line 88, ../sass/partials/_base.scss */
+blockquote span:before {
+  content: "– ";
+}
 
-/* line 92, ../sass/partials/_base.scss */
+/* line 93, ../sass/partials/_base.scss */
+blockquote:before {
+  color: #7C8689;
+  content: open-quote;
+  font-family: Georgia;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.15em;
+  vertical-align: -0.4em;
+}
+
+/* line 103, ../sass/partials/_base.scss */
 hr {
   border: 0;
   border-bottom: 3px solid #3F484C;
@@ -410,7 +422,7 @@ hr {
   height: 1px;
 }
 
-/* line 99, ../sass/partials/_base.scss */
+/* line 110, ../sass/partials/_base.scss */
 .lead-paragraph {
   color: #3F484C;
   font-family: Georgia;
@@ -419,7 +431,7 @@ hr {
   line-height: 1.35em;
 }
 
-/* line 107, ../sass/partials/_base.scss */
+/* line 118, ../sass/partials/_base.scss */
 .marker {
   background: #3F484C;
   color: white;
@@ -430,7 +442,7 @@ hr {
   padding: 2px 2px 3px 4px;
 }
 
-/* line 116, ../sass/partials/_base.scss */
+/* line 127, ../sass/partials/_base.scss */
 .more-link,
 .more-help-link {
   border-bottom: 1px solid #dfdfdf;
@@ -438,7 +450,7 @@ hr {
   text-align: center;
   padding: .5em 0;
 }
-/* line 122, ../sass/partials/_base.scss */
+/* line 133, ../sass/partials/_base.scss */
 .more-link a,
 .more-help-link a {
   text-decoration: none;
@@ -456,39 +468,39 @@ hr {
 .more-help-link a:hover {
   color: #7C8689;
 }
-/* line 125, ../sass/partials/_base.scss */
+/* line 136, ../sass/partials/_base.scss */
 .more-link a:after,
 .more-help-link a:after {
   content: ' ...';
 }
 
-/* line 135, ../sass/partials/_base.scss */
+/* line 146, ../sass/partials/_base.scss */
 .item-list ul li,
 .item-list ol li {
   margin-bottom: .5em;
 }
 
-/* line 140, ../sass/partials/_base.scss */
+/* line 151, ../sass/partials/_base.scss */
 .field-name-body ul {
   list-style-image: url(../images/bullet.png);
   padding-left: 20px;
   padding-top: .5em;
 }
-/* line 144, ../sass/partials/_base.scss */
+/* line 155, ../sass/partials/_base.scss */
 .field-name-body ul li {
   margin-bottom: 1.5em;
   padding-left: 10px;
 }
 
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 152, ../sass/partials/_base.scss */
+  /* line 163, ../sass/partials/_base.scss */
   img {
     height: auto;
     max-width: 100%;
   }
 }
 
-/* line 159, ../sass/partials/_base.scss */
+/* line 170, ../sass/partials/_base.scss */
 a.pdf {
   background: url(/modules/file/icons/application-pdf.png) no-repeat 0 3px;
   display: inline-block;
@@ -496,18 +508,18 @@ a.pdf {
   padding-right: 5px;
 }
 
-/* line 168, ../sass/partials/_base.scss */
+/* line 179, ../sass/partials/_base.scss */
 .submitted {
   color: #7C8689;
   font-size: .9em;
 }
 
-/* line 173, ../sass/partials/_base.scss */
+/* line 184, ../sass/partials/_base.scss */
 header > .container {
   padding-top: 0;
 }
 
-/* line 177, ../sass/partials/_base.scss */
+/* line 188, ../sass/partials/_base.scss */
 .page-header {
   width: 100%;
   float: right;
@@ -531,24 +543,24 @@ a.active:hover, a.active-trail:hover, a:hover {
 a.active, a:active, a.active-trail {
   color: #7C8689;
 }
-/* line 184, ../sass/partials/_base.scss */
+/* line 195, ../sass/partials/_base.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 189, ../sass/partials/_base.scss */
+/* line 200, ../sass/partials/_base.scss */
 .text-center {
   clear: both;
 }
 
 @media (min-width: 801px) {
-  /* line 192, ../sass/partials/_base.scss */
+  /* line 203, ../sass/partials/_base.scss */
   .region-content {
     padding-left: 100px;
   }
 }
 
-/* line 200, ../sass/partials/_base.scss */
+/* line 211, ../sass/partials/_base.scss */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -567,7 +579,7 @@ a:hover {
   font-weight: normal;
   font-style: normal;
 }
-/* line 222, ../sass/partials/_base.scss */
+/* line 233, ../sass/partials/_base.scss */
 [class^="cca-logo-"]:before, [class*="cca-logo-"]:before {
   font-family: "cca-logo";
   font-style: normal !important;
@@ -579,13 +591,13 @@ a:hover {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 232, ../sass/partials/_base.scss */
+/* line 243, ../sass/partials/_base.scss */
 .cca-logo-c:before {
   color: #4B5B65;
   content: "\e000";
 }
 
-/* line 236, ../sass/partials/_base.scss */
+/* line 247, ../sass/partials/_base.scss */
 .cca-logo-a:before {
   color: #FF001F;
   content: "\e001";

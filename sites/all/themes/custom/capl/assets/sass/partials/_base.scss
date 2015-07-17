@@ -72,21 +72,32 @@ a {
 // other
 blockquote {
   background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
+  border-left: 10px solid $gray;
+  font-style: italic;
+  margin: 1.5em 10px 1.5em 25px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
+  p {
+    display: inline;
+  }
+  span {
+    color: #888;
+    display: block;
+    clear: both;
+    font-weight: $font-weight-light;
+    &:before {
+      content: "– ";
+    }
+  }
 }
 blockquote:before {
-  color: #ccc;
+  color: $gray;
   content: open-quote;
+  font-family: Georgia;
   font-size: 4em;
   line-height: 0.1em;
-  margin-right: 0.25em;
+  margin-right: 0.15em;
   vertical-align: -0.4em;
-}
-blockquote p {
-  display: inline;
 }
 
 hr {
