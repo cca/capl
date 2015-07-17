@@ -19,15 +19,6 @@
         margin: 1%;
         width: 31.3%;
       }
-      &:hover {
-        .views-field-title {
-          top: 10%;
-        }
-        .description {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
     }
     a,
     a:hover {
@@ -74,6 +65,16 @@
     height: 187px; 
     float: left; 
     line-height: 262px; 
+  }
+}
+// hover animation for desktop only
+.no-touch .view-projects .view-content > div:hover {
+  .views-field-title {
+    top: 10%;
+  }
+  .description {
+    opacity: 1;
+    visibility: visible;
   }
 }
 
