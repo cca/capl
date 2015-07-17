@@ -184,6 +184,12 @@
           .text($nameField.text() + ' – ' + $jobTitleField.text());
         $jobTitleField.remove();
       });
+
+      // make homepage grid images clickable
+      $('.view-projects').on('click', '.item', function () {
+        var href = $(this).find('a').attr('href');
+        window.location.href = href;
+      });
     }
   }
 
