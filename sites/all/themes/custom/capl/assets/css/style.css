@@ -2107,7 +2107,7 @@ ul.primary li a:hover {
 /* line 165, ../sass/partials/_views.scss */
 .view-programs .field-name-field-program-logo img {
   max-height: 130px;
-  max-width: 100%;
+  max-width: 200px;
   padding: 0;
   vertical-align: middle;
 }
