@@ -2075,7 +2075,7 @@ ul.primary li a:hover {
 /* line 135, ../sass/partials/_views.scss */
 .view-partners .views-field-field-partner-logo img {
   vertical-align: middle;
-  max-height: 100px;
+  max-height: 125px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
   padding: 0;
