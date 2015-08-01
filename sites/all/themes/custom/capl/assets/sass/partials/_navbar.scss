@@ -10,7 +10,7 @@
   z-index: 1;
 	// sticky header classes added with javascript
 	&.nav-up {
-	  top: (-$nav-height);
+	  top: (-$nav-height) !important;
 	}
 	&.over {
 	  box-shadow: 0 1px 4px 1px $gray-dark;

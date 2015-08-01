@@ -1320,7 +1320,7 @@ label[for="nav-trigger"] .icon-bar {
 }
 /* line 12, ../sass/partials/_navbar.scss */
 .navbar.nav-up {
-  top: -50px;
+  top: -50px !important;
 }
 /* line 15, ../sass/partials/_navbar.scss */
 .navbar.over {
