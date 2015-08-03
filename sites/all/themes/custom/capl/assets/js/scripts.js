@@ -150,8 +150,13 @@
   Drupal.behaviors.accordions = {
     attach: function (context, settings) {
 
-      // Project Filter
 
+      // Mobile project categories expand
+      $('#block-views-project-categories-block').on('click', 'h2', function() {
+         $('.region-sidebar-first > .block > .content').toggle();
+      });
+
+      // Project Filter
       $('.view-project-categories').on('click', '.view-header', function(e) {
         e.stopPropagation();
         $(this).toggleClass('expanded');
@@ -175,7 +180,6 @@
     attach: function (context, settings) {
 
       // capl team view
-
       // combine name and job title
       $('.view-capl-team').find('.views-row').each( function () {
         var $nameField = $(this).find('.field-name-field-staff-name');
