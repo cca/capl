@@ -1776,32 +1776,35 @@ html.js fieldset.collapsible .fieldset-legend {
   width: 50px;
   height: 50px;
   margin-top: -25px;
-  z-index: 999;
 }
-/* line 31, ../sass/partials/_slideshow.scss */
+/* line 29, ../sass/partials/_slideshow.scss */
+.field-name-field-slideshow .slick-prev {
+  z-index: 1;
+}
+/* line 33, ../sass/partials/_slideshow.scss */
 .field-name-field-slideshow .slick-prev:before,
 .field-name-field-slideshow .slick-next:before {
   font-size: 50px;
   color: #0DB2DF;
   opacity: 1;
 }
-/* line 39, ../sass/partials/_slideshow.scss */
+/* line 41, ../sass/partials/_slideshow.scss */
 .field-name-field-slideshow .slick-prev {
   left: 10px;
 }
-/* line 43, ../sass/partials/_slideshow.scss */
+/* line 45, ../sass/partials/_slideshow.scss */
 .field-name-field-slideshow [dir='rtl'] .slick-prev {
   right: 10px;
 }
-/* line 48, ../sass/partials/_slideshow.scss */
+/* line 50, ../sass/partials/_slideshow.scss */
 .field-name-field-slideshow .slick-next {
   right: 10px;
 }
-/* line 52, ../sass/partials/_slideshow.scss */
+/* line 54, ../sass/partials/_slideshow.scss */
 .field-name-field-slideshow [dir='rtl'] .slick-next {
   left: 10px;
 }
-/* line 59, ../sass/partials/_slideshow.scss */
+/* line 61, ../sass/partials/_slideshow.scss */
 .field-name-field-slideshow .slick-fade-image {
   opacity: 0.5;
   transition: opacity 0.5s ease;
