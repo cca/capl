@@ -171,7 +171,8 @@
 
       // Mobile project categories expand
       $('#block-views-project-categories-block').on('click', 'h2', function() {
-         $('.region-sidebar-first > .block > .content').toggle();
+        $(this).toggleClass('expanded');
+        $('.region-sidebar-first > .block > .content').toggle();
       });
 
       // Project Filter

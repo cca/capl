@@ -17,14 +17,14 @@ function capl_preprocess_page(&$vars){
   // Add shuffle.js
   drupal_add_js(drupal_get_path('theme', 'capl') . '/bower_components/shufflejs/dist/jquery.shuffle.modernizr.js');
   drupal_add_js(drupal_get_path('theme', 'capl') . '/bower_components/shufflejs/dist/jquery.shuffle.js');
+  drupal_add_js(drupal_get_path('theme', 'capl') . '/assets/js/vendor/slick-1.5.7/slick/slick.min.js');
+  drupal_add_css(drupal_get_path('theme', 'capl') . '/assets/js/vendor/slick-1.5.7/slick/slick.css');
+  drupal_add_css(drupal_get_path('theme', 'capl') . '/assets/js/vendor/slick-1.5.7/slick/slick-theme.css');
 }
 
 function capl_preprocess_node(&$vars){
 
   // Add JS to project page.
   if ($vars['node']->type == 'project') {
-    drupal_add_js(drupal_get_path('theme', 'capl') . '/assets/js/vendor/slick-1.5.7/slick/slick.min.js');
-    drupal_add_css(drupal_get_path('theme', 'capl') . '/assets/js/vendor/slick-1.5.7/slick/slick.css');
-    drupal_add_css(drupal_get_path('theme', 'capl') . '/assets/js/vendor/slick-1.5.7/slick/slick-theme.css');
   }
 }
