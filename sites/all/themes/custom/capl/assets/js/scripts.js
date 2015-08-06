@@ -23,15 +23,33 @@
   Drupal.behaviors.flexslider = {
     attach: function (context, settings) {
 
-      var slideshow = $('.field-name-field-slideshow');
-      if (slideshow.length > 0 ) {
-        $(slideshow).flexslider({
-          selector: '.field-items > .field-item',
-          animation: "slide",
-          animationLoop: true,
-          itemWidth: 490
-        });
-      }
+      $('.field-name-field-slideshow .field-items').slick({
+        //setting-name: setting-value
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        centerMode: true,
+        arrows: true,
+        variableWidth: true
+        /*
+        responsive: [
+          {
+            breakpoint: 650,
+            settings: {
+              infinite: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+              centerMode: true,
+              arrows: false,
+              variableWidth: true,
+            }
+          }
+        ]
+        */
+      });
+
     }
   }
 

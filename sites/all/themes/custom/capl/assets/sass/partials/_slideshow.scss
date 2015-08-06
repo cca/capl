@@ -3,35 +3,61 @@
 
 // Project Slideshow
 .field-name-field-slideshow {
-  position: relative;
-  img {
-    display: block;
+  background-color: $gray-light;
+  padding: 20px 0;
+
+  .slick-slider {
+    margin-bottom: 0;
   }
-  .flex-control-nav {
-    display: none;
+
+  .slick-slide:focus {
+    outline: 0;
   }
-  .flex-direction-nav {
-    list-style: none;
-    a {
-      background: rgba(151, 151, 151, .7) no-repeat 50% 50% url(../images/next.png) ;
-      position: absolute;
-      height: 100%;
-      overflow: hidden;
-      opacity: .7;
-      text-indent: -999px;
-      top: 0;
+
+  .slick-slide {
+    margin: 0 20px;
+  }
+
+  /* Arrows */
+  .slick-prev,
+  .slick-next
+  {
       width: 50px;
-      &:hover {
-        background-color: rgba(151, 151, 151, .8);
-        opacity: 1;
-      }
-    }
-    .flex-prev {
-      background: rgba(151, 151, 151, .5) no-repeat 50% 50% url(../images/prev.png) ;
-      left: 0;
-    }
-    .flex-next {
-      right: 0;
-    }
+      height: 50px;
+      margin-top: -25px;
+      z-index: 999;
+  }
+
+  .slick-prev:before,
+  .slick-next:before
+  {
+      font-size: 50px;
+      color: $blue;
+      opacity: 1;
+  }
+
+  .slick-prev
+{
+    left: 10px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: 10px;
+}
+
+.slick-next
+{
+    right: 10px;
+}
+[dir='rtl'] .slick-next
+{
+    left: 10px;
+}
+
+  .slick-center {
+  }
+  .slick-fade-image {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
   }
 }
