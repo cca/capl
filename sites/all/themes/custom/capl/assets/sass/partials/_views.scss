@@ -10,10 +10,8 @@
       margin: 2% 0;
       overflow: hidden; // keep text overlay hidden
       position: relative;
-      width: 100%;
       @include breakpoint($mid) {
         margin: 2%;
-        width: 46%;
       }
       @include breakpoint($full) {
         margin: 1%;
