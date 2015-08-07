@@ -197,11 +197,14 @@
 
   Drupal.behaviors.tweaks = {
     attach: function (context, settings) {
-      // add email to staff username
-      $('.view-capl-team').find('.field-name-name').each(function() {
-        $username = $(this).text();
-        $(this).text($username + '@cca.edu');
-      })
+
+      $('.view-capl-team').find('.views-row').each(function() {
+        var $username = $(this).find('.field-name-name').text();
+        // add email to staff username
+        $(this).find('.field-name-name').text($username + '@cca.edu');
+        // remove profile image link
+        $(this).find('img').unwrap();
+      });
 
       // make homepage grid images clickable
       $('.view-projects').on('click', '.item', function () {
