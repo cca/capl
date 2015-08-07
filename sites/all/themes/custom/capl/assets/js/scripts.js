@@ -197,17 +197,7 @@
 
   Drupal.behaviors.tweaks = {
     attach: function (context, settings) {
-
-      // capl team view
-      // combine name and job title
-      $('.view-capl-team').find('.views-row').each( function () {
-        var $nameField = $(this).find('.field-name-field-staff-name');
-        var $jobTitleField = $(this).find('.field-name-field-job-title');
-        $nameField.find('.field-item')
-          .text($nameField.text() + ' – ' + $jobTitleField.text());
-        $jobTitleField.remove();
-      });
-
+      
       // make homepage grid images clickable
       $('.view-projects').on('click', '.item', function () {
         var href = $(this).find('a').attr('href');

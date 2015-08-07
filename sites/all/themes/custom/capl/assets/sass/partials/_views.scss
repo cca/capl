@@ -212,10 +212,15 @@
     font-family: georgia;
     font-style: italic;
     font-weight: $font-weight-light;
-    margin: 5px 0;
+    margin-top: 5px;
     @include breakpoint($desktop) {
       font-size: 1.5em;
     }
+  }
+  .field-name-field-job-title {
+    font-family: georgia;
+    font-size: 1.1em;
+    font-style: italic;
   }
   .field-name-name {
     border-bottom: 1px solid $blue;
