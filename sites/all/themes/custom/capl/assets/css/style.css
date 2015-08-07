@@ -2205,15 +2205,14 @@ ul.primary li a:hover {
 }
 /* line 225, ../sass/partials/_views.scss */
 .view-capl-team .field-name-name {
-  border-bottom: 1px solid #0DB2DF;
+  font-weight: 300;
 }
-/* line 227, ../sass/partials/_views.scss */
-.view-capl-team .field-name-name .field-item {
-  margin-bottom: 5px;
-}
-/* line 231, ../sass/partials/_views.scss */
+/* line 228, ../sass/partials/_views.scss */
 .view-capl-team .field-name-field-bio {
+  border-top: 1px solid #0DB2DF;
+  font-weight: 300;
   margin: 10px 10px 0 0;
+  padding-top: 7px;
 }
 /* line 234, ../sass/partials/_views.scss */
 .view-capl-team img {

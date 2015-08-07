@@ -223,13 +223,13 @@
     font-style: italic;
   }
   .field-name-name {
-    border-bottom: 1px solid $blue;
-    .field-item {
-      margin-bottom: 5px;
-    }
+    font-weight: 300;
   }
   .field-name-field-bio {
+    border-top: 1px solid $blue;
+    font-weight: 300;
     margin: 10px 10px 0 0;
+    padding-top: 7px;
   }
   img {
     width: 100%;
