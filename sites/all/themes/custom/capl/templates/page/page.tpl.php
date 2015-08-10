@@ -89,4 +89,3 @@
     <?php if ($page['footer']): print render($page['footer']); endif; ?>
   </div>
 </footer>
- 

@@ -667,25 +667,62 @@ footer ul li {
 /* line 20, ../sass/partials/_footer.scss */
 footer .footer-links {
   float: left;
+  margin-left: 1em;
+  padding-right: 1em;
 }
-/* line 23, ../sass/partials/_footer.scss */
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 20, ../sass/partials/_footer.scss */
+  footer .footer-links {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 801px) {
+  /* line 20, ../sass/partials/_footer.scss */
+  footer .footer-links {
+    border-right: 1px solid #0DB2DF;
+    margin-left: 2.5em;
+    padding-right: 2.5em;
+  }
+}
+/* line 34, ../sass/partials/_footer.scss */
+footer .footer-links.first {
+  margin-left: 0;
+}
+/* line 37, ../sass/partials/_footer.scss */
+footer .footer-links.last {
+  border: 0;
+}
+/* line 41, ../sass/partials/_footer.scss */
 footer .footer-logos {
-  float: right;
+  clear: both;
+  padding-top: 2em;
 }
-/* line 26, ../sass/partials/_footer.scss */
+@media (min-width: 801px) {
+  /* line 41, ../sass/partials/_footer.scss */
+  footer .footer-logos {
+    clear: none;
+    float: right;
+    padding-top: 0;
+  }
+  /* line 48, ../sass/partials/_footer.scss */
+  footer .footer-logos li {
+    text-align: right;
+  }
+}
+/* line 53, ../sass/partials/_footer.scss */
 footer .capl-logo {
   color: #3F484C;
   font-weight: bold;
 }
-/* line 30, ../sass/partials/_footer.scss */
+/* line 57, ../sass/partials/_footer.scss */
 footer .cca-logo {
-  text-align: right;
-  margin-top: 10px;
+  font-size: 2em;
 }
-/* line 34, ../sass/partials/_footer.scss */
-footer .site-copyright {
-  clear: both;
-  text-align: center;
+/* line 60, ../sass/partials/_footer.scss */
+footer .copyright {
+  padding-top: 1em;
 }
 
 /* line 6, ../sass/partials/_forms.scss */

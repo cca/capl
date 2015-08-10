@@ -19,20 +19,45 @@ footer {
   }
   .footer-links {
     float: left;
+    margin-left: 1em;
+    padding-right: 1em;
+    @include breakpoint($hand) {
+      float: none;
+      margin: 0;
+      padding: 0;
+    }
+    @include breakpoint($desktop) {
+      border-right: 1px solid $blue;
+      margin-left: 2.5em;
+      padding-right: 2.5em;
+    }
+    &.first {
+      margin-left: 0;
+    }
+    &.last {
+      border: 0;
+    }
   }
   .footer-logos {
-    float: right;
+    clear: both;
+    padding-top: 2em;
+    @include breakpoint($desktop) {
+      clear: none;
+      float: right;
+      padding-top: 0;
+      li {
+        text-align: right;
+      }
+    }
   }
   .capl-logo {
     color: $gray-dark;
     font-weight: bold;
   }
   .cca-logo {
-    text-align: right;
-    margin-top: 10px;
+    font-size: 2em;
   }
-  .site-copyright {
-    clear: both;
-    text-align: center;
+  .copyright {
+    padding-top: 1em;
   }
 }
