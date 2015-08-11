@@ -211,6 +211,11 @@
         var href = $(this).find('a').attr('href');
         window.location.href = href;
       });
+
+      // fix programs view link
+      $('.view-programs').find('.views-row').each(function() {
+        console.log($(this).find('.field-name-body').text());
+      })
     }
   }
 
