@@ -2265,6 +2265,10 @@ ul.primary li a:hover {
 }
 
 /* line 245, ../sass/partials/_views.scss */
+.view-news .views-row {
+  margin: 4em 0;
+}
+/* line 248, ../sass/partials/_views.scss */
 .view-news h2 {
   font-family: georgia;
   font-style: italic;
@@ -2285,12 +2289,12 @@ ul.primary li a:hover {
 .view-news h2 a.active, .view-news h2 a:active, .view-news h2 a.active-trail {
   color: #7C8689;
 }
-/* line 252, ../sass/partials/_views.scss */
+/* line 255, ../sass/partials/_views.scss */
 .view-news .field-name-post-date {
   font-size: 0.8em;
   font-weight: 300;
 }
-/* line 256, ../sass/partials/_views.scss */
+/* line 259, ../sass/partials/_views.scss */
 .view-news .field-name-node-link {
   font-size: 0.9em;
 }
@@ -2310,19 +2314,19 @@ ul.primary li a:hover {
 .view-news .field-name-node-link a.active, .view-news .field-name-node-link a:active, .view-news .field-name-node-link a.active-trail {
   color: #7C8689;
 }
-/* line 260, ../sass/partials/_views.scss */
+/* line 263, ../sass/partials/_views.scss */
 .view-news .field-name-node-link a:after {
   content: ' +';
 }
 @media (min-width: 481px) {
-  /* line 265, ../sass/partials/_views.scss */
+  /* line 268, ../sass/partials/_views.scss */
   .view-news .field-name-field-featured-image {
     float: left;
     padding: 0 1em 0 0;
     width: 120px;
     height: 120px;
   }
-  /* line 272, ../sass/partials/_views.scss */
+  /* line 275, ../sass/partials/_views.scss */
   .view-news .field-name-field-featured-image img {
     max-width: 120px;
     height: auto;
