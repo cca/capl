@@ -1620,7 +1620,7 @@ label[for="nav-trigger"] .icon-bar {
 }
 
 /* line 168, ../sass/partials/_node.scss */
-.field-name-field-featured-image img,
+.field-name-field-news-image img,
 .field-name-field-program-image img {
   height: auto;
   width: 100%;
@@ -2322,14 +2322,14 @@ ul.primary li a:hover {
 }
 @media (min-width: 481px) {
   /* line 264, ../sass/partials/_views.scss */
-  .view-news .field-name-field-featured-image {
+  .view-news .field-name-field-news-image {
     float: left;
     padding: 0 1em 0 0;
     width: 120px;
     height: 120px;
   }
   /* line 271, ../sass/partials/_views.scss */
-  .view-news .field-name-field-featured-image img {
+  .view-news .field-name-field-news-image img {
     max-width: 120px;
     height: auto;
   }
