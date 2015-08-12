@@ -2263,3 +2263,68 @@ ul.primary li a:hover {
   border: 30px solid #EDEDED;
   box-sizing: border-box;
 }
+
+/* line 245, ../sass/partials/_views.scss */
+.view-news h2 {
+  font-family: georgia;
+  font-style: italic;
+}
+/* line 2, ../sass/global/_mixins.scss */
+.view-news h2 a, .view-news h2 a:link {
+  color: #0DB2DF;
+}
+/* line 7, ../sass/global/_mixins.scss */
+.view-news h2 a:visited, .view-news h2 a:link:visited {
+  color: #0DB2DF;
+}
+/* line 18, ../sass/global/_mixins.scss */
+.view-news h2 a.active:hover, .view-news h2 a.active-trail:hover, .view-news h2 a:hover {
+  color: #7C8689;
+}
+/* line 25, ../sass/global/_mixins.scss */
+.view-news h2 a.active, .view-news h2 a:active, .view-news h2 a.active-trail {
+  color: #7C8689;
+}
+/* line 252, ../sass/partials/_views.scss */
+.view-news .field-name-post-date {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+/* line 256, ../sass/partials/_views.scss */
+.view-news .field-name-node-link {
+  font-size: 0.9em;
+}
+/* line 2, ../sass/global/_mixins.scss */
+.view-news .field-name-node-link a, .view-news .field-name-node-link a:link {
+  color: #0DB2DF;
+}
+/* line 7, ../sass/global/_mixins.scss */
+.view-news .field-name-node-link a:visited, .view-news .field-name-node-link a:link:visited {
+  color: #0DB2DF;
+}
+/* line 18, ../sass/global/_mixins.scss */
+.view-news .field-name-node-link a.active:hover, .view-news .field-name-node-link a.active-trail:hover, .view-news .field-name-node-link a:hover {
+  color: #7C8689;
+}
+/* line 25, ../sass/global/_mixins.scss */
+.view-news .field-name-node-link a.active, .view-news .field-name-node-link a:active, .view-news .field-name-node-link a.active-trail {
+  color: #7C8689;
+}
+/* line 260, ../sass/partials/_views.scss */
+.view-news .field-name-node-link a:after {
+  content: ' +';
+}
+@media (min-width: 481px) {
+  /* line 265, ../sass/partials/_views.scss */
+  .view-news .field-name-field-featured-image {
+    float: left;
+    padding: 0 1em 0 0;
+    width: 120px;
+    height: 120px;
+  }
+  /* line 272, ../sass/partials/_views.scss */
+  .view-news .field-name-field-featured-image img {
+    max-width: 120px;
+    height: auto;
+  }
+}
