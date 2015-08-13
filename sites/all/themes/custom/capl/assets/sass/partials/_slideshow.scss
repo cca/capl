@@ -38,6 +38,15 @@
       opacity: 1;
   }
 
+  .slick-prev:before
+  {
+      content: url('../images/left-arrow.png');
+  }
+  [dir='rtl'] .slick-prev:before
+  {
+      content: url('../images/right-arrow.png');
+  }
+
   .slick-prev
   {
       left: 10px;
@@ -47,6 +56,14 @@
       right: 10px;
   }
 
+  .slick-next:before
+  {
+      content: url('../images/right-arrow.png');
+  }
+  [dir='rtl'] .slick-next:before
+  {
+      content: url('../images/left-arrow.png');
+  }
   .slick-next
   {
       right: 10px;
