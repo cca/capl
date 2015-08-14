@@ -15,8 +15,6 @@
 		<li>
 			<a href="resources">Resources</a></li>
 		<li>
-			<a href="what-we-do">Contacts</a></li>
-		<li>
 			<a href="http://www.cca.edu">CCA.edu</a></li>
 		<li>&nbsp;</li>
 	</ul>
@@ -24,7 +22,7 @@
 <div class="footer-links last">
 	<ul>
 		<li>
-			<a href="what-we-do">Contact Us</a></li>
+			<a href="mailto:center@cca.edu">center@cca.edu</a></li>
 		<li>
 			5275 Broadway<br>Oakland, CA 94618</li>
 		<li>
