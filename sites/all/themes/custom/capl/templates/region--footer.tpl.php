@@ -38,6 +38,6 @@
 		<li class="cca-logo">
 			<a href="http://www.cca.edu"><span class="cca-logo-c"></span><span class="cca-logo-c"></span><span class="cca-logo-a"></span></li></a>
 		<li class="copyright">
-		© California College of the Arts</li>
+		© <?php echo date('Y'); ?> California College of the Arts</li>
 	</ul>
 </div>
