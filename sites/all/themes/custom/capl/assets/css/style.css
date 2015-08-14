@@ -1353,7 +1353,7 @@ label[for="nav-trigger"] .icon-bar {
   top: 0;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 /* line 12, ../sass/partials/_navbar.scss */
 .navbar.nav-up {
