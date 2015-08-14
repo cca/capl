@@ -482,25 +482,23 @@ hr {
 
 /* line 151, ../sass/partials/_base.scss */
 .field-name-body ul {
-  list-style-image: url(../images/bullet.png);
   padding-left: 20px;
   padding-top: .5em;
 }
-/* line 155, ../sass/partials/_base.scss */
+/* line 154, ../sass/partials/_base.scss */
 .field-name-body ul li {
-  margin-bottom: 1.5em;
   padding-left: 10px;
 }
 
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 163, ../sass/partials/_base.scss */
+  /* line 161, ../sass/partials/_base.scss */
   img {
     height: auto;
     max-width: 100%;
   }
 }
 
-/* line 170, ../sass/partials/_base.scss */
+/* line 168, ../sass/partials/_base.scss */
 a.pdf {
   background: url(/modules/file/icons/application-pdf.png) no-repeat 0 3px;
   display: inline-block;
@@ -508,18 +506,18 @@ a.pdf {
   padding-right: 5px;
 }
 
-/* line 179, ../sass/partials/_base.scss */
+/* line 177, ../sass/partials/_base.scss */
 .submitted {
   color: #7C8689;
   font-size: .9em;
 }
 
-/* line 184, ../sass/partials/_base.scss */
+/* line 182, ../sass/partials/_base.scss */
 header > .container {
   padding-top: 0;
 }
 
-/* line 188, ../sass/partials/_base.scss */
+/* line 186, ../sass/partials/_base.scss */
 .page-header {
   width: 100%;
   float: right;
@@ -543,24 +541,24 @@ a.active:hover, a.active-trail:hover, a:hover {
 a.active, a:active, a.active-trail {
   color: #7C8689;
 }
-/* line 195, ../sass/partials/_base.scss */
+/* line 193, ../sass/partials/_base.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 200, ../sass/partials/_base.scss */
+/* line 198, ../sass/partials/_base.scss */
 .text-center {
   clear: both;
 }
 
 @media (min-width: 801px) {
-  /* line 203, ../sass/partials/_base.scss */
+  /* line 201, ../sass/partials/_base.scss */
   .region-content {
     padding-left: 100px;
   }
 }
 
-/* line 211, ../sass/partials/_base.scss */
+/* line 209, ../sass/partials/_base.scss */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -579,7 +577,7 @@ a:hover {
   font-weight: normal;
   font-style: normal;
 }
-/* line 233, ../sass/partials/_base.scss */
+/* line 231, ../sass/partials/_base.scss */
 [class^="cca-logo-"]:before, [class*="cca-logo-"]:before {
   font-family: "cca-logo";
   font-style: normal !important;
@@ -591,13 +589,13 @@ a:hover {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 243, ../sass/partials/_base.scss */
+/* line 241, ../sass/partials/_base.scss */
 .cca-logo-c:before {
   color: #4B5B65;
   content: "\e000";
 }
 
-/* line 247, ../sass/partials/_base.scss */
+/* line 245, ../sass/partials/_base.scss */
 .cca-logo-a:before {
   color: #FF001F;
   content: "\e001";
