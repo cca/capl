@@ -1518,35 +1518,35 @@ label[for="nav-trigger"] .icon-bar {
 }
 
 /* line 95, ../sass/partials/_node.scss */
-.group-left {
+.node-type-project .group-left {
   padding-top: 1em;
 }
 /* line 98, ../sass/partials/_node.scss */
-.group-left h2.js-trigger:hover {
+.node-type-project .group-left h2.js-trigger:hover {
   color: #0DB2DF;
 }
 /* line 100, ../sass/partials/_node.scss */
-.group-left h2.js-trigger:hover:after {
+.node-type-project .group-left h2.js-trigger:hover:after {
   color: #0DB2DF;
 }
 /* line 104, ../sass/partials/_node.scss */
-.group-left h2.js-trigger:after {
+.node-type-project .group-left h2.js-trigger:after {
   content: ' +';
   color: grey;
 }
 /* line 108, ../sass/partials/_node.scss */
-.group-left h2.js-trigger.expanded:after {
+.node-type-project .group-left h2.js-trigger.expanded:after {
   content: ' -';
 }
 @media (min-width: 481px) {
   /* line 97, ../sass/partials/_node.scss */
-  .group-left h2.js-trigger {
+  .node-type-project .group-left h2.js-trigger {
     display: none;
   }
 }
 /* line 115, ../sass/partials/_node.scss */
-.group-left .field .field-label,
-.group-left h4 {
+.node-type-project .group-left .field .field-label,
+.node-type-project .group-left h4 {
   color: #3F484C;
   font-size: 20px;
   font-weight: normal;
@@ -1554,40 +1554,40 @@ label[for="nav-trigger"] .icon-bar {
   margin: 0;
 }
 /* line 123, ../sass/partials/_node.scss */
-.group-left .field {
+.node-type-project .group-left .field {
   margin-bottom: .75em;
 }
 @media (min-width: 0) and (max-width: 480px) {
   /* line 123, ../sass/partials/_node.scss */
-  .group-left .field {
+  .node-type-project .group-left .field {
     display: none;
   }
 }
 @media (min-width: 481px) {
   /* line 123, ../sass/partials/_node.scss */
-  .group-left .field {
+  .node-type-project .group-left .field {
     display: block;
   }
 }
 /* line 131, ../sass/partials/_node.scss */
-.group-left .field .field-items {
+.node-type-project .group-left .field .field-items {
   color: #3F484C;
   font-weight: 300;
 }
 /* line 2, ../sass/global/_mixins.scss */
-.group-left .field .field-items a, .group-left .field .field-items a:link {
+.node-type-project .group-left .field .field-items a, .node-type-project .group-left .field .field-items a:link {
   color: #7C8689;
 }
 /* line 7, ../sass/global/_mixins.scss */
-.group-left .field .field-items a:visited, .group-left .field .field-items a:link:visited {
+.node-type-project .group-left .field .field-items a:visited, .node-type-project .group-left .field .field-items a:link:visited {
   color: #7C8689;
 }
 /* line 18, ../sass/global/_mixins.scss */
-.group-left .field .field-items a.active:hover, .group-left .field .field-items a.active-trail:hover, .group-left .field .field-items a:hover {
+.node-type-project .group-left .field .field-items a.active:hover, .node-type-project .group-left .field .field-items a.active-trail:hover, .node-type-project .group-left .field .field-items a:hover {
   color: #0DB2DF;
 }
 /* line 25, ../sass/global/_mixins.scss */
-.group-left .field .field-items a.active, .group-left .field .field-items a:active, .group-left .field .field-items a.active-trail {
+.node-type-project .group-left .field .field-items a.active, .node-type-project .group-left .field .field-items a:active, .node-type-project .group-left .field .field-items a.active-trail {
   color: #0DB2DF;
 }
 

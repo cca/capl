@@ -183,7 +183,7 @@
       });
 
       //Project Details
-      var details = $('.group-left');
+      var details = $('.node-type-project .group-left');
       if (details.length > 0) {
         details.prepend('<h2 class="js-trigger"> Project Details </h2>'
         );
