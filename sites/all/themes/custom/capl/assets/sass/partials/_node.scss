@@ -37,12 +37,6 @@
 
 // Program Page Layout
 .node-type-program {
-  .field-name-body {
-    @include breakpoint($desktop) {
-      width: 80%;
-      padding-left: 100px;
-    }
-  }
   .view-projects { // related projects block
     @include breakpoint($desktop) {
       width: 90%;
