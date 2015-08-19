@@ -40,10 +40,10 @@
 <header id="header" class="header" role="header">
   <div class="container">
     <div class="big-logo">
-      CCA Center for Art <span class="plus">+</span> Public Life<br />
+      CCA Center for Art <span class="plus">+</span><br>Public&nbsp;Life<br>
     </div>
     <div class="tagline">
-      Collaborations among California College of the Arts students, faculty and community partners.
+      Where creative practice meets community engagement
     </div>
     <div class="page-header">
       <?php if ($title): ?>

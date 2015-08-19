@@ -13,8 +13,10 @@
   .big-logo {
     @extend %clearfix;
     @include breakpoint($gthand) {
-      width: 55%;
-      padding-left: 15%;
+      padding-left: 20%;
+    }
+    @include breakpoint($tablet) {
+      padding-left: 10%;
     }
   }
 
@@ -27,24 +29,23 @@
       font-size: 1.2em;
     }
     @include breakpoint($hand) {
-      font-size: 0.9em;
-      padding: 0 4em 2em 4em;
+      padding: 0 4em 2em 0;
     }
   }
   .big-logo {
+    font-weight: bold;
+    line-height: 1.1em;
     @include breakpoint($desktop) {
       font-size: 3em;
-      font-weight: bold;
       line-height: 1.1em;
     }
     @include breakpoint($tablet) {
-      font-size: 2.5em;
+      font-size: 2.2em;
       line-height: 1.1em;
     }
     @include breakpoint($hand) {
-      font-size: 1.3em;
-      line-height: 1.1em;
-      padding: 2em 3em 1em 2.8em;
+      font-size: 1.9em;
+      padding-bottom: 1em;
     }
   }
 }
