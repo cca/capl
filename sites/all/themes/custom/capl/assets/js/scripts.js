@@ -6,6 +6,7 @@
       // Bind the window resize event to  responsive manager
       $(window).resize(function() {
         adminMenuFix();
+        showProjectFilters();
       }).resize();
 
       function adminMenuFix() {
@@ -14,6 +15,13 @@
           var bodyOffset = $('#admin-menu-wrapper').height() + 5;
           $('body').removeClass('admin-menu').css('margin-top', bodyOffset, 'important');
           $('.navbar').css('top', bodyOffset);
+        }
+      }
+
+      function showProjectFilters() {
+        // Show project filters is window is resized from mobile display
+        if ($(window).width() > 480) {
+          $('.view-project-categories').parent().show();
         }
       }
 
