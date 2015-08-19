@@ -19,7 +19,7 @@
       }
 
       function showProjectFilters() {
-        // Show project filters is window is resized from mobile display
+        // Show project filters if window is resized from mobile display
         if ($(window).width() > 480) {
           $('.view-project-categories').parent().show();
         }
