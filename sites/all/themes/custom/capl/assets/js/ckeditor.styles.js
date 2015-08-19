@@ -11,8 +11,8 @@ if(typeof(CKEDITOR) !== 'undefined') {
   CKEDITOR.addStylesSet( 'drupal',
   [
       { name : 'Paragraph', element : 'p' },
-      { name : 'Callout', element : 'div',
-        attributes: {'class': 'callout'}
+      { name : 'Lead Paragraph', element : 'p',
+        attributes: {'class': 'lead-paragraph'}
       },
       { name : 'Heading 2', element : 'h2' },
       { name : 'Heading 3', element : 'h3' },
