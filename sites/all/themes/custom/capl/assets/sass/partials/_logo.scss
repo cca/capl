@@ -37,14 +37,12 @@
     line-height: 1.1em;
     @include breakpoint($desktop) {
       font-size: 3em;
-      line-height: 1.1em;
     }
     @include breakpoint($tablet) {
       font-size: 2.2em;
-      line-height: 1.1em;
     }
     @include breakpoint($hand) {
-      font-size: 1.9em;
+      font-size: 1.75em;
       padding-bottom: 1em;
     }
   }
