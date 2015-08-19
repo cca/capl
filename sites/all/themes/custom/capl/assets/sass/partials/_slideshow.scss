@@ -14,77 +14,77 @@
     outline: 0;
   }
 
-  /* apply filter to prev/next images */
-  img {
-    @include filter(brightness(0.5) grayscale(0.2));
-  }
-  .slick-current img {
-    @include filter(unset);
-  }
-
   .slick-slide {
     margin: 0 20px;
   }
 
-  /* Arrows */
-  .slick-prev,
-  .slick-next
-  {
-      width: 50px;
-      height: 50px;
-      margin-top: -25px;
-  }
-  .slick-prev {
-    z-index: 1;
+  .slick-dots {
+    bottom: -32px;
   }
 
-  .slick-prev:before,
-  .slick-next:before
-  {
-      font-size: 50px;
-      color: $blue;
-      opacity: 1;
-  }
+  @include breakpoint($gthand) {
+    /* apply filter to prev/next images */
+    img {
+      @include filter(brightness(0.5) grayscale(0.2));
+    }
+    .slick-current img {
+      @include filter(unset);
+    }
 
-  .slick-prev:before
-  {
-      content: url('../images/left-arrow.png');
-  }
-  [dir='rtl'] .slick-prev:before
-  {
-      content: url('../images/right-arrow.png');
-  }
+    /* Arrows */
+    .slick-prev,
+    .slick-next
+    {
+        width: 50px;
+        height: 50px;
+        margin-top: -25px;
+    }
+    .slick-prev {
+      z-index: 1;
+    }
 
-  .slick-prev
-  {
-      left: 10px;
-  }
-  [dir='rtl'] .slick-prev
-  {
-      right: 10px;
-  }
+    .slick-prev:before,
+    .slick-next:before
+    {
+        font-size: 50px;
+        color: $blue;
+        opacity: 1;
+    }
 
-  .slick-next:before
-  {
-      content: url('../images/right-arrow.png');
-  }
-  [dir='rtl'] .slick-next:before
-  {
-      content: url('../images/left-arrow.png');
-  }
-  .slick-next
-  {
-      right: 10px;
-  }
-  [dir='rtl'] .slick-next
-  {
-      left: 10px;
-  }
+    .slick-prev:before
+    {
+        content: url('../images/left-arrow.png');
+    }
+    [dir='rtl'] .slick-prev:before
+    {
+        content: url('../images/right-arrow.png');
+    }
 
-  .slick-center {
-  }
-  .slick-fade-image {
-    opacity: 0.5;
-    transition: opacity 0.5s ease;
+    .slick-prev
+    {
+        left: 10px;
+    }
+    [dir='rtl'] .slick-prev
+    {
+        right: 10px;
+    }
+
+    .slick-next:before
+    {
+        content: url('../images/right-arrow.png');
+    }
+    [dir='rtl'] .slick-next:before
+    {
+        content: url('../images/left-arrow.png');
+    }
+    .slick-next
+    {
+        right: 10px;
+    }
+    [dir='rtl'] .slick-next
+    {
+        left: 10px;
+    }
+
   }
 }

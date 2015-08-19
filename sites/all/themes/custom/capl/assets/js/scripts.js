@@ -36,7 +36,7 @@
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        dots: false,
+        dots: true,
         centerMode: true,
         arrows: true,
         variableWidth: true
