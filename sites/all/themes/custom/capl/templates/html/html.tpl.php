@@ -57,7 +57,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
-<div id="skip-link">
+<div id="skip-link" class="container">
   <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
 </div>
 <?php print $page_top; ?>
