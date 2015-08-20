@@ -40,6 +40,9 @@ $susy: (
 // Apply container function.
 .container {
   padding: 1em;
+  @include breakpoint($hand) {
+    padding: 0.5em;
+  }
 }
 .container,
 .group-left,
