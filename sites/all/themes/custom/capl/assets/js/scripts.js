@@ -34,7 +34,7 @@
       $('.field-name-field-slideshow .field-items').slick({
         //setting-name: setting-value
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
         centerMode: true,

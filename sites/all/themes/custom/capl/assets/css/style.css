@@ -1811,7 +1811,7 @@ html.js fieldset.collapsible .fieldset-legend {
 }
 /* line 21, ../sass/partials/_slideshow.scss */
 .field-name-field-slideshow .slick-dots {
-  bottom: -32px;
+  bottom: -36px;
 }
 @media (min-width: 481px) {
   /* line 5, ../sass/partials/_slideshow.scss */
