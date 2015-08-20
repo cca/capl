@@ -37,7 +37,7 @@
   </div>
 </div>
 
-<header id="header" class="header" role="header">
+<header id="header" class="header">
   <div class="container">
     <div class="page-header">
       <?php if ($title): ?>
@@ -84,7 +84,7 @@
   <!-- /sidebar-second -->
 </div>
 
-<footer class="footer" role="footer">
+<footer class="footer">
   <div class="container">
     <?php if ($page['footer']): print render($page['footer']); endif; ?>
   </div>

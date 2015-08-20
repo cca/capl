@@ -37,7 +37,7 @@
   </div>
 </div>
 
-<header id="header" class="header" role="header">
+<header id="header">
   <div class="container">
     <div class="big-logo">
       CCA Center for Art <span class="plus">+</span><br>Public&nbsp;Life<br>
@@ -90,7 +90,7 @@
   <!-- /sidebar-second -->
 </div>
 
-<footer class="footer" role="footer">
+<footer class="footer">
   <div class="container">
     <?php if ($page['footer']): print render($page['footer']); endif; ?>
   </div>
