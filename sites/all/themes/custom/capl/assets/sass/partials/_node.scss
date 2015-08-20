@@ -41,10 +41,6 @@
     @include breakpoint($desktop) {
       width: 90%;
     }
-    &:before {
-      content: 'Program Case Studies';
-      margin-bottom: 0.3em;
-    }
     .node-teaser {
       padding-left: 0;
     }

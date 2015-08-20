@@ -79,6 +79,12 @@
     visibility: visible;
   }
 }
+/* projects block view */
+#block-views-projects-block-1 {
+  h2 {
+    color: $gray-dark;
+  }
+}
 
 /* project categories */
 .view-project-categories {
