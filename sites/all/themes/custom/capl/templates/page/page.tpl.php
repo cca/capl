@@ -66,7 +66,8 @@
   <?php endif; ?>
   <!-- /sidebar-first -->
 
-  <div class="main-content" class="container">
+  <div class="container main-content">
+    <a id="main-content"></a>
     <?php if ($messages): ?>
       <div id="messages">
         <?php print $messages; ?>
