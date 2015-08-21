@@ -6,9 +6,6 @@
   .logo {
     opacity: 0.0;
   }
-  .tagline {
-    padding: 2em 0 0 4em;
-  }
   .tagline,
   .big-logo {
     @extend %clearfix;
@@ -22,14 +19,15 @@
 
   .tagline {
     color: $gray;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
     @include breakpoint($desktop) {
       font-size: 1.4em;
     }
     @include breakpoint($tablet) {
       font-size: 1.2em;
-    }
-    @include breakpoint($hand) {
-      padding: 0 4em 2em 0;
     }
   }
   .big-logo {
