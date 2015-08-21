@@ -10,7 +10,7 @@
   .big-logo {
     @extend %clearfix;
     @include breakpoint($gthand) {
-      padding-left: 20%;
+      padding-left: calc(20% + 25px);
     }
     @include breakpoint($tablet) {
       padding-left: 10%;

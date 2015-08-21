@@ -1046,7 +1046,7 @@ fieldset legend {
   /* line 9, ../sass/partials/_logo.scss */
   .front .tagline,
   .front .big-logo {
-    padding-left: 20%;
+    padding-left: calc(20% + 25px);
   }
 }
 @media (min-width: 481px) and (max-width: 800px) {
