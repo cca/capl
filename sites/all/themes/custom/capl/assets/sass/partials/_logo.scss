@@ -29,6 +29,9 @@
     @include breakpoint($tablet) {
       font-size: 1.2em;
     }
+    @include breakpoint($hand) {
+      font-weight: 200;
+    }
   }
   .big-logo {
     font-weight: bold;
