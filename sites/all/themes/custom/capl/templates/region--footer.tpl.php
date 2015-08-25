@@ -1,19 +1,19 @@
 <div class="footer-links first">
 	<ul>
 		<li>
-			<a href="projects">Projects</a></li>
+			<a href="/projects">Projects</a></li>
 		<li>
-			<a href="programs-and-partners">Programs + Partners</a></li>
+			<a href="/programs-and-partners">Programs + Partners</a></li>
 		<li>
-			<a href="what-we-do">About</a></li>
+			<a href="/what-we-do">About</a></li>
 		<li>
-			<a href="news">News</a></li>
+			<a href="/news">News</a></li>
 	</ul>
 </div>
 <div class="footer-links">
 	<ul>
 		<li>
-			<a href="resources">Resources</a></li>
+			<a href="/resources">Resources</a></li>
 		<li>
 			<a href="http://www.cca.edu">CCA.edu</a></li>
 		<li>&nbsp;</li>
