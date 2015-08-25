@@ -6,7 +6,7 @@
       // Bind the window resize event to  responsive manager
       $(window).resize(function() {
         adminMenuFix();
-        showProjectFilters();
+        showCollapsedContent();
       }).resize();
 
       function adminMenuFix() {
@@ -18,10 +18,13 @@
         }
       }
 
-      function showProjectFilters() {
-        // Show project filters if window is resized from mobile display
+      function showCollapsedContent() {
+        // Show collapsed content if window is resized from mobile display
         if ($(window).width() > 480) {
+          // homepage project grid filters
           $('.view-project-categories').parent().show();
+          // project sidebar details
+          $('.group-left .field').show();
         }
       }
 
