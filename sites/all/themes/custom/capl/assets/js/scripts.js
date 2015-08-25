@@ -211,6 +211,14 @@
   Drupal.behaviors.tweaks = {
     attach: function (context, settings) {
 
+      // hide drawer menu when user clicks outside of nav-wrapper
+      $('html').click(function() {
+        $('#nav-trigger').prop('checked', false);
+      });
+      $('.nav-wrapper').click(function(event){
+          event.stopPropagation();
+      });
+
       $('.view-capl-team').find('.views-row').each(function() {
         var $username = $(this).find('.field-name-name').text();
         // add email to staff username
