@@ -1233,7 +1233,7 @@ label[for="nav-trigger"] .icon-bar {
   opacity: 0;
   min-height: 100%;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   padding-bottom: 1em;
   padding-top: 1em;
   position: fixed;
