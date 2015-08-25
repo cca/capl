@@ -171,6 +171,8 @@
 
         // reshuffle grid
         $grid.shuffle('shuffle', groupName );
+        // scroll to top of grid results
+        $(window).scrollTo("#main-content", 500);
       });
 
     }
