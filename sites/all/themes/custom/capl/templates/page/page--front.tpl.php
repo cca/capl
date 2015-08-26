@@ -43,7 +43,7 @@
       CCA Center for Art <span class="plus">+</span><br>Public&nbsp;Life<br>
     </div>
     <div class="tagline">
-      Where creative practice meets community&nbsp;engagement
+      Where creative practice meets<br>community&nbsp;engagement
     </div>
     <div class="page-header">
       <?php if ($title): ?>
