@@ -1792,26 +1792,30 @@ html.js fieldset.collapsible .fieldset-legend {
   display: none;
 }
 
-/* line 7, ../sass/partials/_slideshow.scss */
+/* line 5, ../sass/partials/_slideshow.scss */
+.field-name-field-slideshow {
+  margin-top: -15px;
+}
+/* line 9, ../sass/partials/_slideshow.scss */
 .field-name-field-slideshow .slick-slider {
   margin-bottom: 0;
 }
-/* line 11, ../sass/partials/_slideshow.scss */
+/* line 13, ../sass/partials/_slideshow.scss */
 .field-name-field-slideshow .slick-slide:focus {
   outline: 0;
 }
-/* line 15, ../sass/partials/_slideshow.scss */
+/* line 17, ../sass/partials/_slideshow.scss */
 .field-name-field-slideshow .slick-slide {
   margin: 0 20px;
 }
-/* line 19, ../sass/partials/_slideshow.scss */
+/* line 21, ../sass/partials/_slideshow.scss */
 .field-name-field-slideshow .slick-dots {
   bottom: -36px;
 }
 
 /* apply arrow nav icons and prev/next image filter for desktop only */
 @media (min-width: 481px) {
-  /* line 25, ../sass/partials/_slideshow.scss */
+  /* line 27, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow {
     /* add gray background */
     background-color: #EDEDED;
@@ -1819,7 +1823,7 @@ html.js fieldset.collapsible .fieldset-legend {
     /* apply filter to prev/next images */
     /* Arrows */
   }
-  /* line 32, ../sass/partials/_slideshow.scss */
+  /* line 34, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow img {
     -webkit-filter: brightness(0.3) grayscale(0.2);
     -moz-filter: brightness(0.3) grayscale(0.2);
@@ -1827,7 +1831,7 @@ html.js fieldset.collapsible .fieldset-legend {
     -o-filter: brightness(0.3) grayscale(0.2);
     filter: brightness(0.3) grayscale(0.2);
   }
-  /* line 35, ../sass/partials/_slideshow.scss */
+  /* line 37, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow .slick-current img {
     -webkit-filter: unset;
     -moz-filter: unset;
@@ -1835,53 +1839,53 @@ html.js fieldset.collapsible .fieldset-legend {
     -o-filter: unset;
     filter: unset;
   }
-  /* line 40, ../sass/partials/_slideshow.scss */
+  /* line 42, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow .slick-prev,
   .no-touch .field-name-field-slideshow .slick-next {
     width: 50px;
     height: 50px;
     margin-top: -25px;
   }
-  /* line 47, ../sass/partials/_slideshow.scss */
+  /* line 49, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow .slick-prev {
     z-index: 1;
   }
-  /* line 51, ../sass/partials/_slideshow.scss */
+  /* line 53, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow .slick-prev:before,
   .no-touch .field-name-field-slideshow .slick-next:before {
     font-size: 50px;
     color: #0DB2DF;
     opacity: 1;
   }
-  /* line 59, ../sass/partials/_slideshow.scss */
+  /* line 61, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow .slick-prev:before {
     content: url("../images/left-arrow.png");
   }
-  /* line 63, ../sass/partials/_slideshow.scss */
+  /* line 65, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow [dir='rtl'] .slick-prev:before {
     content: url("../images/right-arrow.png");
   }
-  /* line 68, ../sass/partials/_slideshow.scss */
+  /* line 70, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow .slick-prev {
     left: 10px;
   }
-  /* line 72, ../sass/partials/_slideshow.scss */
+  /* line 74, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow [dir='rtl'] .slick-prev {
     right: 10px;
   }
-  /* line 77, ../sass/partials/_slideshow.scss */
+  /* line 79, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow .slick-next:before {
     content: url("../images/right-arrow.png");
   }
-  /* line 81, ../sass/partials/_slideshow.scss */
+  /* line 83, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow [dir='rtl'] .slick-next:before {
     content: url("../images/left-arrow.png");
   }
-  /* line 85, ../sass/partials/_slideshow.scss */
+  /* line 87, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow .slick-next {
     right: 10px;
   }
-  /* line 89, ../sass/partials/_slideshow.scss */
+  /* line 91, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow [dir='rtl'] .slick-next {
     left: 10px;
   }

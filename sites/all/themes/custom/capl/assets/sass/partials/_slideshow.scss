@@ -3,6 +3,8 @@
 
 // Project Slideshow
 .field-name-field-slideshow {
+  // decrease space between slideshow top and navbar logo
+  margin-top: -15px;
 
   .slick-slider {
     margin-bottom: 0;
