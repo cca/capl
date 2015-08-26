@@ -27,7 +27,7 @@
 		<li>
 			5275 Broadway<br>Oakland, CA 94618</li>
 		<li>
-			<a href="tel:1-510-594-3600">510.594.3600</a></li>
+			<a href="tel:1-510-594-3757">510.594.3757</a></li>
 	</ul>
 </div>
 <div class="footer-logos">
