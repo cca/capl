@@ -19,7 +19,10 @@
   .slick-dots {
     bottom: -36px;
   }
+}
 
+/* apply arrow nav icons and prev/next image filter for desktop only */
+.no-touch .field-name-field-slideshow {
   @include breakpoint($gthand) {
     /* add gray background */
     background-color: $gray-light;
