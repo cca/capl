@@ -34,6 +34,7 @@
   .big-logo {
     font-weight: bold;
     line-height: 1.1em;
+    margin-top: -20px; 
     @include breakpoint($desktop) {
       font-size: 3em;
     }
