@@ -30,7 +30,7 @@
     
     /* apply filter to prev/next images */
     img {
-      @include filter(brightness(0.5) grayscale(0.2));
+      @include filter(brightness(0.3) grayscale(0.2));
     }
     .slick-current img {
       @include filter(unset);

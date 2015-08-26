@@ -1827,11 +1827,11 @@ html.js fieldset.collapsible .fieldset-legend {
   }
   /* line 32, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow img {
-    -webkit-filter: brightness(0.5) grayscale(0.2);
-    -moz-filter: brightness(0.5) grayscale(0.2);
-    -ms-filter: brightness(0.5) grayscale(0.2);
-    -o-filter: brightness(0.5) grayscale(0.2);
-    filter: brightness(0.5) grayscale(0.2);
+    -webkit-filter: brightness(0.3) grayscale(0.2);
+    -moz-filter: brightness(0.3) grayscale(0.2);
+    -ms-filter: brightness(0.3) grayscale(0.2);
+    -o-filter: brightness(0.3) grayscale(0.2);
+    filter: brightness(0.3) grayscale(0.2);
   }
   /* line 35, ../sass/partials/_slideshow.scss */
   .no-touch .field-name-field-slideshow .slick-current img {
