@@ -43,22 +43,6 @@
         centerMode: true,
         arrows: true,
         variableWidth: true
-        /*
-        responsive: [
-          {
-            breakpoint: 650,
-            settings: {
-              infinite: true,
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: true,
-              centerMode: true,
-              arrows: false,
-              variableWidth: true,
-            }
-          }
-        ]
-        */
       });
 
     }
