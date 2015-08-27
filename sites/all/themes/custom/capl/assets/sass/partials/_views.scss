@@ -26,6 +26,10 @@
       margin: 0 4%;
       font-size: 0.95em;
       font-weight: 300;
+      @include breakpoint($hand) {
+        font-size: 1.1em;
+        line-height: 1em;
+      }
     }
     img {
       height: auto;
@@ -75,7 +79,7 @@
 // hover animation for desktop only
 .no-touch .view-projects .view-content > div:hover {
   .views-field-title {
-    top: 10%;
+    top: 20%;
   }
   .description {
     opacity: 1;
