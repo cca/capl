@@ -15,6 +15,7 @@ function capl_preprocess_page(&$vars){
   $vars['logopath'] = path_to_theme() .'/assets/images/logo-' .(($vars['is_front'] === TRUE) ? 'big': 'small') .'.svg' ;
 
   // Add shuffle.js
+  drupal_add_js(drupal_get_path('theme', 'capl') . '/bower_components/imagesloaded/imagesloaded.pkgd.js');
   drupal_add_js(drupal_get_path('theme', 'capl') . '/bower_components/shufflejs/dist/jquery.shuffle.modernizr.js');
   drupal_add_js(drupal_get_path('theme', 'capl') . '/bower_components/shufflejs/dist/jquery.shuffle.js');
   drupal_add_js(drupal_get_path('theme', 'capl') . '/bower_components/jquery.scrollTo/jquery.scrollTo.min.js');
