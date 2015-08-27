@@ -77,7 +77,7 @@
           
           // If they scrolled down and are past the navbar, add class .nav-up.
           // This is necessary so you never see what is "behind" the navbar.
-          if (st > lastScrollTop && st > navbarHeight){
+          if (st > lastScrollTop && st > (navbarHeight * 2)) {
               // Scroll Down
               navbar.removeClass('nav-down over').addClass('nav-up');
           } else {
@@ -136,12 +136,14 @@
       var showAll = '<div><a href="#" class="show-all" data-group="all">Show All</a></div>';
       $categories.find('.view-content').prepend(showAll);
 
-      // initialize shuffle plugin
-      var $grid = $('#grid');
+      imagesLoaded('.view-project-categories', function() {
+        // initialize shuffle plugin
+        var $grid = $('#grid');
 
-      $grid.shuffle({
-          itemSelector: '.item' // the selector for the items in the grid
-      });
+        $grid.shuffle({
+            itemSelector: '.item' // the selector for the items in the grid
+        });
+      })
 
       $('#filter a').click(function (e) {
         e.preventDefault();
