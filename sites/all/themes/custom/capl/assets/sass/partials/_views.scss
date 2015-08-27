@@ -64,10 +64,12 @@
     position: relative
   }
   .item {
-    width: 262px; 
-    height: 180px; 
     float: left; 
     line-height: 262px; 
+    @include breakpoint($gthand) {
+      width: 262px; 
+      height: 180px; 
+    }
   }
 }
 // hover animation for desktop only
