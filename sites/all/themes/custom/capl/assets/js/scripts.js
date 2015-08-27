@@ -136,7 +136,7 @@
       var showAll = '<div><a href="#" class="show-all" data-group="all">Show All</a></div>';
       $categories.find('.view-content').prepend(showAll);
 
-      imagesLoaded('.view-project-categories', function() {
+      imagesLoaded('.view-projects', function() {
         // initialize shuffle plugin
         var $grid = $('#grid');
 
