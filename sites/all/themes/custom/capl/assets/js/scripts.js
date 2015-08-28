@@ -1,5 +1,8 @@
 (function($) {
 
+  // allow nested functions to override navbar overlay behavior
+  var globalScroll = true;
+
   Drupal.behaviors.is_responsive = {
     attach: function (context, settings) {
 
@@ -82,7 +85,7 @@
               navbar.removeClass('nav-down over').addClass('nav-up');
           } else {
               // Scroll Up
-              if(st + $(window).height() < $(document).height()) {
+              if(globalScroll && st + $(window).height() < $(document).height()) {
                   navbar.removeClass('nav-up').addClass('nav-down over');
               }
               if(st < navbarHeight) {
@@ -91,6 +94,8 @@
           }
           
           lastScrollTop = st;
+          // reset global scroll variable
+          globalScroll = true;
       }
     }
   }
@@ -159,6 +164,8 @@
         $grid.shuffle('shuffle', groupName );
         // scroll to top of grid results
         $(window).scrollTo("#main-content", 500);
+        // suppress navbar overlay on scroll
+        globalScroll = false;
       });
 
     }
