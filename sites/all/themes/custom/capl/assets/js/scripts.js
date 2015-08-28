@@ -136,10 +136,10 @@
       var showAll = '<div><a href="#" class="show-all" data-group="all">Show All</a></div>';
       $categories.find('.view-content').prepend(showAll);
 
-      imagesLoaded('.view-projects', function() {
-        // initialize shuffle plugin
-        var $grid = $('#grid');
+      var $grid = $('#grid');
 
+      // wait until all images are loaded before calling shuffle on grid items
+      imagesLoaded('.view-projects', function() {
         $grid.shuffle({
             itemSelector: '.item' // the selector for the items in the grid
         });
