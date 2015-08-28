@@ -63,9 +63,8 @@ a {
   text-decoration: none;
 }
 .field-name-body {
-  a,
-  a:hover {
-    text-decoration: underline;
+  a {
+    @include link-colors($blue, $gray, $gray, $blue);
   }
 }
 
@@ -186,13 +185,6 @@ header > .container {
 .page-header {
   @include span(8 of 8 last);
   border-bottom: none;
-}
-
-a {
-  @include link-colors($black, $gray, $gray, $black);
-  &:hover {
-    text-decoration: none;
-  }
 }
 
 .text-center {
