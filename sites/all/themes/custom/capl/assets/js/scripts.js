@@ -1,7 +1,7 @@
 (function($) {
 
-  // allow nested functions to override navbar overlay behavior
-  var globalScroll = true;
+  // allow detection of triggered scrolling vs human scrolling events
+  var humanScroll = true;
 
   Drupal.behaviors.is_responsive = {
     attach: function (context, settings) {
@@ -72,6 +72,15 @@
       }, 250);
 
       function hasScrolled() {
+
+          // exit if scroll was not initiated by human
+          if (!humanScroll) {
+            setTimeout(function() {
+              humanScroll = true;
+            }, 1000);
+            return;
+          }
+
           var st = $(this).scrollTop();
           
           // Make sure they scroll more than delta
@@ -85,7 +94,7 @@
               navbar.removeClass('nav-down over').addClass('nav-up');
           } else {
               // Scroll Up
-              if(globalScroll && st + $(window).height() < $(document).height()) {
+              if(humanScroll && st + $(window).height() < $(document).height()) {
                   navbar.removeClass('nav-up').addClass('nav-down over');
               }
               if(st < navbarHeight) {
@@ -94,8 +103,6 @@
           }
           
           lastScrollTop = st;
-          // reset global scroll variable
-          globalScroll = true;
       }
     }
   }
@@ -162,10 +169,10 @@
 
         // reshuffle grid
         $grid.shuffle('shuffle', groupName );
+        // suppress navbar overlay on scroll
+        humanScroll = false;
         // scroll to top of grid results
         $(window).scrollTo("#main-content", 500);
-        // suppress navbar overlay on scroll
-        globalScroll = false;
       });
 
     }
