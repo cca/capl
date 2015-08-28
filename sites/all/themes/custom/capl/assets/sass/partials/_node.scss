@@ -42,6 +42,14 @@
       padding-left: 0;
     }
   }
+  .field-name-field-sidebar {
+    @extend .field-name-body;
+    background-color: $gray-light;
+    .field-items {
+      margin: 1em;
+      padding: 1px;
+    }
+  }
 }
 
 // Project Teasers
