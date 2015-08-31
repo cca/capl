@@ -2,6 +2,10 @@
 // --------------------------------------------------------
 
 /* projects */
+.front .view-projects {
+  // put min height on homepage to prevent jumps as you filter
+  min-height: 622px;
+}
 .view-projects {
   .view-content{
     > div {
