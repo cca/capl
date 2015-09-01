@@ -156,22 +156,21 @@ function _ldap_user_orphans($ldap_user_conf) {
       foreach ($puid_x_puid_attrs as $puid_attr => $puids) {
         foreach ($puids as $puid => $user_data) {
 
-          if ($account = $accounts[$user_data['uid']]) {
-            $user_edit['ldap_user_last_checked'][LANGUAGE_NONE][0]['value'] = $check_time;
-            $account = user_save($account, $user_edit, 'ldap_user');
-            if (!$user_data['exists']) {
-                /**
-              * $ldap_user_conf->orphanedDrupalAcctBehavior will either be
-               *  'ldap_user_orphan_email' or one of the user module options:
-               *     user_cancel_block, user_cancel_block_unpublish,
-               *     user_cancel_reassign, user_cancel_delete
-               */
-              if ($ldap_user_conf->orphanedDrupalAcctBehavior == 'ldap_user_orphan_email') {
-                 $email_list[] = $account->name . "," . $account->mail . "," . $base_url . "/user/$uid/edit";
-              }
-              else {
-                 _user_cancel(array(), $account, $ldap_user_conf->orphanedDrupalAcctBehavior);
-              }
+          $account = $accounts[$user_data['uid']];
+          $user_edit['ldap_user_last_checked'][LANGUAGE_NONE][0]['value'] = $check_time;
+          $account = user_save($account, $user_edit, 'ldap_user');
+          if (!$user_data['exists']) {
+              /**
+            * $ldap_user_conf->orphanedDrupalAcctBehavior will either be
+             *  'ldap_user_orphan_email' or one of the user module options:
+             *     user_cancel_block, user_cancel_block_unpublish,
+             *     user_cancel_reassign, user_cancel_delete
+             */
+            if ($ldap_user_conf->orphanedDrupalAcctBehavior == 'ldap_user_orphan_email') {
+               $email_list[] = $account->name . "," . $account->mail . "," . $base_url . "/user/$uid/edit";
+            }
+            else {
+               _user_cancel(array(), $account, $ldap_user_conf->orphanedDrupalAcctBehavior);
             }
           }
         }
